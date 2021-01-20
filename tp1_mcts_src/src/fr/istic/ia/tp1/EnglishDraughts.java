@@ -1,12 +1,6 @@
 package fr.istic.ia.tp1;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.function.Function;
 
 import fr.istic.ia.tp1.Game.PlayerId;
@@ -142,9 +136,7 @@ public class EnglishDraughts extends Game {
 	 * @return
 	 */
 	boolean isEmpty(int square) {
-		//
-		// TODO isEmpty
-		//
+		return board.isEmpty(square) ;
 	}
 	
 	/** 
@@ -153,9 +145,10 @@ public class EnglishDraughts extends Game {
 	 * @return
 	 */
 	boolean isAdversary(int square) {
-		//
-		// TODO isAdversary
-		//
+		return ((this.playerId==PlayerId.ONE && !board.isBlack(square))||
+				(this.playerId==PlayerId.TWO && !board.isWhite(square)))
+				?false
+				:true;
 	}
 	
 	/** 
@@ -164,9 +157,10 @@ public class EnglishDraughts extends Game {
 	 * @return
 	 */
 	boolean isMine(int square) {
-		//
-		// TODO isMine
-		//
+		return ((this.playerId==PlayerId.ONE && !board.isWhite(square))||
+				(this.playerId==PlayerId.TWO && !board.isBlack(square)))
+				?false
+				:true;
 	}
 	
 	/** 
@@ -174,9 +168,11 @@ public class EnglishDraughts extends Game {
 	 * @return The list of current player pawn positions
 	 */
 	ArrayList<Integer> myPawns() {
-		//
-		// TODO myPawns
-		//
+		return (this.playerId == PlayerId.ONE)
+				?board.getWhitePawns()
+				:(this.playerId == PlayerId.TWO)
+					?board.getBlackPawns()
+					: new ArrayList<>();
 	}
 	
 	
