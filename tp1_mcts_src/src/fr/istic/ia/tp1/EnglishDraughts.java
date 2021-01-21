@@ -238,6 +238,15 @@ public class EnglishDraughts extends Game {
 	}
 
 	/**
+	 * le nombre de cases pour le deplacement
+	 */
+	private int nombreDecases(int from , CheckerBoard board1){
+		int tailleDamier = board1.size;
+		boolean lignePaire = board1.lineOfSquare(from) == 0 ;
+		int mouvement  = lignePaire? tailleDamier/2-1 : tailleDamier/2  ;
+		return mouvement ;
+	}
+	/**
 	 * deplacement en prenant en compte les autre pions du jeu
 	 * @return
 	 */
@@ -252,15 +261,42 @@ public class EnglishDraughts extends Game {
 			Integer from = moveIt.next();
 			while (moveIt.hasNext()){
 			Integer current =	moveIt.next();
-			if (isEmpty(current)) draughtsMove.add(current);
-			if (isAdversary(current)) {
-				//TODO recommencer !
+			boolean stop = false ;
+			while (!stop){
+				int mouv1 = nombreDecases(from , board);
+				int mouv2 = nombreDecases(current , board);
+				 if (isAdversary(current)) {
+					if(from < current){
+						if (current-from == mouv1){
+							if (isEmpty(mouv2)) draughtsMove.add(mouv2);
+						}else{
+							if(isEmpty(mouv2+1)) draughtsMove.add(mouv2+1);
+						}
+					}
+					else{
+						if (from-current == mouv1){
+							if (isEmpty(mouv2)) draughtsMove.add(mouv2);
+						}
+						else {
+							if (isEmpty(mouv2-1)) draughtsMove.add(mouv2-1);
+
+						}
+					}stop = !stop ;
+				}
+				 else if (isEmpty(current)) {
+					 draughtsMove.add(current);
+					 stop = !stop ;
+				 }
+				 //TODO REFELCHIR À LA RECURSIVITÉ
 			}
 
 
+
 			}
+			mouvementAvecCapture.add(draughtsMove);
 		}
 
+		return mouvementAvecCapture ;
 
 	}
 	/**
