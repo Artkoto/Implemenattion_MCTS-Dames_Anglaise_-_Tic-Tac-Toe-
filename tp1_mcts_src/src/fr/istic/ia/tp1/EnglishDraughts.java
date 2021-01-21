@@ -186,6 +186,7 @@ public class EnglishDraughts extends Game {
 		int mouvement  = lignePaire? tailleDamier1/2-1 : tailleDamier1/2  ;
 		ArrayList<Integer> result = new ArrayList<>();
 
+		//si c'est un king
 	 if(dame){
 		if (!bas) {
 			if (!gauche)  result.add(from+mouvement);
@@ -197,6 +198,7 @@ public class EnglishDraughts extends Game {
 		}
 		return result ;
 	 }
+	 //si c'est un blanc
 	 if (blanc){
 		 if (!haut){
 			 if (!gauche) result.add(from-mouvement);
@@ -205,6 +207,7 @@ public class EnglishDraughts extends Game {
 		 return result ;
 	 }
 
+	 //si cest noir
 		if (!bas) {
 			if (!gauche)  result.add(from+mouvement);
 			if(!droite) result.add(from+mouvement+1) ;
@@ -214,7 +217,7 @@ public class EnglishDraughts extends Game {
 	}
 
 	/**
-	 * fonction auxciliaire qui retourne les deplacements possibles sans captures
+	 * fonction auxciliaire qui retourne les deplacements possibles sans captures et sans contrintes
 	 * @return
 	 */
 	private List<Move> moveSansCapture(){
@@ -246,6 +249,68 @@ public class EnglishDraughts extends Game {
 		int mouvement  = lignePaire? tailleDamier/2-1 : tailleDamier/2  ;
 		return mouvement ;
 	}
+
+	/**
+	 * Mouvement avec prise multiple
+	 */
+	private List<Move> mouvPriseMultiple(boolean blanc , boolean king ,int from ,
+										 CheckerBoard board1, DraughtsMove drMove){
+		ArrayList<Integer> mouvmutiple = calculMov(from,king,blanc,board1);
+		ArrayList<Move> result = new ArrayList<>();
+		Iterator<Integer> it = mouvmutiple.iterator() ;
+		Integer current = it.next();
+		int mouv1 = nombreDecases(from , board1);
+		int mouv2 = nombreDecases(current , board1);
+		while (it.hasNext()){
+			boolean stop = false ;
+			DraughtsMove draughtsMove = new DraughtsMove();
+			draughtsMove.addAll(drMove);
+			if (isAdversary(current)) {
+				if(from < current){
+					if (current-from == mouv1){
+						if (isEmpty(current+mouv2)) {
+							stop = true ;
+							draughtsMove.add(current+mouv2);
+							result.addAll(mouvPriseMultiple(blanc,king,current+mouv2,board1,draughtsMove));
+
+						}
+					}else{
+						if(isEmpty(current+mouv2+1)) {
+							stop = true ;
+							draughtsMove.add(current+mouv2+1);
+							result.addAll(mouvPriseMultiple(blanc,king,current+mouv2+1,board1,draughtsMove));
+						}
+					}
+				}
+				else{
+					if (from-current == mouv1){
+						if (isEmpty(current-mouv2)) {
+							stop = true ;
+							draughtsMove.add(current-mouv2);
+							result.addAll(mouvPriseMultiple(blanc,king,current-mouv2,board1,draughtsMove));
+						}
+					}
+					else {
+						if (isEmpty(current-mouv2-1)) {
+							stop = true ;
+							draughtsMove.add(current-mouv2-1);
+							result.addAll(mouvPriseMultiple(blanc,king,current-mouv2-1,board1,draughtsMove));
+						}
+
+					}
+				}
+			}
+			else{
+				if (!stop && isEmpty(current)) {
+					draughtsMove.add(current); //fin de la recurssivité
+					result.add(draughtsMove);
+				}
+			}
+		}
+
+		return result;
+	}
+
 	/**
 	 * deplacement en prenant en compte les autre pions du jeu
 	 * @return
@@ -259,41 +324,60 @@ public class EnglishDraughts extends Game {
 			DraughtsMove draughtsMove = new DraughtsMove() ;
 			Iterator<Integer> moveIt = move.iterator() ;
 			Integer from = moveIt.next();
+			draughtsMove.add(from);
+			boolean estBlanc = playerId == PlayerId.ONE;
+			boolean estDame = board.isKing(from);
 			while (moveIt.hasNext()){
 			Integer current =	moveIt.next();
 			boolean stop = false ;
-			while (!stop){
 				int mouv1 = nombreDecases(from , board);
 				int mouv2 = nombreDecases(current , board);
 				 if (isAdversary(current)) {
 					if(from < current){
 						if (current-from == mouv1){
-							if (isEmpty(mouv2)) draughtsMove.add(mouv2);
+							if (isEmpty(current+mouv2)) {
+								stop = true ;
+								draughtsMove.add(current+mouv2);
+								mouvementAvecCapture.addAll(mouvPriseMultiple(estBlanc,estDame,current+mouv2,board,
+										draughtsMove));
+
+							}
 						}else{
-							if(isEmpty(mouv2+1)) draughtsMove.add(mouv2+1);
+							if(isEmpty(current+mouv2+1)) {
+								stop = true ;
+								draughtsMove.add(current+mouv2 + 1);
+								mouvementAvecCapture.addAll(mouvPriseMultiple(estBlanc,estDame,current+mouv2+1,board,
+										draughtsMove));
+							}
 						}
 					}
 					else{
 						if (from-current == mouv1){
-							if (isEmpty(mouv2)) draughtsMove.add(mouv2);
+							if (isEmpty(current-mouv2)) {
+								stop = true ;
+								draughtsMove.add(current-mouv2);
+								mouvementAvecCapture.addAll(mouvPriseMultiple(estBlanc,estDame,current-mouv2,board,
+										draughtsMove));
+							}
 						}
 						else {
-							if (isEmpty(mouv2-1)) draughtsMove.add(mouv2-1);
+							if (isEmpty(current-mouv2-1)) {
+								stop = true ;
+								draughtsMove.add(current-mouv2 - 1);
+								mouvementAvecCapture.addAll(mouvPriseMultiple(estBlanc,estDame,current-mouv2-1,board,
+										draughtsMove));
+							}
 
 						}
-					}stop = !stop ;
+					}
 				}
-				 else if (isEmpty(current)) {
+				 if (!stop && isEmpty(current)) {
 					 draughtsMove.add(current);
-					 stop = !stop ;
+					 mouvementAvecCapture.add(draughtsMove);
 				 }
-				 //TODO REFELCHIR À LA RECURSIVITÉ
-			}
-
-
 
 			}
-			mouvementAvecCapture.add(draughtsMove);
+
 		}
 
 		return mouvementAvecCapture ;
@@ -306,17 +390,7 @@ public class EnglishDraughts extends Game {
 	 */
 	@Override
 	public List<Move> possibleMoves() {
-		//
-		// TODO generate the list of possible moves
-		//
-		// Advice: 
-		// create two auxiliary functions :
-		// - one for jump moves from a given position, with capture (and multi-capture).
-		//    Use recursive calls to explore all multiple capture possibilities
-		// - one function that returns the displacement moves from a given position (without capture)
-		//
-		ArrayList<Move> moves = new ArrayList<Move>();
-		return moves;
+		return moveAvecCapture();
 	}
 
 	@Override
