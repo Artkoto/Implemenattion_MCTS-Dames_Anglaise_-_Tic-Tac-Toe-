@@ -145,10 +145,8 @@ public class EnglishDraughts extends Game {
 	 * @return
 	 */
 	boolean isAdversary(int square) {
-		return ((this.playerId==PlayerId.ONE && !board.isBlack(square))||
-				(this.playerId==PlayerId.TWO && !board.isWhite(square)))
-				?false
-				:true;
+		return ((this.playerId==PlayerId.ONE && board.isBlack(square))||
+				(this.playerId==PlayerId.TWO && board.isWhite(square)));
 	}
 	
 	/** 
@@ -157,10 +155,8 @@ public class EnglishDraughts extends Game {
 	 * @return
 	 */
 	boolean isMine(int square) {
-		return ((this.playerId==PlayerId.ONE && !board.isWhite(square))||
-				(this.playerId==PlayerId.TWO && !board.isBlack(square)))
-				?false
-				:true;
+		return ((this.playerId==PlayerId.ONE && board.isWhite(square))||
+				(this.playerId==PlayerId.TWO && board.isBlack(square)));
 	}
 	
 	/** 
@@ -174,8 +170,99 @@ public class EnglishDraughts extends Game {
 					?board.getBlackPawns()
 					: new ArrayList<>();
 	}
-	
-	
+
+	/**
+	 * fonction de calcule du déplacement
+	 */
+	private ArrayList<Integer> calculMov (Integer from, boolean dame , boolean blanc,
+											  CheckerBoard board1){
+		boolean bas , haut , gauche , droite ;
+		gauche = board1.inLeftRow(from);
+		droite = board1.inRightRow(from);
+		haut = board1.inTopRow(from);
+		bas = board1.inBottomRow(from);
+		int tailleDamier1 = board1.size;
+		boolean lignePaire = board1.lineOfSquare(from) == 0 ;
+		int mouvement  = lignePaire? tailleDamier1/2-1 : tailleDamier1/2  ;
+		ArrayList<Integer> result = new ArrayList<>();
+
+	 if(dame){
+		if (!bas) {
+			if (!gauche)  result.add(from+mouvement);
+			if(!droite) result.add(from+mouvement+1) ;
+		}
+		if (!haut){
+			if (!gauche) result.add(from-mouvement);
+			if(!droite) result.add(from-mouvement-1);
+		}
+		return result ;
+	 }
+	 if (blanc){
+		 if (!haut){
+			 if (!gauche) result.add(from-mouvement);
+			 if(!droite) result.add(from-mouvement-1);
+		 }
+		 return result ;
+	 }
+
+		if (!bas) {
+			if (!gauche)  result.add(from+mouvement);
+			if(!droite) result.add(from+mouvement+1) ;
+		}
+		return result ;
+
+	}
+
+	/**
+	 * fonction auxciliaire qui retourne les deplacements possibles sans captures
+	 * @return
+	 */
+	private List<Move> moveSansCapture(){
+		ArrayList<Move> mouvementSansPrise = new ArrayList<>();
+		Iterator<Integer> it = myPawns().iterator() ;
+		Integer from = it.next();
+		boolean estBlanc = playerId == PlayerId.ONE;
+		boolean estDame = board.isKing(from);
+		while (it.hasNext()){
+			DraughtsMove draughtsMove = new DraughtsMove() ;
+			ArrayList<Integer> movCourant = calculMov(from , estDame ,estBlanc , board);
+			if (movCourant.size() >=1){
+				draughtsMove.add(from);
+				draughtsMove.addAll(movCourant);
+				mouvementSansPrise.add(draughtsMove);
+			}
+			from = it.next() ;
+		}
+
+		return mouvementSansPrise;
+	}
+
+	/**
+	 * deplacement en prenant en compte les autre pions du jeu
+	 * @return
+	 */
+	private  List<Move> moveAvecCapture(){
+		ArrayList<Move> mouvementAvecCapture = new ArrayList<>();
+		List<Move> mouvementsansCapture = moveSansCapture();
+		Iterator<Move> it = mouvementsansCapture.iterator();
+		DraughtsMove move = (DraughtsMove) it.next();
+		while (it.hasNext()){
+			DraughtsMove draughtsMove = new DraughtsMove() ;
+			Iterator<Integer> moveIt = move.iterator() ;
+			Integer from = moveIt.next();
+			while (moveIt.hasNext()){
+			Integer current =	moveIt.next();
+			if (isEmpty(current)) draughtsMove.add(current);
+			if (isAdversary(current)) {
+				//TODO recommencer !
+			}
+
+
+			}
+		}
+
+
+	}
 	/**
 	 * Generate the list of possible moves
 	 * - first check moves with captures
