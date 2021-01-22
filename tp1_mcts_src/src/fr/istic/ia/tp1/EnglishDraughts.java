@@ -8,6 +8,8 @@ import fr.istic.ia.tp1.Game.PlayerId;
 /**
  * Implementation of the English Draughts game.
  * @author vdrevell
+ * @author Yao Arnaud Akoto
+ * @author kassim kaba
  *
  */
 public class EnglishDraughts extends Game {
