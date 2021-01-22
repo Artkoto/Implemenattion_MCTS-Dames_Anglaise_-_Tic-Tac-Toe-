@@ -258,10 +258,10 @@ public class EnglishDraughts extends Game {
 		ArrayList<Integer> mouvmutiple = calculMov(from,king,blanc,board1);
 		ArrayList<Move> result = new ArrayList<>();
 		Iterator<Integer> it = mouvmutiple.iterator() ;
-		Integer current = it.next();
 		int mouv1 = nombreDecases(from , board1);
-		int mouv2 = nombreDecases(current , board1);
 		while (it.hasNext()){
+			Integer current = it.next();
+			int mouv2 = nombreDecases(current , board1);
 			boolean stop = false ;
 			DraughtsMove draughtsMove = new DraughtsMove();
 			draughtsMove.addAll(drMove);
@@ -316,7 +316,7 @@ public class EnglishDraughts extends Game {
 	 * @return
 	 */
 	private  List<Move> moveAvecCapture(){
-		ArrayList<Move> mouvementAvecCapture = new ArrayList<>();
+		List<Move> mouvementAvecCapture = new ArrayList<Move>();
 		List<Move> mouvementsansCapture = moveSansCapture();
 		Iterator<Move> it = mouvementsansCapture.iterator();
 		DraughtsMove move = (DraughtsMove) it.next();
@@ -375,9 +375,8 @@ public class EnglishDraughts extends Game {
 					 draughtsMove.add(current);
 					 mouvementAvecCapture.add(draughtsMove);
 				 }
-
 			}
-
+			move = (DraughtsMove) it.next();
 		}
 
 		return mouvementAvecCapture ;
@@ -390,7 +389,9 @@ public class EnglishDraughts extends Game {
 	 */
 	@Override
 	public List<Move> possibleMoves() {
-		return moveAvecCapture();
+		ArrayList<Move> moves = new ArrayList<Move>();
+		moves.addAll( moveAvecCapture());
+		return moves;
 	}
 
 	@Override
