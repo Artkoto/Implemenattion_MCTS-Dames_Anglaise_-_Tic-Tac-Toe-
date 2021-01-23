@@ -195,6 +195,7 @@ public class EnglishDraughts extends Game {
 		//si c'est un king
 	 if(dame){
 		if (!bas) {
+			mouvement =  (board1.lineOfSquare(from)%2 == 0)? mouvement-1 : mouvement+1 ;
 			if (!gauche)  result.add(from+mouvement);
 			if(!droite) result.add(from+mouvement+1) ;
 		}
@@ -215,6 +216,7 @@ public class EnglishDraughts extends Game {
 
 	 //si cest noir
 		if (!bas) {
+			mouvement =  (board1.lineOfSquare(from)%2 == 0)? mouvement-1 : mouvement+1 ;
 			if (!gauche)  result.add(from+mouvement);
 			if(!droite) result.add(from+mouvement+1) ;
 		}
@@ -226,8 +228,8 @@ public class EnglishDraughts extends Game {
 	 * fonction auxciliaire qui retourne les deplacements possibles sans captures et sans contrintes
 	 * @return
 	 */
-	private List<Move> moveSansCapture(){
-		ArrayList<Move> mouvementSansPrise = new ArrayList<>();
+	private List<Move> deplacementPossible(){
+		ArrayList<Move> deplacementPossible = new ArrayList<>();
 		Iterator<Integer> it = myPawns().iterator() ;
 		while (it.hasNext()){
 			Integer from = it.next();
@@ -238,11 +240,11 @@ public class EnglishDraughts extends Game {
 			if (movCourant.size() >=1){
 				draughtsMove.add(from);
 				draughtsMove.addAll(movCourant);
-				mouvementSansPrise.add(draughtsMove);
+				deplacementPossible.add(draughtsMove);
 			}
 		}
 
-		return mouvementSansPrise;
+		return deplacementPossible;
 	}
 
 	/**
@@ -264,61 +266,96 @@ public class EnglishDraughts extends Game {
 		ArrayList<Move> result = new ArrayList<>();
 		Iterator<Integer> it = mouvmutiple.iterator() ;
 		int mouv1 = nombreDecases(from , board1);
+		DraughtsMove draughtsMove = new DraughtsMove();
+		draughtsMove.addAll(drMove);
+		draughtsMove.add(from);
 		while (it.hasNext()){
 			Integer current = it.next();
 			int mouv2 = nombreDecases(current , board1);
-			boolean stop = false ;
-			DraughtsMove draughtsMove = new DraughtsMove();
-			draughtsMove.addAll(drMove);
+			DraughtsMove curentMove = new DraughtsMove();
+			curentMove.addAll(draughtsMove);
 			if (isAdversary(current)) {
+				System.out.println("1");
 				ArrayList<Integer> prises = new ArrayList<>();
 				prises.addAll(prise);
 				prises.add(current);
 				if(from < current){
+					System.out.println("2");
 					if (current-from == mouv1){
+						System.out.println("00");
 						if (isEmpty(current+mouv2)) {
-							stop = true ;
-							draughtsMove.add(current+mouv2);
+							System.out.println("001");
 							result.addAll(mouvPriseMultiple(blanc,king,current+mouv2,board1,draughtsMove, prises));
 
 						}
 					}else{
+						System.out.println("11");
 						if(isEmpty(current+mouv2+1)) {
-							stop = true ;
-							draughtsMove.add(current+mouv2+1);
+							System.out.println("12");
 							result.addAll(mouvPriseMultiple(blanc,king,current+mouv2+1,board1,draughtsMove, prises));
 						}
 					}
 				}
+
 				else{
+					System.out.println("22");
 					if (from-current == mouv1){
+						System.out.println("220");
 						if (isEmpty(current-mouv2)) {
-							stop = true ;
-							draughtsMove.add(current-mouv2);
+							System.out.println("221");
 							result.addAll(mouvPriseMultiple(blanc,king,current-mouv2,board1,draughtsMove, prises));
 						}
 					}
 					else {
+						System.out.println("2201");
 						if (isEmpty(current-mouv2-1)) {
-							stop = true ;
-							draughtsMove.add(current-mouv2-1);
+							System.out.println("32");
 							result.addAll(mouvPriseMultiple(blanc,king,current-mouv2-1,board1,draughtsMove, prises));
 						}
 
 					}
 				}
 			}
-			else{
-				if (!stop && isEmpty(current)) {
-					draughtsMove.add(current); //fin de la recurssivité
-					result.add(draughtsMove);
-					lesPrisesPossibles.put(draughtsMove,prise);
+			System.out.println("00000");
+			System.out.println(current);
+				if (!isEmpty(current)) {
+					System.out.println("33");
+					 //fin de la recurssivité
+					result.add(curentMove);
+					lesPrisesPossibles.put(curentMove,prise);
+					//TOTO CORRIGER LE BUG
+
+				}
+
+		}
+
+		return result;
+	}
+
+
+	private  List<Move> moveSansCapture(){
+		List<Move> mouvementsansCapture = new ArrayList<>();
+		List<Move> deplacementpossible = deplacementPossible();
+		Iterator<Move> it = deplacementpossible.iterator();
+		while (it.hasNext()){
+			DraughtsMove move = (DraughtsMove) it.next();
+			DraughtsMove draughtsMove = new DraughtsMove() ;
+			Iterator<Integer> moveIt = move.iterator() ;
+			Integer from = moveIt.next();
+			draughtsMove.add(from);
+			while (moveIt.hasNext()){
+				Integer current =	moveIt.next();
+				DraughtsMove moveCurent = new DraughtsMove();
+				moveCurent.addAll(draughtsMove);
+				if (isEmpty(current)) {
+					moveCurent.add(current);
+					mouvementsansCapture.add(moveCurent);
 
 				}
 			}
 		}
 
-		return result;
+		return mouvementsansCapture;
 	}
 
 	/**
@@ -326,9 +363,9 @@ public class EnglishDraughts extends Game {
 	 * @return
 	 */
 	private  List<Move> moveAvecCapture(){
-		List<Move> mouvementAvecCapture = new ArrayList<Move>();
-		List<Move> mouvementsansCapture = moveSansCapture();
-		Iterator<Move> it = mouvementsansCapture.iterator();
+		List<Move> mouvementAvecCapture = new ArrayList<>();
+		List<Move> deplacementpossible = deplacementPossible();
+		Iterator<Move> it = deplacementpossible.iterator();
 		while (it.hasNext()){
 			DraughtsMove move = (DraughtsMove) it.next();
 			DraughtsMove draughtsMove = new DraughtsMove() ;
@@ -339,43 +376,44 @@ public class EnglishDraughts extends Game {
 			boolean estDame = board.isKing(from);
 			while (moveIt.hasNext()){
 			Integer current =	moveIt.next();
-			boolean stop = false ;
 				int mouv1 = nombreDecases(from , board);
 				int mouv2 = nombreDecases(current , board);
 				 if (isAdversary(current)) {
 				 	ArrayList<Integer> prise = new ArrayList<>();
-				 	prise.add(current);
+					 //vers le bas
 					if(from < current){
+						//bas-gauche
 						if (current-from == mouv1){
 							if (isEmpty(current+mouv2)) {
-								stop = true ;
-								draughtsMove.add(current+mouv2);
+								prise.add(current);
 								mouvementAvecCapture.addAll(mouvPriseMultiple(estBlanc,estDame,current+mouv2,board,
 										draughtsMove, prise));
 
 							}
+							//bas-droite
 						}else{
 							if(isEmpty(current+mouv2+1)) {
-								stop = true ;
-								draughtsMove.add(current+mouv2 + 1);
+								prise.add(current);
 								mouvementAvecCapture.addAll(mouvPriseMultiple(estBlanc,estDame,current+mouv2+1,board,
 										draughtsMove, prise));
 							}
 						}
 					}
+					//vers le haut
 					else{
+
+						//haut-droite
 						if (from-current == mouv1){
 							if (isEmpty(current-mouv2)) {
-								stop = true ;
-								draughtsMove.add(current-mouv2);
+								prise.add(current);
 								mouvementAvecCapture.addAll(mouvPriseMultiple(estBlanc,estDame,current-mouv2,board,
 										draughtsMove, prise));
 							}
 						}
+						//haut-gauche
 						else {
 							if (isEmpty(current-mouv2-1)) {
-								stop = true ;
-								draughtsMove.add(current-mouv2 - 1);
+								prise.add(current);
 								mouvementAvecCapture.addAll(mouvPriseMultiple(estBlanc,estDame,current-mouv2-1,board,
 										draughtsMove, prise));
 							}
@@ -383,10 +421,6 @@ public class EnglishDraughts extends Game {
 						}
 					}
 				}
-				 if (!stop && isEmpty(current)) {
-					 draughtsMove.add(current);
-					 mouvementAvecCapture.add(draughtsMove);
-				 }
 			}
 
 		}
@@ -403,7 +437,7 @@ public class EnglishDraughts extends Game {
 	public List<Move> possibleMoves() {
 		ArrayList<Move> moves = new ArrayList<>();
 		moves.addAll(moveAvecCapture());
-		return moves;
+		return !moves.isEmpty()?moves : moveSansCapture();
 	}
 
 	@Override
@@ -418,8 +452,6 @@ public class EnglishDraughts extends Game {
 		DraughtsMove move = (DraughtsMove) aMove;
 
 		// Move pawn and capture opponents
-		List<Move> moves =  possibleMoves();
-		if (moves.contains(move)){
 			//ajoter sur la dernier case et en fonction des sauts enlever les enemis
 			Integer to = move.get(move.size()-1);
 			Integer from = move.get(0);
@@ -445,16 +477,10 @@ public class EnglishDraughts extends Game {
 				}
 
 			// Next player
-			playerId.other();
+			playerId = playerId.other();
 
 			// Update nbTurn
 			nbTurn++;
-
-
-
-		}else {
-			System.out.println("Déplacement impossible dans ce sens");
-		}
 		
 
 
