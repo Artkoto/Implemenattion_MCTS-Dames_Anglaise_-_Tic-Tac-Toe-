@@ -144,7 +144,11 @@ public class EnglishDraughts extends Game {
 	 * @return
 	 */
 	boolean isEmpty(int square) {
-		return board.isEmpty(square) ;
+		try {
+			return board.isEmpty(square);
+		} catch (Exception e) {
+			return false;
+		}
 	}
 	
 	/** 
@@ -189,7 +193,9 @@ public class EnglishDraughts extends Game {
 		droite = board1.inRightRow(from);
 		haut = board1.inTopRow(from);
 		bas = board1.inBottomRow(from);
-		int mouvement  = nombreDecases( from ,  board1) ;
+		int tailleDamier = board1.size;
+		boolean lignePaire = board1.lineOfSquare(from)%2 == 0;
+		int mouvement  = !lignePaire? tailleDamier/2-1 : tailleDamier/2  ;
 		ArrayList<Integer> result = new ArrayList<>();
 
 		//si c'est un king
@@ -260,7 +266,7 @@ public class EnglishDraughts extends Game {
 	/**
 	 * Mouvement avec prise multiple
 	 */
-	private List<Move> mouvPriseMultiple(boolean blanc , boolean king ,int from ,
+	private List<Move> mouvPriseMultiple(boolean blanc , boolean king ,int from , int taille,
 										 CheckerBoard board1, DraughtsMove drMove, ArrayList<Integer> prise){
 		ArrayList<Integer> mouvmutiple = calculMov(from,king,blanc,board1);
 		ArrayList<Move> result = new ArrayList<>();
@@ -271,61 +277,61 @@ public class EnglishDraughts extends Game {
 		draughtsMove.add(from);
 		while (it.hasNext()){
 			Integer current = it.next();
-			int mouv2 = nombreDecases(current , board1);
 			DraughtsMove curentMove = new DraughtsMove();
 			curentMove.addAll(draughtsMove);
-			if (isAdversary(current)) {
-				System.out.println("1");
+			if(!isAdversary(current)){
+				result.add(curentMove);
+				lesPrisesPossibles.put(curentMove,prise);
+			}
+			 else {
 				ArrayList<Integer> prises = new ArrayList<>();
 				prises.addAll(prise);
 				prises.add(current);
 				if(from < current){
-					System.out.println("2");
+					mouv1 =  (board1.lineOfSquare(from)%2 == 0)? mouv1-1 : mouv1+1 ;
 					if (current-from == mouv1){
-						System.out.println("00");
-						if (isEmpty(current+mouv2)) {
-							System.out.println("001");
-							result.addAll(mouvPriseMultiple(blanc,king,current+mouv2,board1,draughtsMove, prises));
-
+						if (isEmpty(from+(taille-1))) {
+							result.addAll(mouvPriseMultiple(blanc,king,from+(taille-1),taille,board1,curentMove,
+									prises));
+						}else {
+							result.add(curentMove);
+							lesPrisesPossibles.put(curentMove,prise);
 						}
 					}else{
-						System.out.println("11");
-						if(isEmpty(current+mouv2+1)) {
-							System.out.println("12");
-							result.addAll(mouvPriseMultiple(blanc,king,current+mouv2+1,board1,draughtsMove, prises));
+						if(isEmpty(from+(taille+1))) {
+							result.addAll(mouvPriseMultiple(blanc,king,from+(taille+1),taille,board1,curentMove,
+									prises));
+						}else {
+							result.add(curentMove);
+							lesPrisesPossibles.put(curentMove,prise);
 						}
 					}
 				}
 
 				else{
-					System.out.println("22");
 					if (from-current == mouv1){
-						System.out.println("220");
-						if (isEmpty(current-mouv2)) {
-							System.out.println("221");
-							result.addAll(mouvPriseMultiple(blanc,king,current-mouv2,board1,draughtsMove, prises));
+						if (isEmpty(from-(taille-1))) {
+							result.addAll(mouvPriseMultiple(blanc,king,from-(taille-1),taille,board1,curentMove,
+									prises));
+						}else {
+							result.add(curentMove);
+							lesPrisesPossibles.put(curentMove,prise);
 						}
 					}
 					else {
-						System.out.println("2201");
-						if (isEmpty(current-mouv2-1)) {
-							System.out.println("32");
-							result.addAll(mouvPriseMultiple(blanc,king,current-mouv2-1,board1,draughtsMove, prises));
+						if (isEmpty(from-(taille+1))) {
+							result.addAll(mouvPriseMultiple(blanc,king,from-(taille-1),taille,board1,curentMove,
+									prises));
+						}else {
+							result.add(curentMove);
+							lesPrisesPossibles.put(curentMove,prise);
 						}
 
 					}
 				}
 			}
-			System.out.println("00000");
-			System.out.println(current);
-				if (!isEmpty(current)) {
-					System.out.println("33");
-					 //fin de la recurssivité
-					result.add(curentMove);
-					lesPrisesPossibles.put(curentMove,prise);
-					//TOTO CORRIGER LE BUG
 
-				}
+
 
 		}
 
@@ -363,6 +369,7 @@ public class EnglishDraughts extends Game {
 	 * @return
 	 */
 	private  List<Move> moveAvecCapture(){
+		int taille = board.size ;
 		List<Move> mouvementAvecCapture = new ArrayList<>();
 		List<Move> deplacementpossible = deplacementPossible();
 		Iterator<Move> it = deplacementpossible.iterator();
@@ -377,24 +384,24 @@ public class EnglishDraughts extends Game {
 			while (moveIt.hasNext()){
 			Integer current =	moveIt.next();
 				int mouv1 = nombreDecases(from , board);
-				int mouv2 = nombreDecases(current , board);
 				 if (isAdversary(current)) {
 				 	ArrayList<Integer> prise = new ArrayList<>();
 					 //vers le bas
 					if(from < current){
 						//bas-gauche
+						mouv1 =  (board.lineOfSquare(from)%2 == 0)? mouv1-1 : mouv1+1 ;
 						if (current-from == mouv1){
-							if (isEmpty(current+mouv2)) {
+							if (isEmpty(from+taille-1)) {
 								prise.add(current);
-								mouvementAvecCapture.addAll(mouvPriseMultiple(estBlanc,estDame,current+mouv2,board,
+								mouvementAvecCapture.addAll(mouvPriseMultiple(estBlanc,estDame,from+taille-1,taille,board,
 										draughtsMove, prise));
 
 							}
 							//bas-droite
 						}else{
-							if(isEmpty(current+mouv2+1)) {
+							if(isEmpty(from+taille+1)) {
 								prise.add(current);
-								mouvementAvecCapture.addAll(mouvPriseMultiple(estBlanc,estDame,current+mouv2+1,board,
+								mouvementAvecCapture.addAll(mouvPriseMultiple(estBlanc,estDame,from+taille+1,taille,board,
 										draughtsMove, prise));
 							}
 						}
@@ -404,17 +411,19 @@ public class EnglishDraughts extends Game {
 
 						//haut-droite
 						if (from-current == mouv1){
-							if (isEmpty(current-mouv2)) {
+							if (isEmpty(from-(taille-1))) {
 								prise.add(current);
-								mouvementAvecCapture.addAll(mouvPriseMultiple(estBlanc,estDame,current-mouv2,board,
+								mouvementAvecCapture.addAll(mouvPriseMultiple(estBlanc,estDame,from-(taille-1),taille,
+										board,
 										draughtsMove, prise));
 							}
 						}
 						//haut-gauche
 						else {
-							if (isEmpty(current-mouv2-1)) {
+							if (isEmpty(from-(taille+1))) {
 								prise.add(current);
-								mouvementAvecCapture.addAll(mouvPriseMultiple(estBlanc,estDame,current-mouv2-1,board,
+								mouvementAvecCapture.addAll(mouvPriseMultiple(estBlanc,estDame,from-(taille+1), taille,
+										board,
 										draughtsMove, prise));
 							}
 
@@ -463,6 +472,8 @@ public class EnglishDraughts extends Game {
 					Integer pionCapture= it.next() ;
 					board.removePawn(pionCapture);
 				}
+				lesPrisesPossibles.clear();
+				nbKingMovesWithoutCapture =0;
 			}else{
 				// Keep track of successive moves with kings wthout capture
 				nbKingMovesWithoutCapture ++;
@@ -509,6 +520,9 @@ public class EnglishDraughts extends Game {
 		// return PlayerId.NONE if the game is null
 		
 		// Return null is the game has not ended yet
+		if (nbKingMovesWithoutCapture == 25) return  PlayerId.NONE;
+		if (board.getBlackPawns().size() < 1 ) return PlayerId.ONE;
+		if (board.getWhitePawns().size() < 1) return  PlayerId.TWO;
 		return null;
 	}
 }
