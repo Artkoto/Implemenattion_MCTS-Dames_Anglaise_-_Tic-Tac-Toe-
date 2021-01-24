@@ -298,53 +298,52 @@ public class EnglishDraughts extends Game {
 			draughtsMove.addAll(drMove);
 			draughtsMove.add(from);
 			Integer current = it.next();
-			if(!board1.inBottomRow(current)
-					&& !board1.inTopRow(current)
-					&& !board1.inLeftRow(current)
-					&& !board1.inRightRow(current)){
-				if (isAdversary(current)){
-					System.out.println(current);
-					System.out.println("1002");
-					//ajouter le current dans les pions boffés
-					//chercher le sens de deplacement
-					int to  ;
-					//haut-gauche
-					if(board1.neighborUpLeft(from)==current) {
-						System.out.println("HG");
+			//si pion pas deja capturé
+			if(!prise.contains(current)){
+				if(!board1.inBottomRow(current)
+						&& !board1.inTopRow(current)
+						&& !board1.inLeftRow(current)
+						&& !board1.inRightRow(current)){
+					//si un adversaire
+					if (isAdversary(current)){
+						System.out.println(current);
+						//ajouter le current dans les pions boffés
+						//chercher le sens de deplacement
+						int to  ;
+						//haut-gauche
+						if(board1.neighborUpLeft(from)==current) {
 							to = board1.neighborUpLeft(current);
 							//next = from-(taille+1);
 
-					}
-							//haut-droite
-					else if(board1.neighborUpRight(from)==current) {
-						System.out.println("HD");
+						}
+						//haut-droite
+						else if(board1.neighborUpRight(from)==current) {
 							to =board1.neighborUpRight(current);
-						//next = from-(taille-1);
-					}
-							//bas-gauche
+							//next = from-(taille-1);
+						}
+						//bas-gauche
 						else if(board1.neighborDownLeft(from)==current) {
-						System.out.println("BG");
-								to = board1.neighborDownLeft(current);
-								//next = from+(taille-1);
+							to = board1.neighborDownLeft(current);
+							//next = from+(taille-1);
 						}
-								//bas-droite
+						//bas-droite
 						else  {
-						System.out.println("BD");
 							to = board1.neighborDownRight(current);
-							//next = from+(taille+1);
 						}
-					System.out.println(to);
-					if (!isEmpty(to)) {
-						System.out.println("arrive");
-						ArrayList<Integer> prises = new ArrayList<>();
-						prises.addAll(prise);
-						//calculer to
-						mouvements.addAll(movAvecCaptureForEach(to,blanc,dame,board1, draughtsMove, prises));
+
+						if (isEmpty(to)) {
+							ArrayList<Integer> prises = new ArrayList<>();
+							prises.addAll(prise);
+							prises.add(current);
+							//calculer to
+							mouvements.addAll(movAvecCaptureForEach(to,blanc,dame,board1, draughtsMove, prises));
+						}
+
+
 					}
-
-
 				}
 			}
+
 			if (draughtsMove.size() >=2){
 				mouvements.add(draughtsMove);
 				lesPrisesPossibles.put(draughtsMove,prise);
