@@ -195,38 +195,33 @@ public class EnglishDraughts extends Game {
 		droite = board1.inRightRow(from);
 		haut = board1.inTopRow(from);
 		bas = board1.inBottomRow(from);
-		int tailleDamier = board1.size;
-		boolean lignePaire = board1.lineOfSquare(from)%2 == 0;
-		int mouvement  = !lignePaire? tailleDamier/2-1 : tailleDamier/2  ;
 		ArrayList<Integer> result = new ArrayList<>();
 
 		//si c'est un king
-	 if(dame){
+
 		if (!bas) {
-			mouvement =  (board1.lineOfSquare(from)%2 == 0)? mouvement-1 : mouvement+1 ;
-			if (!gauche)  result.add(from+mouvement);
-			if(!droite) result.add(from+mouvement+1) ;
+			if(dame || !blanc) {
+				if (!gauche) {
+					int to = board1.neighborDownLeft(from);
+					if (to!=0) result.add(to);
+				}
+				if (!droite) {
+					int to = board1.neighborDownRight(from);
+					if (to!=0) result.add(to);
+				}
+			}
 		}
 		if (!haut){
-			if (!gauche) result.add(from-mouvement-1);
-			if(!droite) result.add(from-mouvement);
-		}
-		return result ;
-	 }
-	 //si c'est un blanc
-	 if (blanc){
-		 if (!haut){
-			 if (!gauche) result.add(from-mouvement-1);
-			 if(!droite) result.add(from-mouvement);
-		 }
-		 return result ;
-	 }
-
-	 //si cest noir
-		if (!bas) {
-			mouvement =  (board1.lineOfSquare(from)%2 == 0)? mouvement-1 : mouvement+1 ;
-			if (!gauche)  result.add(from+mouvement);
-			if(!droite) result.add(from+mouvement+1) ;
+			if (dame || blanc) {
+				if (!gauche) {
+					int to = board1.neighborUpLeft(from);
+					if (to!=0) result.add(to);
+				}
+				if (!droite) {
+					int to = board1.neighborUpRight(from);
+					if (to!=0) result.add(to);
+				}
+			}
 		}
 		return result ;
 
