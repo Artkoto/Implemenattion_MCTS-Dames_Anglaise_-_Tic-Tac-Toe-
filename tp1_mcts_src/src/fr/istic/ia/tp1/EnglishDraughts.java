@@ -5,6 +5,8 @@ import java.util.function.Function;
 
 import fr.istic.ia.tp1.Game.PlayerId;
 
+import javax.swing.*;
+
 /**
  * Implementation of the English Draughts game.
  * @author vdrevell
@@ -254,91 +256,9 @@ public class EnglishDraughts extends Game {
 	}
 
 	/**
-	 * le nombre de cases pour le deplacement
+	 * mouvements sans prises
+	 * @return
 	 */
-	private int nombreDecases(int from , CheckerBoard board1){
-		int tailleDamier = board1.size;
-		boolean lignePaire = board1.lineOfSquare(from)%2 == 0;
-		int mouvement  = !lignePaire? tailleDamier/2-1 : tailleDamier/2  ;
-		return mouvement ;
-	}
-
-	/**
-	 * Mouvement avec prise multiple
-	 */
-	private List<Move> mouvPriseMultiple(boolean blanc , boolean king ,int from , int taille,
-										 CheckerBoard board1, DraughtsMove drMove, ArrayList<Integer> prise){
-		ArrayList<Integer> mouvmutiple = calculMov(from,king,blanc,board1);
-		ArrayList<Move> result = new ArrayList<>();
-		Iterator<Integer> it = mouvmutiple.iterator() ;
-		int mouv1 = nombreDecases(from , board1);
-		DraughtsMove draughtsMove = new DraughtsMove();
-		draughtsMove.addAll(drMove);
-		draughtsMove.add(from);
-		while (it.hasNext()){
-			Integer current = it.next();
-			DraughtsMove curentMove = new DraughtsMove();
-			curentMove.addAll(draughtsMove);
-			if(!isAdversary(current)){
-				result.add(curentMove);
-				lesPrisesPossibles.put(curentMove,prise);
-			}
-			 else {
-				ArrayList<Integer> prises = new ArrayList<>();
-				prises.addAll(prise);
-				prises.add(current);
-				if(from < current){
-					mouv1 =  (board1.lineOfSquare(from)%2 == 0)? mouv1-1 : mouv1+1 ;
-					if (current-from == mouv1){
-						if (isEmpty(from+(taille-1))) {
-							result.addAll(mouvPriseMultiple(blanc,king,from+(taille-1),taille,board1,curentMove,
-									prises));
-						}else {
-							result.add(curentMove);
-							lesPrisesPossibles.put(curentMove,prise);
-						}
-					}else{
-						if(isEmpty(from+(taille+1))) {
-							result.addAll(mouvPriseMultiple(blanc,king,from+(taille+1),taille,board1,curentMove,
-									prises));
-						}else {
-							result.add(curentMove);
-							lesPrisesPossibles.put(curentMove,prise);
-						}
-					}
-				}
-
-				else{
-					if (from-current == mouv1){
-						if (isEmpty(from-(taille-1))) {
-							result.addAll(mouvPriseMultiple(blanc,king,from-(taille-1),taille,board1,curentMove,
-									prises));
-						}else {
-							result.add(curentMove);
-							lesPrisesPossibles.put(curentMove,prise);
-						}
-					}
-					else {
-						if (isEmpty(from-(taille+1))) {
-							result.addAll(mouvPriseMultiple(blanc,king,from-(taille-1),taille,board1,curentMove,
-									prises));
-						}else {
-							result.add(curentMove);
-							lesPrisesPossibles.put(curentMove,prise);
-						}
-
-					}
-				}
-			}
-
-
-
-		}
-
-		return result;
-	}
-
-
 	private  List<Move> moveSansCapture(){
 		List<Move> mouvementsansCapture = new ArrayList<>();
 		List<Move> deplacementpossible = deplacementPossible();
@@ -365,76 +285,109 @@ public class EnglishDraughts extends Game {
 	}
 
 	/**
-	 * deplacement en prenant en compte les autre pions du jeu
+	 * mov avec capture pour un pion
 	 * @return
 	 */
-	private  List<Move> moveAvecCapture(){
-		int taille = board.size ;
-		List<Move> mouvementAvecCapture = new ArrayList<>();
+	private List<Move> movAvecCaptureForEach(int from, boolean blanc , boolean dame , CheckerBoard board1 ,
+											 DraughtsMove drMove , ArrayList<Integer> prise){
+		ArrayList<Integer> deplacementPossibleForEach = calculMov(from,dame,blanc,board1);
+		List<Move> mouvements = new ArrayList<>();
+		Iterator<Integer> it  = deplacementPossibleForEach.iterator();
+		while (it.hasNext()){
+			DraughtsMove draughtsMove = new DraughtsMove();
+			draughtsMove.addAll(drMove);
+			draughtsMove.add(from);
+			Integer current = it.next();
+			if(!board1.inBottomRow(current)
+					&& !board1.inTopRow(current)
+					&& !board1.inLeftRow(current)
+					&& !board1.inRightRow(current)){
+				if (isAdversary(current)){
+					System.out.println(current);
+					System.out.println("1002");
+					//ajouter le current dans les pions boffés
+					//chercher le sens de deplacement
+					int to  ;
+					//haut-gauche
+					if(board1.neighborUpLeft(from)==current) {
+						System.out.println("HG");
+							to = board1.neighborUpLeft(current);
+							//next = from-(taille+1);
+
+					}
+							//haut-droite
+					else if(board1.neighborUpRight(from)==current) {
+						System.out.println("HD");
+							to =board1.neighborUpRight(current);
+						//next = from-(taille-1);
+					}
+							//bas-gauche
+						else if(board1.neighborDownLeft(from)==current) {
+						System.out.println("BG");
+								to = board1.neighborDownLeft(current);
+								//next = from+(taille-1);
+						}
+								//bas-droite
+						else  {
+						System.out.println("BD");
+							to = board1.neighborDownRight(current);
+							//next = from+(taille+1);
+						}
+					System.out.println(to);
+					if (!isEmpty(to)) {
+						System.out.println("arrive");
+						ArrayList<Integer> prises = new ArrayList<>();
+						prises.addAll(prise);
+						//calculer to
+						mouvements.addAll(movAvecCaptureForEach(to,blanc,dame,board1, draughtsMove, prises));
+					}
+
+
+				}
+			}
+			if (draughtsMove.size() >=2){
+				mouvements.add(draughtsMove);
+				lesPrisesPossibles.put(draughtsMove,prise);
+
+			}
+
+
+		}
+
+		return mouvements;
+	}
+
+	/**
+	 * Mouvement avec prise multiple
+	 */
+	private List<Move> movAvecCaptureForAll(){
+		List<Move> mouvements = new ArrayList<>();
 		List<Move> deplacementpossible = deplacementPossible();
 		Iterator<Move> it = deplacementpossible.iterator();
 		while (it.hasNext()){
 			DraughtsMove move = (DraughtsMove) it.next();
-			DraughtsMove draughtsMove = new DraughtsMove() ;
+			DraughtsMove draughtsMove = new DraughtsMove();
 			Iterator<Integer> moveIt = move.iterator() ;
 			Integer from = moveIt.next();
-			draughtsMove.add(from);
-			boolean estBlanc = playerId == PlayerId.ONE;
+			boolean estBlanc = playerId ==PlayerId.ONE ;
 			boolean estDame = board.isKing(from);
-			while (moveIt.hasNext()){
-			Integer current =	moveIt.next();
-				int mouv1 = nombreDecases(from , board);
-				 if (isAdversary(current)) {
-				 	ArrayList<Integer> prise = new ArrayList<>();
-					 //vers le bas
-					if(from < current){
-						//bas-gauche
-						mouv1 =  (board.lineOfSquare(from)%2 == 0)? mouv1-1 : mouv1+1 ;
-						if (current-from == mouv1){
-							if (isEmpty(from+taille-1)) {
-								prise.add(current);
-								mouvementAvecCapture.addAll(mouvPriseMultiple(estBlanc,estDame,from+taille-1,taille,board,
-										draughtsMove, prise));
-
-							}
-							//bas-droite
-						}else{
-							if(isEmpty(from+taille+1)) {
-								prise.add(current);
-								mouvementAvecCapture.addAll(mouvPriseMultiple(estBlanc,estDame,from+taille+1,taille,board,
-										draughtsMove, prise));
-							}
-						}
-					}
-					//vers le haut
-					else{
-
-						//haut-droite
-						if (from-current == mouv1){
-							if (isEmpty(from-(taille-1))) {
-								prise.add(current);
-								mouvementAvecCapture.addAll(mouvPriseMultiple(estBlanc,estDame,from-(taille-1),taille,
-										board,
-										draughtsMove, prise));
-							}
-						}
-						//haut-gauche
-						else {
-							if (isEmpty(from-(taille+1))) {
-								prise.add(current);
-								mouvementAvecCapture.addAll(mouvPriseMultiple(estBlanc,estDame,from-(taille+1), taille,
-										board,
-										draughtsMove, prise));
-							}
-
-						}
-					}
-				}
+			ArrayList<Integer> prise = new ArrayList<>() ;
+			List<Move> deplacementForEach = movAvecCaptureForEach(from,estBlanc,estDame,board,draughtsMove, prise);
+			if (!deplacementForEach.isEmpty()){
+				mouvements.addAll(deplacementForEach);
 			}
 
 		}
 
-		return mouvementAvecCapture ;
+		return mouvements;
+}
+
+	/**
+	 * deplacement en prenant en compte les pour un pion
+	 * @return
+	 */
+	private  List<Move> moveAvecCapture(){
+		return movAvecCaptureForAll() ;
 
 	}
 	/**
