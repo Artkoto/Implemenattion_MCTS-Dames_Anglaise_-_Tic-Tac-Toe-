@@ -301,25 +301,21 @@ public class EnglishDraughts extends Game {
 						&& !board1.inRightRow(current)){
 					//si un adversaire
 					if (isAdversary(current)){
-						System.out.println(current);
 						//ajouter le current dans les pions boffés
 						//chercher le sens de deplacement
 						int to  ;
 						//haut-gauche
 						if(board1.neighborUpLeft(from)==current) {
 							to = board1.neighborUpLeft(current);
-							//next = from-(taille+1);
 
 						}
 						//haut-droite
 						else if(board1.neighborUpRight(from)==current) {
 							to =board1.neighborUpRight(current);
-							//next = from-(taille-1);
 						}
 						//bas-gauche
 						else if(board1.neighborDownLeft(from)==current) {
 							to = board1.neighborDownLeft(current);
-							//next = from+(taille-1);
 						}
 						//bas-droite
 						else  {
@@ -333,17 +329,17 @@ public class EnglishDraughts extends Game {
 							//calculer to
 							mouvements.addAll(movAvecCaptureForEach(to,blanc,dame,board1, draughtsMove, prises));
 						}
+						else if (draughtsMove.size() >=2){
+							mouvements.add(draughtsMove);
+							lesPrisesPossibles.put(draughtsMove,prise);
 
+						}
 
 					}
 				}
 			}
 
-			if (draughtsMove.size() >=2){
-				mouvements.add(draughtsMove);
-				lesPrisesPossibles.put(draughtsMove,prise);
 
-			}
 
 
 		}
