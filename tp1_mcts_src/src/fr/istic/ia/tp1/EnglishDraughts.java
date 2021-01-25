@@ -289,13 +289,11 @@ public class EnglishDraughts extends Game {
 		List<Move> mouvements = new ArrayList<>();
 		Iterator<Integer> it  = deplacementPossibleForEach.iterator();
 		boolean continuer = false;
+		DraughtsMove draughtsMove = new DraughtsMove();
+		draughtsMove.addAll(drMove);
+		draughtsMove.add(from);
 		while (it.hasNext()){
-			ArrayList<Integer> priseCurent = new ArrayList<>();
-			priseCurent.addAll(prise);
 			boolean continuer1 = false;
-			DraughtsMove draughtsMove = new DraughtsMove();
-			draughtsMove.addAll(drMove);
-			draughtsMove.add(from);
 			Integer current = it.next();
 			//si pion pas deja capturé
 			if(!prise.contains(current)){
@@ -327,34 +325,22 @@ public class EnglishDraughts extends Game {
 						}
 
 						if (isEmpty(to)) {
-
-							if (board1.inTopRow(to)||board1.inBottomRow(to)){
-								draughtsMove.add(to);
-								priseCurent.add(current);
-							}else {
-								ArrayList<Integer> prises = new ArrayList<>();
-								prises.addAll(priseCurent);
-								prises.add(current);
-								mouvements.addAll(movAvecCaptureForEach(to, blanc, dame, board1, draughtsMove, prises));
-								continuer1 = true;
-
-							}
-
+							ArrayList<Integer> prises = new ArrayList<>();
+							prises.addAll(prise);
+							prises.add(current);
+							mouvements.addAll(movAvecCaptureForEach(to, blanc, dame, board1, draughtsMove, prises));
+							continuer1 = true;
 						}
-
 					}
 				}
 			}
-			continuer = continuer1 || continuer ;
-
-			if ( !it.hasNext() && !continuer && (draughtsMove.size() >=2)){
-				mouvements.add(draughtsMove);
-				lesPrisesPossibles.put(draughtsMove,priseCurent);
-
-			}
+			continuer = continuer1 ||continuer;
 
 		}
-
+		if ( !continuer && (draughtsMove.size() >=2)){
+			mouvements.add(draughtsMove);
+			lesPrisesPossibles.put(draughtsMove,prise);
+		}
 
 		return mouvements;
 	}
