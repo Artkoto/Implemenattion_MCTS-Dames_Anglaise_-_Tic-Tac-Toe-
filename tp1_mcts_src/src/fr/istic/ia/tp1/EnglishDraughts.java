@@ -288,7 +288,9 @@ public class EnglishDraughts extends Game {
 		ArrayList<Integer> deplacementPossibleForEach = calculMov(from,dame,blanc,board1);
 		List<Move> mouvements = new ArrayList<>();
 		Iterator<Integer> it  = deplacementPossibleForEach.iterator();
+		boolean continuer = false;
 		while (it.hasNext()){
+			boolean continuer1 = false;
 			DraughtsMove draughtsMove = new DraughtsMove();
 			draughtsMove.addAll(drMove);
 			draughtsMove.add(from);
@@ -326,23 +328,24 @@ public class EnglishDraughts extends Game {
 							ArrayList<Integer> prises = new ArrayList<>();
 							prises.addAll(prise);
 							prises.add(current);
-							//calculer to
 							mouvements.addAll(movAvecCaptureForEach(to,blanc,dame,board1, draughtsMove, prises));
-						}
-						else if (draughtsMove.size() >=2){
-							mouvements.add(draughtsMove);
-							lesPrisesPossibles.put(draughtsMove,prise);
+							continuer1=true;
 
 						}
 
 					}
 				}
 			}
+			continuer = continuer1 || continuer ;
 
+			if ( !it.hasNext() && !continuer && (draughtsMove.size() >=2)){
+				mouvements.add(draughtsMove);
+				lesPrisesPossibles.put(draughtsMove,prise);
 
-
+			}
 
 		}
+
 
 		return mouvements;
 	}
@@ -463,9 +466,10 @@ public class EnglishDraughts extends Game {
 		// return PlayerId.NONE if the game is null
 		
 		// Return null is the game has not ended yet
-		if (nbKingMovesWithoutCapture == 25) return  PlayerId.NONE;
+		if (nbKingMovesWithoutCapture >= 25) return  PlayerId.NONE;
 		if (board.getBlackPawns().size() < 1 ) return PlayerId.ONE;
 		if (board.getWhitePawns().size() < 1) return  PlayerId.TWO;
+		if (possibleMoves().isEmpty()) return  playerId.other();
 		return null;
 	}
 }
