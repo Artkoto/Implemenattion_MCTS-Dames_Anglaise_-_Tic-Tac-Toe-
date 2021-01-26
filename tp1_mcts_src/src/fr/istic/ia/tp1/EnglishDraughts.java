@@ -405,6 +405,7 @@ public class EnglishDraughts extends Game {
 			//ajoter sur la dernier case et en fonction des sauts enlever les enemis
 			Integer to = move.get(move.size()-1);
 			Integer from = move.get(0);
+			boolean estDame = board.isKing(from);
 			board.movePawn(from,to);
 			if (lesPrisesPossibles.containsKey(move)){
 				ArrayList<Integer> prises = lesPrisesPossibles.get(move);
@@ -414,10 +415,10 @@ public class EnglishDraughts extends Game {
 					board.removePawn(pionCapture);
 				}
 				lesPrisesPossibles.clear();
-				nbKingMovesWithoutCapture =0;
+				if (estDame) nbKingMovesWithoutCapture = 0;
 			}else{
 				// Keep track of successive moves with kings wthout capture
-				nbKingMovesWithoutCapture ++;
+				 if (estDame) nbKingMovesWithoutCapture ++;
 
 			}
 
