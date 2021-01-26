@@ -415,15 +415,16 @@ public class EnglishDraughts extends Game {
 					board.removePawn(pionCapture);
 				}
 				lesPrisesPossibles.clear();
-				if (estDame) nbKingMovesWithoutCapture = 0;
+				nbKingMovesWithoutCapture = 0;
 			}else{
 				// Keep track of successive moves with kings wthout capture
 				 if (estDame) nbKingMovesWithoutCapture ++;
+				 else nbKingMovesWithoutCapture = 0;
 
 			}
 
 			// Promote to king if the pawn ends on the opposite of the board
-				if (!board.isKing(to)){
+				if (!estDame){
 					if (board.inBottomRow(to) || board.inTopRow(to)){
 						board.crownPawn(to);
 					}
