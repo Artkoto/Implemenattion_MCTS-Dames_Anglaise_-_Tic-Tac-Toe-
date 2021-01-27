@@ -39,12 +39,6 @@ public class EnglishDraughts extends Game {
 	int nbKingMovesWithoutCapture;
 
 	/**
-	 * map pour les prise
-	 * (move , ArrayList)
-	 */
-	private Map<Move,ArrayList<Integer>> lesPrisesPossibles = new HashMap<>();
-	
-	/**
 	 * Class representing a move in the English draughts game
 	 * A move is an ArrayList of Integers, corresponding to the successive tile numbers (Manouri notation)
 	 * toString is overrided to provide Manouri notation output.
@@ -339,7 +333,6 @@ public class EnglishDraughts extends Game {
 		}
 		if ( !continuer && (draughtsMove.size() >=2)){
 			mouvements.add(draughtsMove);
-			lesPrisesPossibles.put(draughtsMove,prise);
 		}
 
 		return mouvements;
@@ -402,42 +395,43 @@ public class EnglishDraughts extends Game {
 		DraughtsMove move = (DraughtsMove) aMove;
 
 		// Move pawn and capture opponents
-			//ajoter sur la dernier case et en fonction des sauts enlever les enemis
-			Integer to = move.get(move.size()-1);
-			Integer from = move.get(0);
-			boolean estDame = board.isKing(from);
+		Iterator<Integer> it = move.iterator() ;
+		Integer from = it.next();
+		Integer to = from;
+		boolean estDame = board.isKing(from);
+		boolean moveAvecPrise = false ;
+
+		while (it.hasNext()){
+			 to = it.next();
 			board.movePawn(from,to);
-			if (lesPrisesPossibles.containsKey(move)){
-				ArrayList<Integer> prises = lesPrisesPossibles.get(move);
-				Iterator<Integer> it = prises.iterator() ;
-				while (it.hasNext()){
-					Integer pionCapture= it.next() ;
-					board.removePawn(pionCapture);
-				}
-				lesPrisesPossibles.clear();
-				nbKingMovesWithoutCapture = 0;
-			}else{
-				// Keep track of successive moves with kings wthout capture
-				 if (estDame) nbKingMovesWithoutCapture ++;
-				 else nbKingMovesWithoutCapture = 0;
-
+			Integer pionCapture = board.squareBetween(from,to);
+			if (pionCapture != 0){
+				board.removePawn(pionCapture);
+				moveAvecPrise = true;
 			}
+			from = to ;
+		}
 
-			// Promote to king if the pawn ends on the opposite of the board
-				if (!estDame){
-					if (board.inBottomRow(to) || board.inTopRow(to)){
-						board.crownPawn(to);
-					}
-				}
+		// Keep track of successive moves with kings wthout capture
+		if (moveAvecPrise || !estDame){
+			nbKingMovesWithoutCapture = 0;
+		}
+		else {
+			nbKingMovesWithoutCapture ++;
+		}
 
-			// Next player
-			playerId = playerId.other();
+		// Promote to king if the pawn ends on the opposite of the board
+		if (!estDame){
+			if (board.inBottomRow(to) || board.inTopRow(to)){
+				board.crownPawn(to);
+			}
+		}
 
-			// Update nbTurn
-			nbTurn++;
-		
+		// Next player
+		playerId = playerId.other();
 
-
+		// Update nbTurn
+		nbTurn++;
 	}
 
 	@Override
@@ -466,7 +460,7 @@ public class EnglishDraughts extends Game {
 		if (nbKingMovesWithoutCapture >= 25) return  PlayerId.NONE;
 		if (board.getBlackPawns().size() <= 0 ) return PlayerId.ONE;
 		if (board.getWhitePawns().size() <= 0) return  PlayerId.TWO;
-		if (possibleMoves().isEmpty()) return  playerId.other();
+		if (possibleMoves().isEmpty() || board.isEmpty()) return  playerId.other();
 		return null;
 	}
 }
