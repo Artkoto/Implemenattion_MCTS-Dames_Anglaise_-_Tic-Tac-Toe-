@@ -3,6 +3,7 @@ package fr.istic.ia.tp1;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Optional;
 import java.util.concurrent.TimeUnit;
 
 import fr.istic.ia.tp1.Game.Move;
@@ -11,6 +12,8 @@ import fr.istic.ia.tp1.Game.PlayerId;
 /**
  * A class implementing a Monte-Carlo Tree Search method (MCTS) for playing two-player games ({@link Game}).
  * @author vdrevell
+ * @author Yao Arnaud Akoto
+ * @author Kassim Kaba
  *
  */
 public class MonteCarloTreeSearch {
@@ -33,12 +36,18 @@ public class MonteCarloTreeSearch {
 		
 		/** The children of the node: the games states accessible by playing a move from this node state */
 		ArrayList<EvalNode> children;
+
+		/** le parent du noeud courrant*/
+		EvalNode parent ;
 		
 		/** 
 		 * The only constructor of EvalNode.
 		 * @param game The game state corresponding to this node.
 		 */
-		EvalNode(Game game) {
+		EvalNode(Game game, Optional<EvalNode> parent) {
+			if (parent.isPresent()) {
+				this.parent = parent.get();
+			}
 			this.game = game;
 			children = new ArrayList<EvalNode>();
 			w = 0.0;
@@ -50,10 +59,18 @@ public class MonteCarloTreeSearch {
 		 * @return UCT value for the node
 		 */
 		double uct() {
-			//
-			// TODO implement the UCT function (Upper Confidence Bound for Trees)
-			//
-			return 0.0;
+			if (parent != null) {
+				//
+				//  implement the UCT function (Upper Confidence Bound for Trees)
+				//
+				double INFINI = 99999999999.9999999;
+				double c = 1 / Math.sqrt(2);
+				double lnN = Math.log(parent.n) / Math.log(2); //attendre pour savoir si on utilise le noeud parent
+				return n == 0 ? INFINI : this.score() + c * Math.sqrt(lnN / n);
+			 // pas sûre de ce
+			// calcule à revoir
+			}
+			return 0 ;
 		}
 		
 		/**
@@ -62,9 +79,9 @@ public class MonteCarloTreeSearch {
 		 */
 		double score() {
 			//
-			// TODO implement the score function for a node
+			// implement the score function for a node
 			//
-			return 0.0;
+			return n==0? 0 : w/n ;
 		}
 		
 		/**
@@ -73,8 +90,10 @@ public class MonteCarloTreeSearch {
 		 */
 		void updateStats(RolloutResults res) {
 			//
-			// TODO implement updateStats for a node
+			// implement updateStats for a node
 			//
+			n = res.nbSimulations();
+			w = game.player() == PlayerId.ONE ? res.win1 : res.win2;
 		}
 	}
 	
@@ -127,8 +146,18 @@ public class MonteCarloTreeSearch {
 		 */
 		public void update(PlayerId winner) {
 			//
-			// TODO implement the update of RolloutResults
+			//  implement the update of RolloutResults
 			//
+			if (winner == PlayerId.ONE) {
+				win1++;
+			}
+			else if (winner == PlayerId.TWO){
+				win2++;
+			}else {
+				win1 = win1 / 0.5;
+				win2 = win2 + 0.5;
+
+			}
 		}
 		
 		/**
@@ -169,7 +198,7 @@ public class MonteCarloTreeSearch {
 	 * @param game
 	 */
 	public MonteCarloTreeSearch(Game game) {
-		root = new EvalNode(game.clone());
+		root = new EvalNode(game.clone(),null);
 		nTotal = 0;
 	}
 	

@@ -448,14 +448,9 @@ public class EnglishDraughts extends Game {
 	 */
 	@Override
 	public PlayerId winner() {
-		//
-		// TODO implement winner
-		//
-		
+
 		// return the winner ID if possible
-		
 		// return PlayerId.NONE if the game is null
-		
 		// Return null is the game has not ended yet
 		if (nbKingMovesWithoutCapture >= 25) return  PlayerId.NONE;
 		if (board.getBlackPawns().size() <= 0 ) return PlayerId.ONE;
