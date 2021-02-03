@@ -61,7 +61,7 @@ public class MonteCarloTreeSearch {
 		double uct() {
 			if (parent != null) {
 				//
-				//  implement the UCT function (Upper Confidence Bound for Trees)
+				//TODO  implement the UCT function (Upper Confidence Bound for Trees)
 				//
 				double INFINI = 99999999999.9999999;
 				double c = 1 / Math.sqrt(2);
@@ -79,7 +79,7 @@ public class MonteCarloTreeSearch {
 		 */
 		double score() {
 			//
-			// implement the score function for a node
+			//TODO implement the score function for a node
 			//
 			return n==0? 0 : w/n ;
 		}
@@ -90,7 +90,7 @@ public class MonteCarloTreeSearch {
 		 */
 		void updateStats(RolloutResults res) {
 			//
-			// implement updateStats for a node
+			//TODO implement updateStats for a node
 			//
 			n = res.nbSimulations();
 			w = game.player() == PlayerId.ONE ? res.win1 : res.win2;
@@ -146,7 +146,7 @@ public class MonteCarloTreeSearch {
 		 */
 		public void update(PlayerId winner) {
 			//
-			//  implement the update of RolloutResults
+			//TODO  implement the update of RolloutResults
 			//
 			if (winner == PlayerId.ONE) {
 				win1++;
@@ -154,10 +154,11 @@ public class MonteCarloTreeSearch {
 			else if (winner == PlayerId.TWO){
 				win2++;
 			}else {
-				win1 = win1 / 0.5;
+				win1 = win1 + 0.5;
 				win2 = win2 + 0.5;
 
 			}
+			n++;
 		}
 		
 		/**
@@ -211,7 +212,7 @@ public class MonteCarloTreeSearch {
 		//
 		// TODO implement playRandomlyToEnd
 		//
-		return null;
+		return game.winner();
 	}
 	
 	/**
@@ -224,7 +225,12 @@ public class MonteCarloTreeSearch {
 		//
 		// TODO implement rollOut
 		//
-		return null;
+		RolloutResults rolloutResults = new RolloutResults() ;
+		for (int i = 0; i < nbRuns; i++) {
+			rolloutResults.update(playRandomlyToEnd(game));
+			//rolloutResults.n++;
+		}
+		return rolloutResults;
 	}
 	
 	/**
