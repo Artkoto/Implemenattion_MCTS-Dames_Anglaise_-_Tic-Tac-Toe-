@@ -64,11 +64,9 @@ public class MonteCarloTreeSearch {
 				//TODO  implement the UCT function (Upper Confidence Bound for Trees)
 				//
 				double INFINI = 99999999999.9999999;
-				double c = 1 / Math.sqrt(2);
-				double lnN = Math.log(parent.n) / Math.log(2); //attendre pour savoir si on utilise le noeud parent
+				double c = Math.sqrt(2);
+				double lnN = Math.log(parent.n);
 				return n == 0 ? INFINI : this.score() + c * Math.sqrt(lnN / n);
-			 // pas sûre de ce
-			// calcule à revoir
 			}
 			return 0 ;
 		}
@@ -92,8 +90,8 @@ public class MonteCarloTreeSearch {
 			//
 			//TODO implement updateStats for a node
 			//
-			n = res.nbSimulations();
-			w = game.player() == PlayerId.ONE ? res.win1 : res.win2;
+			n += res.nbSimulations();
+			w += game.player().other() == PlayerId.ONE ? res.win1 : res.win2;
 		}
 	}
 	
@@ -212,6 +210,7 @@ public class MonteCarloTreeSearch {
 		//
 		// TODO implement playRandomlyToEnd
 		//
+		//Utiliser la même boucle que dans gameLoop
 		return game.winner();
 	}
 	
