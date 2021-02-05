@@ -34,9 +34,6 @@ public class MonteCarloTreeSearch {
 		/** The children of the node: the games states accessible by playing a move from this node state */
 		ArrayList<EvalNode> children;
 
-		/** le parent du noeud courrant*/
-		EvalNode parent ;
-
 		/**
 		 * mouvement-noeud
 		 */
@@ -46,27 +43,11 @@ public class MonteCarloTreeSearch {
 		/** 
 		 * The only constructor of EvalNode.
 		 * @param game The game state corresponding to this node.
-		 * @param parent le parent du neoud courent.
 		 */
-		EvalNode(Game game, Optional<EvalNode> parent) {
-			if (parent != null) {
-				this.parent = parent.get();
-			}
+		EvalNode(Game game) {
+
 			this.game = game;
 			children = new ArrayList<EvalNode>();
-			//pour le root les fils sont cree automatiquement
-			if(parent == null){
-				Iterator<Move> itMove = this.game.possibleMoves().iterator();
-				while (itMove.hasNext()){
-					Move deplavementNode = itMove.next();
-					Game  gameCurent =this.game.clone();
-					gameCurent.play(deplavementNode);
-					EvalNode node = new EvalNode(gameCurent, Optional.of(this));
-					node.move_node = deplavementNode;
-					children.add(node);
-				}
-			}
-
 			w = 0.0;
 			n = 0;
 		}
@@ -76,16 +57,15 @@ public class MonteCarloTreeSearch {
 		 * @return UCT value for the node
 		 */
 		double uct() {
-			if (parent != null) {
-				//
-				//TODO  implement the UCT function (Upper Confidence Bound for Trees)
-				//
-				double INFINI = 99999999999.9999999;
-				double c = Math.sqrt(2);
-				double lnN = Math.log(parent.n);
-				return n == 0 ? INFINI : this.score() + c * Math.sqrt(lnN / n);
-			}
-			return 0 ;
+
+			//
+			//TODO  implement the UCT function (Upper Confidence Bound for Trees)
+			//
+			double INFINI = 99999.0;
+			double c = Math.sqrt(2);
+			double lnN = Math.log(root.n);
+			return n == 0 ? INFINI : this.score() + c * Math.sqrt(lnN / n);
+
 		}
 		
 		/**
@@ -108,12 +88,12 @@ public class MonteCarloTreeSearch {
 			//TODO implement updateStats for a node
 			//
 			n += res.nbSimulations();
-			w += game.player() == PlayerId.ONE ? res.win1 : res.win2;
+			w += root.game.player() == PlayerId.ONE ? res.win1 : res.win2;
 		}
 
 		@Override
 		public int hashCode() {
-			return Objects.hash(n, w, game, children, parent, move_node);
+			return Objects.hash(n, w, game, children, move_node);
 		}
 	}
 	
@@ -218,9 +198,18 @@ public class MonteCarloTreeSearch {
 	 * @param game
 	 */
 	public MonteCarloTreeSearch(Game game) {
-		root = new EvalNode(game.clone(),null);
-
+		root = new EvalNode(game.clone());
 		nTotal = 0;
+		//pour le root les fils sont cree automatiquement
+			Iterator<Move> itMove = root.game.possibleMoves().iterator();
+			while (itMove.hasNext()){
+				Move deplavementNode = itMove.next();
+				Game  gameCurent =root.game.clone();
+				gameCurent.play(deplavementNode);
+				EvalNode node = new EvalNode(gameCurent);
+				node.move_node = deplavementNode;
+				root.children.add(node);
+			}
 	}
 	
 	/**
@@ -294,26 +283,23 @@ public class MonteCarloTreeSearch {
 		//
 
 		// List of visited nodes
-		EvalNode node = root;
+		Iterator<EvalNode> it = root.children.iterator();
 		// Start from the root
 		// Selection (with UCT tree policy)
-		Iterator<EvalNode> it = node.children.iterator();
-		node = it.next();
+		EvalNode node = it.next();
 		while (it.hasNext()){
 			EvalNode nodeCourent = it.next();
 			if (node.uct() < nodeCourent.uct()){
-				node = nodeCourent ;
+				node = nodeCourent;
 			}
 		}
-		
 		// Expand node
 		// Simulate from new node(s)
-		RolloutResults rolloutResultsresults = rollOut(node.game, 1);
+		RolloutResults res = rollOut(node.game, 1);
 		
 		// Backpropagate results
-
-			node.updateStats(rolloutResultsresults);
-			root.updateStats(rolloutResultsresults);
+			node.updateStats(res);
+			root.updateStats(res);
 			nTotal = root.n;
 		
 		// Return false if tree evaluation should continue
@@ -328,9 +314,9 @@ public class MonteCarloTreeSearch {
 		// 
 		// TODO Implement MCTS getBestMove
 		//
-		EvalNode node=root;
+		EvalNode node;
 		// Selection (with UCT tree policy)
-			Iterator<EvalNode> it = node.children.iterator();
+			Iterator<EvalNode> it = root.children.iterator();
 			node = it.next();
 			while (it.hasNext()){
 				EvalNode nodeCourent = it.next();
@@ -352,11 +338,9 @@ public class MonteCarloTreeSearch {
 	 */
 	public String stats() {
 		String str = "MCTS with " + nTotal + " evals\n";
-		Iterator<Move> itMove = root.game.possibleMoves().iterator();
 		for (EvalNode node : root.children) {
-			Move move = itMove.next();
 			double score = node.score();
-			str += move + " : " + score + " (" + node.w + "/" + node.n + ")\n";
+			str += node.move_node + " : " + score + " (" + node.w + "/" + node.n + ")\n";
 		}
 		return str;
 	}
