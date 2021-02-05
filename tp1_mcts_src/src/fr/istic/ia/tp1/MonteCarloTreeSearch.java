@@ -311,10 +311,6 @@ public class MonteCarloTreeSearch {
 					}
 				}
 			}
-		System.out.println(stats());
-		System.out.println("############ Choix");
-		System.out.println(node.move_node + " : " + node.score() + " (" + node.w + "/" + node.n + ")");
-		System.out.println("############");
 		return node.move_node;
 	}
 	
