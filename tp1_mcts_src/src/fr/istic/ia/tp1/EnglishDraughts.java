@@ -453,9 +453,7 @@ public class EnglishDraughts extends Game {
 		// return PlayerId.NONE if the game is null
 		// Return null is the game has not ended yet
 		if (nbKingMovesWithoutCapture >= 25) return  PlayerId.NONE;
-		if (board.getBlackPawns().size() <= 0 ) return PlayerId.ONE;
-		if (board.getWhitePawns().size() <= 0) return  PlayerId.TWO;
-		if (possibleMoves().isEmpty() || board.isEmpty()) return  playerId.other();
+		if (possibleMoves().isEmpty() || myPawns().isEmpty()) return  playerId.other();
 		return null;
 	}
 }

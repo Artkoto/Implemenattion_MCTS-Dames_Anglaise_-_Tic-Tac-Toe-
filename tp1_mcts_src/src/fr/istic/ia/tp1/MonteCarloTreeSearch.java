@@ -1,9 +1,6 @@
 package fr.istic.ia.tp1;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 import fr.istic.ia.tp1.Game.Move;
@@ -39,17 +36,33 @@ public class MonteCarloTreeSearch {
 
 		/** le parent du noeud courrant*/
 		EvalNode parent ;
-		
+
+		/**
+		 * mouvement-noeud
+		 */
+		private Map<EvalNode,Move> move_node = new HashMap<>();
+
+
 		/** 
 		 * The only constructor of EvalNode.
 		 * @param game The game state corresponding to this node.
+		 * @param parent le parent du neoud courent.
 		 */
 		EvalNode(Game game, Optional<EvalNode> parent) {
-			if (parent.isPresent()) {
+			if (parent != null) {
 				this.parent = parent.get();
 			}
 			this.game = game;
 			children = new ArrayList<EvalNode>();
+			if(uct() == 0 && n !=0){
+				Iterator<Move> itMove = this.game.possibleMoves().iterator();
+				while (itMove.hasNext()){
+					EvalNode node = new EvalNode(this.game, Optional.of(this));
+					move_node.put(node,itMove.next());
+					children.add(node);
+				}
+			}
+
 			w = 0.0;
 			n = 0;
 		}
@@ -92,6 +105,11 @@ public class MonteCarloTreeSearch {
 			//
 			n += res.nbSimulations();
 			w += game.player().other() == PlayerId.ONE ? res.win1 : res.win2;
+		}
+
+		@Override
+		public int hashCode() {
+			return Objects.hash(n, w, game, children, parent, move_node);
 		}
 	}
 	
@@ -191,13 +209,13 @@ public class MonteCarloTreeSearch {
 	 */
 	int nTotal;
 
-	
 	/**
 	 * The constructor
 	 * @param game
 	 */
 	public MonteCarloTreeSearch(Game game) {
 		root = new EvalNode(game.clone(),null);
+
 		nTotal = 0;
 	}
 	
@@ -211,6 +229,11 @@ public class MonteCarloTreeSearch {
 		// TODO implement playRandomlyToEnd
 		//
 		//Utiliser la même boucle que dans gameLoop
+		// Game loop until the end of the game
+		Player player = new PlayerRandom() ;
+		while (game.winner() == null) {
+			game.play(player.play(game));
+		}
 		return game.winner();
 	}
 	
@@ -265,18 +288,41 @@ public class MonteCarloTreeSearch {
 		//
 		// TODO implement MCTS evaluateTreeOnce
 		//
-		
+
 		// List of visited nodes
-		
+		List<EvalNode> visite = new ArrayList<>();
+		EvalNode node = root;
 		// Start from the root
-		
+		visite.add(node);
 		// Selection (with UCT tree policy)
+		while (!node.children.isEmpty()){
+			Iterator<EvalNode> it = node.children.iterator();
+			node = it.next();
+			while (it.hasNext()){
+				EvalNode nodeCourent = it.next();
+				if (node.uct() < nodeCourent.uct()){
+					node = nodeCourent ;
+				}
+			}
+			visite.add(node);
+		}
 		
 		// Expand node
-		
+		//Move deplavementNode = node.parent.move_node.get(node);
+		Move deplavementNode = node.game.possibleMoves().get(0);
+		Game  g =node.game.clone();
+		g.play(deplavementNode);
+		EvalNode newFils = new EvalNode(g , Optional.of(node));
+		visite.add(newFils);
 		// Simulate from new node(s)
+		RolloutResults rolloutResultsresults = rollOut(newFils.game, 1);
 		
 		// Backpropagate results
+		EvalNode pere = node ;
+		while (pere !=null){
+			pere.updateStats(rolloutResultsresults);
+			pere = pere.parent ; //on peut aussi parcourir visite
+		}
 		
 		// Return false if tree evaluation should continue
 		return false;
@@ -290,7 +336,19 @@ public class MonteCarloTreeSearch {
 		// 
 		// TODO Implement MCTS getBestMove
 		//
-		return null;
+		EvalNode node = root;
+		// Selection (with UCT tree policy)
+		while (!node.children.isEmpty()){
+			Iterator<EvalNode> it = node.children.iterator();
+			node = it.next();
+			while (it.hasNext()){
+				EvalNode nodeCourent = it.next();
+				if (node.score() < nodeCourent.score()){
+					node = nodeCourent ;
+				}
+			}
+		}
+		return /*node.parent.move_node.get(node)*/ node.game.possibleMoves().get(0);
 	}
 	
 	
