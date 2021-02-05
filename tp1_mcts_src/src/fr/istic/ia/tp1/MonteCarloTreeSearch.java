@@ -273,7 +273,7 @@ public class MonteCarloTreeSearch {
 		}
 		// Expand node
 		// Simulate from new node(s)
-		//jouer alléatoirement entre 50 et 10 coups
+		//jouer alléatoirement entre 50 et 100 coups
 		RolloutResults res = rollOut(node.game, 50+(new Random().nextInt(50)));
 		
 		// Backpropagate results

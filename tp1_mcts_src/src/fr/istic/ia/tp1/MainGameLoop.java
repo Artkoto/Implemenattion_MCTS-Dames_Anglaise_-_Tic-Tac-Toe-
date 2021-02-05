@@ -102,6 +102,8 @@ public class MainGameLoop {
 		list.add( new NamedSupplier<Game>("English Draughts (8x8)",    () -> new EnglishDraughts())   );
 		list.add( new NamedSupplier<Game>("English Draughts on 10x10", () -> new EnglishDraughts(10)) );
 		list.add( new NamedSupplier<Game>("English Draughts on 6x6",   () -> new EnglishDraughts(6))  );
+		list.add( new NamedSupplier<Game>("Tic-Tac-Toe",   () -> new TicTacToe())  );
+
 		
 		System.out.println("Select the game to play:");
 		return chooseInList(list).get();

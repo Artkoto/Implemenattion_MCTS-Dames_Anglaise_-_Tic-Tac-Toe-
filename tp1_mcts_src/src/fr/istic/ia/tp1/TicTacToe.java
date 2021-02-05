@@ -28,7 +28,6 @@ public class TicTacToe extends Game {
 
 	@Override
 	public List<Game.Move> possibleMoves() {
-		// TODO Auto-generated method stub
 		ArrayList<Game.Move> moves = new ArrayList<Game.Move>();
 		for (int i=0; i<board.length; ++i) {
 			if (board[i] == 0) {
