@@ -57,11 +57,7 @@ public class MonteCarloTreeSearch {
 		 * @return UCT value for the node
 		 */
 		double uct() {
-
-			//
-			//TODO  implement the UCT function (Upper Confidence Bound for Trees)
-			//
-			double INFINI = 99999.0;
+			double INFINI = 9999999999.0;
 			double c = Math.sqrt(2);
 			double lnN = Math.log(root.n);
 			return n == 0 ? INFINI : this.score() + c * Math.sqrt(lnN / n);
@@ -73,9 +69,6 @@ public class MonteCarloTreeSearch {
 		 * @return Estimated probability of win for the node
 		 */
 		double score() {
-			//
-			//TODO implement the score function for a node
-			//
 			return n==0? 0 : w/n ;
 		}
 		
@@ -84,11 +77,8 @@ public class MonteCarloTreeSearch {
 		 * @param res
 		 */
 		void updateStats(RolloutResults res) {
-			//
-			//TODO implement updateStats for a node
-			//
 			n += res.nbSimulations();
-			w += root.game.player() == PlayerId.ONE ? res.win1 : res.win2;
+			w += res.nbWins(root.game.player()) ;
 		}
 
 		@Override
@@ -145,9 +135,6 @@ public class MonteCarloTreeSearch {
 		 * @param winner
 		 */
 		public void update(PlayerId winner) {
-			//
-			//TODO  implement the update of RolloutResults
-			//
 			if (winner == PlayerId.ONE) {
 				win1++;
 			}
@@ -218,10 +205,6 @@ public class MonteCarloTreeSearch {
 	 * @return The PlayerId of the winner (or NONE if equality or timeout).
 	 */
 	static PlayerId playRandomlyToEnd(Game game) {
-		//
-		// TODO implement playRandomlyToEnd
-		//
-		//Utiliser la même boucle que dans gameLoop
 		// Game loop until the end of the game
 		Player player = new PlayerRandom() ;
 		while (game.winner() == null) {
@@ -237,13 +220,9 @@ public class MonteCarloTreeSearch {
 	 * @return A RolloutResults object containing the number of wins for each player and the number of simulations
 	 */
 	static RolloutResults rollOut(final Game game, int nbRuns) {
-		//
-		// TODO implement rollOut
-		//
 		RolloutResults rolloutResults = new RolloutResults() ;
 		for (int i = 0; i < nbRuns; i++) {
 			rolloutResults.update(playRandomlyToEnd(game));
-			//rolloutResults.n++;
 		}
 		return rolloutResults;
 	}
@@ -278,10 +257,9 @@ public class MonteCarloTreeSearch {
 	 * @return <code>true</code> if there is no need for further exploration (to speed up end of games).
 	 */
 	public boolean evaluateTreeOnce() {
-		//
-		// TODO implement MCTS evaluateTreeOnce
-		//
-
+		if(root.children.isEmpty() || root.children.size() ==1) {
+			return true ;
+		}
 		// List of visited nodes
 		Iterator<EvalNode> it = root.children.iterator();
 		// Start from the root
@@ -295,7 +273,8 @@ public class MonteCarloTreeSearch {
 		}
 		// Expand node
 		// Simulate from new node(s)
-		RolloutResults res = rollOut(node.game, 1);
+		//jouer alléatoirement entre 50 et 10 coups
+		RolloutResults res = rollOut(node.game, 50+(new Random().nextInt(50)));
 		
 		// Backpropagate results
 			node.updateStats(res);
@@ -311,9 +290,6 @@ public class MonteCarloTreeSearch {
 	 * @return The best move to play from the current MCTS tree state.
 	 */
 	public Move getBestMove() {
-		// 
-		// TODO Implement MCTS getBestMove
-		//
 		EvalNode node;
 		// Selection (with UCT tree policy)
 			Iterator<EvalNode> it = root.children.iterator();
@@ -322,11 +298,22 @@ public class MonteCarloTreeSearch {
 				EvalNode nodeCourent = it.next();
 				if (node.score() < nodeCourent.score()){
 					node = nodeCourent ;
+				}else if (node.score() == nodeCourent.score()){
+					if (node.n < nodeCourent.n){
+						node = nodeCourent ;
+					}
+					else if (node.n == nodeCourent.n){
+						//Sélectionner alléatoirement quand deux noeuds maximisent les chances de gagner
+						boolean pileOuFace = new Random().nextBoolean();
+						if (pileOuFace) {
+							node = nodeCourent;
+						}
+					}
 				}
 			}
 		System.out.println(stats());
-		System.out.println("############");
-		System.out.println(node.move_node + " : " + node.score() + " (" + node.w + "/" + node.n + ")\n");
+		System.out.println("############ Choix");
+		System.out.println(node.move_node + " : " + node.score() + " (" + node.w + "/" + node.n + ")");
 		System.out.println("############");
 		return node.move_node;
 	}
