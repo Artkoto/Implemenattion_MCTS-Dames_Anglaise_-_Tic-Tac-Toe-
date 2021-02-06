@@ -39,6 +39,11 @@ public class MonteCarloTreeSearch {
 		 */
 		Move move_node ;
 
+		/**
+		 * parent
+		 */
+		EvalNode parent;
+
 
 		/** 
 		 * The only constructor of EvalNode.
@@ -48,6 +53,7 @@ public class MonteCarloTreeSearch {
 
 			this.game = game;
 			children = new ArrayList<EvalNode>();
+			parent = root ;
 			w = 0.0;
 			n = 0;
 		}
@@ -59,7 +65,7 @@ public class MonteCarloTreeSearch {
 		double uct() {
 			double INFINI = 9999999999.0;
 			double c = Math.sqrt(2);
-			double lnN = Math.log(root.n);
+			double lnN = Math.log(parent.n);
 			return n == 0 ? INFINI : this.score() + c * Math.sqrt(lnN / n);
 
 		}
@@ -79,6 +85,38 @@ public class MonteCarloTreeSearch {
 		void updateStats(RolloutResults res) {
 			n += res.nbSimulations();
 			w += res.nbWins(root.game.player()) ;
+		}
+
+		/**
+		 * methode qui genere les fils d'un noeud
+		 * @return
+		 */
+		void genererFils(){
+
+			Iterator<Move> itMove = this.game.possibleMoves().iterator();
+			while (itMove.hasNext()){
+				Move deplavementNode = itMove.next();
+				Game  gameCurent =this.game.clone();
+				gameCurent.play(deplavementNode);
+				EvalNode node = new EvalNode(gameCurent);
+				node.move_node = deplavementNode;
+				this.children.add(node);
+				node.parent = this ;
+			}
+		}
+
+		EvalNode meilleurFils (){
+			Iterator<EvalNode> it = this.children.iterator();
+			EvalNode node = it.next();
+			while (it.hasNext()) {
+				EvalNode nodeCourent = it.next();
+				if (node.uct() < nodeCourent.uct()) {
+					node = nodeCourent;
+				}
+				if (!node.children.isEmpty())
+					node = node.meilleurFils();
+			}
+			return  node ;
 		}
 
 		@Override
@@ -187,16 +225,8 @@ public class MonteCarloTreeSearch {
 	public MonteCarloTreeSearch(Game game) {
 		root = new EvalNode(game.clone());
 		nTotal = 0;
-		//pour le root les fils sont cree automatiquement
-			Iterator<Move> itMove = root.game.possibleMoves().iterator();
-			while (itMove.hasNext()){
-				Move deplavementNode = itMove.next();
-				Game  gameCurent =root.game.clone();
-				gameCurent.play(deplavementNode);
-				EvalNode node = new EvalNode(gameCurent);
-				node.move_node = deplavementNode;
-				root.children.add(node);
-			}
+		root.parent =null ;
+		root.genererFils();
 	}
 	
 	/**
@@ -261,25 +291,22 @@ public class MonteCarloTreeSearch {
 			return true ;
 		}
 		// List of visited nodes
-		Iterator<EvalNode> it = root.children.iterator();
 		// Start from the root
 		// Selection (with UCT tree policy)
-		EvalNode node = it.next();
-		while (it.hasNext()){
-			EvalNode nodeCourent = it.next();
-			if (node.uct() < nodeCourent.uct()){
-				node = nodeCourent;
-			}
-		}
+		EvalNode node = root.meilleurFils();
 		// Expand node
 		// Simulate from new node(s)
-		//jouer alléatoirement entre 50 et 100 coups
-		RolloutResults res = rollOut(node.game, 50+(new Random().nextInt(50)));
+		//jouer alléatoirement entre 1 et 10 coups
+		RolloutResults res = rollOut(node.game, 1+(new Random().nextInt(11)));
+		node.genererFils();
 		
 		// Backpropagate results
-			node.updateStats(res);
-			root.updateStats(res);
-			nTotal = root.n;
+		node.updateStats(res);
+		while (node.parent != null){
+			node.parent.updateStats(res);
+			node = node.parent ;
+		}
+		nTotal = root.n;
 		
 		// Return false if tree evaluation should continue
 		return false;
@@ -302,15 +329,25 @@ public class MonteCarloTreeSearch {
 					if (node.n < nodeCourent.n){
 						node = nodeCourent ;
 					}
-					else if (node.n == nodeCourent.n){
+					else if (node.n == nodeCourent.n && node.score()!=0){
 						//Sélectionner alléatoirement quand deux noeuds maximisent les chances de gagner
 						boolean pileOuFace = new Random().nextBoolean();
 						if (pileOuFace) {
 							node = nodeCourent;
 						}
 					}
+					else if (node.n == nodeCourent.n && node.score()==0){
+						if (node.n > nodeCourent.n) {
+							node = nodeCourent;
+						}
+					}
 				}
 			}
+		System.out.println(stats());
+		System.out.println("############");
+		System.out.println(node.move_node + " : " + node.score() + " (" + node.w + "/" + node.n + ")\n");
+		System.out.println("############");
+
 		return node.move_node;
 	}
 	
