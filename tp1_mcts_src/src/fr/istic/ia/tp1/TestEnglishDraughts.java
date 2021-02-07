@@ -189,4 +189,20 @@ public class TestEnglishDraughts {
 		assertTrue("Remove adversary from 8", draughts.board.isEmpty(8));
 		assertEquals("Finish in 4 and get crowned", CheckerBoard.WHITE_KING, draughts.board.get(4));
 	}
+
+	@Test
+	public void testPlayMutipleCirculaire() { //on revien en sa position de départ
+		EnglishDraughts draughts = new EnglishDraughts(8);
+		setBoard(draughts.board, asList(24,19), asList(6), asList(9,10,18), asList(17));
+		draughts.play(newMove(draughts, asList(6,15,22,13,6)));
+
+		assertTrue("Remove adversary from 10", draughts.board.isEmpty(10));
+		assertTrue("Pass by 11", draughts.board.isEmpty(15));
+		assertTrue("Remove adversary from 18", draughts.board.isEmpty(18));
+		assertTrue("Remove adversary from 22", draughts.board.isEmpty(22));
+		assertTrue("Remove adversary from 17", draughts.board.isEmpty(17));
+		assertTrue("Remove adversary from 13", draughts.board.isEmpty(13));
+		assertTrue("Remove adversary from 9", draughts.board.isEmpty(9));
+		assertEquals("Finish in 6 and get crowned", CheckerBoard.WHITE_KING, draughts.board.get(6));
+	}
 }

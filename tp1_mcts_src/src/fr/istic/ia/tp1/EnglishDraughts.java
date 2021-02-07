@@ -277,7 +277,7 @@ public class EnglishDraughts extends Game {
 	 * mov avec capture pour un pion
 	 * @return
 	 */
-	private List<Move> movAvecCaptureForEach(int from, boolean blanc , boolean dame , CheckerBoard board1 ,
+	private List<Move> movAvecCaptureForEach(int origin,int from, boolean blanc , boolean dame , CheckerBoard board1 ,
 											 DraughtsMove drMove , ArrayList<Integer> prise){
 		ArrayList<Integer> deplacementPossibleForEach = calculMov(from,dame,blanc,board1);
 		List<Move> mouvements = new ArrayList<>();
@@ -318,11 +318,11 @@ public class EnglishDraughts extends Game {
 							to = board1.neighborDownRight(current);
 						}
 
-						if (isEmpty(to)) {
+						if (isEmpty(to) || to == origin) {
 							ArrayList<Integer> prises = new ArrayList<>();
 							prises.addAll(prise);
 							prises.add(current);
-							mouvements.addAll(movAvecCaptureForEach(to, blanc, dame, board1, draughtsMove, prises));
+							mouvements.addAll(movAvecCaptureForEach(origin,to, blanc, dame, board1, draughtsMove, prises));
 							continuer1 = true;
 						}
 					}
@@ -353,7 +353,8 @@ public class EnglishDraughts extends Game {
 			boolean estBlanc = playerId ==PlayerId.ONE ;
 			boolean estDame = board.isKing(from);
 			ArrayList<Integer> prise = new ArrayList<>() ;
-			List<Move> deplacementForEach = movAvecCaptureForEach(from,estBlanc,estDame,board,draughtsMove, prise);
+			List<Move> deplacementForEach = movAvecCaptureForEach(from ,from,estBlanc,estDame,board,draughtsMove,
+					prise);
 			if (!deplacementForEach.isEmpty()){
 				mouvements.addAll(deplacementForEach);
 			}
