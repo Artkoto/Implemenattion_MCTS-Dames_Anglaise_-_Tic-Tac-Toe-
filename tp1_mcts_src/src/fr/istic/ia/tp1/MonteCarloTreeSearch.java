@@ -53,7 +53,6 @@ public class MonteCarloTreeSearch {
 
 			this.game = game;
 			children = new ArrayList<EvalNode>();
-			parent = root ;
 			w = 0.0;
 			n = 0;
 		}
@@ -63,10 +62,10 @@ public class MonteCarloTreeSearch {
 		 * @return UCT value for the node
 		 */
 		double uct() {
-			double INFINI = Integer.MAX_VALUE;
+			double INFINI = Double.MAX_VALUE;
 			double c = Math.sqrt(2);
 			double lnN = Math.log(parent.n);
-			return n == 0 ? INFINI : this.score() + c * Math.sqrt(lnN / (double) n);
+			return n == 0 ? INFINI : this.score() + c * Math.sqrt(lnN/n);
 
 		}
 		
@@ -75,7 +74,7 @@ public class MonteCarloTreeSearch {
 		 * @return Estimated probability of win for the node
 		 */
 		double score() {
-			return n==0? 0 : w/(double) n ;
+			return n==0? 0 : w/n ;
 		}
 		
 		/**
@@ -324,15 +323,19 @@ public class MonteCarloTreeSearch {
 				if (node.score() < nodeCourent.score()){
 					node = nodeCourent ;
 				}else if (node.score() == nodeCourent.score()){
-					if (node.uct() > nodeCourent.uct()){
-						node = nodeCourent ;
-					}
-					else if (node.uct() == nodeCourent.uct()){
-						//Sélectionner alléatoirement quand deux noeuds maximisent les chances de gagner
-						boolean pileOuFace = new Random().nextBoolean();
-						if (pileOuFace) {
-							node = nodeCourent;
+					if (node.score()!=0){
+						if (node.uct() < nodeCourent.uct()){
+							node = nodeCourent ;
 						}
+						else if (node.uct() == nodeCourent.uct()){
+							//Sélectionner alléatoirement quand deux noeuds maximisent les chances de gagner
+							boolean pileOuFace = new Random().nextBoolean();
+							if (pileOuFace) {
+								node = nodeCourent;
+							}
+						}
+					}else if (node.uct() > nodeCourent.uct()){
+						node = nodeCourent ;
 					}
 				}
 			}
