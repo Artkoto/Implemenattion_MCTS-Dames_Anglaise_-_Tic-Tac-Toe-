@@ -102,7 +102,7 @@ public class MonteCarloTreeSearch {
 			}
 		}
 
-		EvalNode meilleurFils (){
+		EvalNode meilleurFeuille (){
 			Iterator<EvalNode> it = this.children.iterator();
 			EvalNode node = it.next();
 			while (it.hasNext()) {
@@ -111,7 +111,35 @@ public class MonteCarloTreeSearch {
 					node = nodeCourent;
 				}
 				if (!node.children.isEmpty())
-					node = node.meilleurFils();
+					node = node.meilleurFeuille();
+			}
+			return  node ;
+		}
+		EvalNode meilleurFils (){
+			if (children.isEmpty()) return null ;
+			Iterator<EvalNode> it = this.children.iterator();
+			EvalNode node = it.next();
+			// Selection (with UCT tree policy)
+			while (it.hasNext()){
+				EvalNode nodeCourent = it.next();
+				if (node.score() < nodeCourent.score()){
+					node = nodeCourent ;
+				}else if (node.score() == nodeCourent.score()){
+					if (node.score()!=0){
+						if (node.uct() < nodeCourent.uct()){
+							node = nodeCourent ;
+						}
+						else if (node.uct() == nodeCourent.uct()){
+							//Sélectionner alléatoirement quand deux noeuds maximisent les chances de gagner
+							boolean pileOuFace = new Random().nextBoolean();
+							if (pileOuFace) {
+								node = nodeCourent;
+							}
+						}
+					}else if (node.uct() > nodeCourent.uct()){
+						node = nodeCourent ;
+					}
+				}
 			}
 			return  node ;
 		}
@@ -290,12 +318,12 @@ public class MonteCarloTreeSearch {
 		// List of visited nodes
 		// Start from the root
 		// Selection (with UCT tree policy)
-		EvalNode node = root.meilleurFils();
+		EvalNode node = root.meilleurFeuille();
 		// Expand node
 		// Simulate from new node(s)
 		//jouer alléatoirement entre 1 et 1000 coups
 		node.genererFils();
-		RolloutResults res = rollOut(node.game, 1+(new Random().nextInt(1001)));
+		RolloutResults res = rollOut(node.game, 10+(new Random().nextInt(901)));
 
 		// Backpropagate results
 		node.updateStats(res);
@@ -314,31 +342,8 @@ public class MonteCarloTreeSearch {
 	 * @return The best move to play from the current MCTS tree state.
 	 */
 	public Move getBestMove() {
-		EvalNode node;
-		// Selection (with UCT tree policy)
-			Iterator<EvalNode> it = root.children.iterator();
-			node = it.next();
-			while (it.hasNext()){
-				EvalNode nodeCourent = it.next();
-				if (node.score() < nodeCourent.score()){
-					node = nodeCourent ;
-				}else if (node.score() == nodeCourent.score()){
-					if (node.score()!=0){
-						if (node.uct() < nodeCourent.uct()){
-							node = nodeCourent ;
-						}
-						else if (node.uct() == nodeCourent.uct()){
-							//Sélectionner alléatoirement quand deux noeuds maximisent les chances de gagner
-							boolean pileOuFace = new Random().nextBoolean();
-							if (pileOuFace) {
-								node = nodeCourent;
-							}
-						}
-					}else if (node.uct() > nodeCourent.uct()){
-						node = nodeCourent ;
-					}
-				}
-			}
+		EvalNode node = root.meilleurFils();
+
 		System.out.println(stats());
 		System.out.println("############ Choix : ");
 		System.out.println(node.move_node + " : " + node.score() + " (" + node.w + "/" + node.n + ")");
