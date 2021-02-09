@@ -65,7 +65,7 @@ public class MonteCarloTreeSearch {
 			double INFINI = Double.MAX_VALUE;
 			double c = Math.sqrt(2);
 			double lnN = Math.log(parent.n);
-			return n == 0 ? INFINI : this.score() + c * Math.sqrt(lnN/n);
+			return n == 0 ? INFINI : this.score() + c * Math.sqrt(lnN/n) ;
 
 		}
 		
@@ -83,7 +83,7 @@ public class MonteCarloTreeSearch {
 		 */
 		void updateStats(RolloutResults res) {
 			n += res.nbSimulations();
-			w += res.nbWins(root.game.player()) ;
+			w += res.nbWins(Objects.requireNonNull(this.game.player().other())) ;
 		}
 
 		/**
@@ -95,7 +95,7 @@ public class MonteCarloTreeSearch {
 			for (Move deplavementNode : this.game.possibleMoves()) {
 				Game gameCurent = this.game.clone();
 				gameCurent.play(deplavementNode);
-				EvalNode node = new EvalNode(gameCurent.clone());
+				EvalNode node = new EvalNode(gameCurent);
 				node.move_node = deplavementNode;
 				this.children.add(node);
 				node.parent = this;
@@ -107,12 +107,13 @@ public class MonteCarloTreeSearch {
 			EvalNode node = it.next();
 			while (it.hasNext()) {
 				EvalNode nodeCourent = it.next();
-				if (node.uct() < nodeCourent.uct()) {
+				if ( nodeCourent.uct() > node.uct()) {
 					node = nodeCourent;
 				}
-				if (!node.children.isEmpty())
-					node = node.meilleurFeuille();
 			}
+			if (!node.children.isEmpty())
+				node = node.meilleurFeuille();
+
 			return  node ;
 		}
 		EvalNode meilleurFils (){
@@ -122,23 +123,8 @@ public class MonteCarloTreeSearch {
 			// Selection (with UCT tree policy)
 			while (it.hasNext()){
 				EvalNode nodeCourent = it.next();
-				if (node.score() < nodeCourent.score()){
+				if (node.score() < nodeCourent.score()  ){
 					node = nodeCourent ;
-				}else if (node.score() == nodeCourent.score()){
-					if (node.score()!=0){
-						if (node.uct() < nodeCourent.uct()){
-							node = nodeCourent ;
-						}
-						else if (node.uct() == nodeCourent.uct()){
-							//Sélectionner alléatoirement quand deux noeuds maximisent les chances de gagner
-							boolean pileOuFace = new Random().nextBoolean();
-							if (pileOuFace) {
-								node = nodeCourent;
-							}
-						}
-					}else if (node.uct() > nodeCourent.uct()){
-						node = nodeCourent ;
-					}
 				}
 			}
 			return  node ;
@@ -304,7 +290,7 @@ public class MonteCarloTreeSearch {
 		// Print some statistics
 		System.out.println("Stopped search after " 
 		       + TimeUnit.NANOSECONDS.toMillis(System.nanoTime() - startTime) + " ms. "
-		       + "Root stats is " + root.w + "/" + root.n + String.format(" (%.2f%% win)", 100.0*root.w/root.n));
+		       + "Root stats is " + root.w + "/" + root.n + String.format(" (%.2f%% loss)", 100.0*root.w/root.n));
 	}
 	
 	/**
@@ -323,7 +309,7 @@ public class MonteCarloTreeSearch {
 		// Simulate from new node(s)
 		//jouer alléatoirement entre 1 et 1000 coups
 		node.genererFils();
-		RolloutResults res = rollOut(node.game, 10+(new Random().nextInt(901)));
+		RolloutResults res = rollOut(node.game.clone(), 1);
 
 		// Backpropagate results
 		node.updateStats(res);
