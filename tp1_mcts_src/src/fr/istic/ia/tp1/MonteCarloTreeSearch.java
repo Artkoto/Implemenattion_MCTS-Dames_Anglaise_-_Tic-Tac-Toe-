@@ -120,21 +120,19 @@ public class MonteCarloTreeSearch {
 		EvalNode meilleurFeuille (){
 			EvalNode node = null;
 			for(EvalNode nodeCourent : this.children) {
+
+				//si un noeud donne directement un victoire on n'a plus besoin de calculer
+				if (nodeCourent.game.winner() != null)
+					return nodeCourent;
+
 				//verifier si ya defaite imédiate au prochain tour
 				boolean actualise = !verfDefaiteImediate(nodeCourent);
 				if (node == null) {
 					if (actualise)
 						node = nodeCourent;
 				}
-				else {
-					//si un noeud donne directement un victoire on n'a plus besoin de calculer
-					if (nodeCourent.game.winner() != null)
-						return nodeCourent;
-
-					if (nodeCourent.uct() > node.uct() && actualise) {
-						node = nodeCourent;
-					}
-
+				else if (nodeCourent.uct() > node.uct() && actualise) {
+					node = nodeCourent;
 				}
 			}
 			if(node == null){
