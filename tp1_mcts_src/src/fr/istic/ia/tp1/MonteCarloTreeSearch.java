@@ -21,7 +21,7 @@ public class MonteCarloTreeSearch {
 	 * @author vdrevell
 	 *
 	 */
-	class EvalNode {
+	class EvalNode implements Cloneable {
 		/** The number of simulations run through this node */
 		int n;
 		
@@ -87,6 +87,21 @@ public class MonteCarloTreeSearch {
 		}
 
 		/**
+		 * verifie si le coup suivant est une défaite
+		 * @param node
+		 * @return
+		 */
+		boolean verfDefaiteImediate(EvalNode node){
+			EvalNode nodeDevérificationDeDefaite = new EvalNode(node.game.clone());
+			nodeDevérificationDeDefaite.genererFils();
+			for (EvalNode n : nodeDevérificationDeDefaite.children){
+				if (n.game.winner() !=null)
+				return true;
+			}
+			return false;
+		}
+
+		/**
 		 * methode qui genere les fils d'un noeud
 		 * @return
 		 */
@@ -103,13 +118,27 @@ public class MonteCarloTreeSearch {
 		}
 
 		EvalNode meilleurFeuille (){
-			Iterator<EvalNode> it = this.children.iterator();
-			EvalNode node = it.next();
-			while (it.hasNext()) {
-				EvalNode nodeCourent = it.next();
-				if ( nodeCourent.uct() > node.uct()) {
-					node = nodeCourent;
+			EvalNode node = null;
+			for(EvalNode nodeCourent : this.children) {
+				//verifier si ya defaite imédiate au prochain tour
+				boolean actualise = !verfDefaiteImediate(nodeCourent);
+				if (node == null) {
+					if (actualise)
+						node = nodeCourent;
 				}
+				else {
+					//si un noeud donne directement un victoire on n'a plus besoin de calculer
+					if (nodeCourent.game.winner() != null)
+						return nodeCourent;
+
+					if (nodeCourent.uct() > node.uct() && actualise) {
+						node = nodeCourent;
+					}
+
+				}
+			}
+			if(node == null){
+				node = children.get(new Random().nextInt(children.size())) ;
 			}
 			if (!node.children.isEmpty())
 				node = node.meilleurFeuille();
@@ -118,13 +147,19 @@ public class MonteCarloTreeSearch {
 		}
 		EvalNode meilleurFils (){
 			if (children.isEmpty()) return null ;
-			Iterator<EvalNode> it = this.children.iterator();
-			EvalNode node = it.next();
+			EvalNode node = null;
 			// Selection (with UCT tree policy)
-			while (it.hasNext()){
-				EvalNode nodeCourent = it.next();
-				if (node.score() < nodeCourent.score()  ){
-					node = nodeCourent ;
+			for(EvalNode nodeCourent : this.children){
+				if (node == null)
+					node = nodeCourent;
+				else{
+					if (node.score() < nodeCourent.score()) {
+						node = nodeCourent;
+					}
+					else if (node.score() == nodeCourent.score()){
+						if (node.n < nodeCourent.n)
+							node =nodeCourent;
+					}
 				}
 			}
 			return  node ;
@@ -318,9 +353,26 @@ public class MonteCarloTreeSearch {
 			node = node.parent ;
 		}
 		nTotal = root.n;
-		
+
+		//si c'est une victoire on arrête le calcule
+		boolean victoireDirecte = root.meilleurFils().game.winner() == root.game.player();
+		//si on se sauve d'une situation de féfaites on arête aussi
+		boolean protection = seSauverAvec(root) ==1 ;
 		// Return false if tree evaluation should continue
-		return false;
+		return victoireDirecte || protection;
+	}
+
+	/**
+	 * retourne le nobre de noeuds avec le quel on peu se sauver d'une défaite
+	 * @param node
+	 * @return
+	 */
+	int seSauverAvec(EvalNode node){
+		int nbr =0;
+		for (EvalNode n : node.children){
+			if (!node.verfDefaiteImediate(n)) nbr++;
+		}
+		return nbr;
 	}
 	
 	/**
