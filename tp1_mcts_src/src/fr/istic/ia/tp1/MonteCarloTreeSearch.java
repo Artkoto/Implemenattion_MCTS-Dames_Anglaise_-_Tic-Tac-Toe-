@@ -117,6 +117,10 @@ public class MonteCarloTreeSearch {
 			}
 		}
 
+		/**
+		 * La phase de sélection
+		 * @return
+		 */
 		EvalNode meilleurFeuille (){
 			EvalNode node = null;
 			for(EvalNode nodeCourent : this.children) {
@@ -143,6 +147,11 @@ public class MonteCarloTreeSearch {
 
 			return  node ;
 		}
+
+		/**
+		 * choix du coup à jouer
+		 * @return
+		 */
 		EvalNode meilleurFils (){
 			if (children.isEmpty()) return null ;
 			EvalNode node = null;
@@ -361,7 +370,7 @@ public class MonteCarloTreeSearch {
 	}
 
 	/**
-	 * retourne le nobre de noeuds avec le quel on peu se sauver d'une défaite
+	 * retourne le nobre de noeuds avec le quel on peu se sauver d'une défaite imédiate
 	 * @param node
 	 * @return
 	 */
