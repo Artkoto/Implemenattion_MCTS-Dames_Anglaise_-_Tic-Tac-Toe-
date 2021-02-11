@@ -21,7 +21,7 @@ public class MonteCarloTreeSearch {
 	 * @author vdrevell
 	 *
 	 */
-	class EvalNode implements Cloneable {
+	static class EvalNode  {
 		/** The number of simulations run through this node */
 		int n;
 		
@@ -79,7 +79,7 @@ public class MonteCarloTreeSearch {
 		
 		/**
 		 * Update the stats (n and w) of the node with the provided rollout results
-		 * @param res
+		 * @param res ""
 		 */
 		void updateStats(RolloutResults res) {
 			n += res.nbSimulations();
@@ -88,8 +88,8 @@ public class MonteCarloTreeSearch {
 
 		/**
 		 * verifie si le coup suivant est une défaite
-		 * @param node
-		 * @return
+		 * @param node ""
+		 * @return ""
 		 */
 		boolean verfDefaiteImediate(EvalNode node){
 			EvalNode nodeDeVerificationDeDefaite = new EvalNode(node.game.clone());
@@ -103,7 +103,7 @@ public class MonteCarloTreeSearch {
 
 		/**
 		 * methode qui genere les fils d'un noeud
-		 * @return
+		 *
 		 */
 		void genererFils(){
 
@@ -119,7 +119,7 @@ public class MonteCarloTreeSearch {
 
 		/**
 		 * La phase de sélection
-		 * @return
+		 * @return la feille la plus prometeuse
 		 */
 		EvalNode meilleurFeuille (){
 			EvalNode node = null;
@@ -150,7 +150,7 @@ public class MonteCarloTreeSearch {
 
 		/**
 		 * choix du coup à jouer
-		 * @return
+		 * @return le meilleur fils
 		 */
 		EvalNode meilleurFils (){
 			if (children.isEmpty()) return null ;
@@ -223,7 +223,7 @@ public class MonteCarloTreeSearch {
 		/**
 		 * Update playout statistics with a win of the player <code>winner</code>
 		 * Also handles equality if <code>winner</code>={@link PlayerId#NONE}, adding 0.5 wins to each player
-		 * @param winner
+		 * @param winner ""
 		 */
 		public void update(PlayerId winner) {
 			if (winner == PlayerId.ONE) {
@@ -241,7 +241,7 @@ public class MonteCarloTreeSearch {
 		
 		/**
 		 * Getter for the number of wins of a player
-		 * @param playerId
+		 * @param playerId ""
 		 * @return The number of wins of player <code>playerId</code>
 		 */
 		public double nbWins(PlayerId playerId) {
