@@ -92,9 +92,9 @@ public class MonteCarloTreeSearch {
 		 * @return
 		 */
 		boolean verfDefaiteImediate(EvalNode node){
-			EvalNode nodeDevérificationDeDefaite = new EvalNode(node.game.clone());
-			nodeDevérificationDeDefaite.genererFils();
-			for (EvalNode n : nodeDevérificationDeDefaite.children){
+			EvalNode nodeDeVerificationDeDefaite = new EvalNode(node.game.clone());
+			nodeDeVerificationDeDefaite.genererFils();
+			for (EvalNode n : nodeDeVerificationDeDefaite.children){
 				if (n.game.winner() !=null)
 				return true;
 			}
