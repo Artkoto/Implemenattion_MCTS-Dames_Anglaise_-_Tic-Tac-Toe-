@@ -1,28 +1,28 @@
 <div>
 
-<span class="c27 c81">M1 Informatique - TP IA                                                                                                                      2020-2021</span>
+# <span class="c27 c81">M1 Informatique - TP IA  2020-2021</span>
 
 </div>
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 171.00px; height: 45.00px;">![](images/image4.png)</span>
-<span class="c27 c38"> AKOTO Yao Arnaud P  </span> 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 151.81px; height: 40.00px;">![](images/image2.png)</span><span class="c5 c91"> </span>
+
+## <span class="c27 c38"> AKOTO Yao Arnaud P  </span> 
+
 
 <span class="c4"></span>
 
 <span class="c4"></span>
 
-<span class="c12">Compte rendu du  TP1 : Dames Anglaises avec MCTS</span>
+## <span class="c12">Compte rendu du  TP1 : Dames Anglaises avec MCTS</span>
 
 <span class="c4"></span>
 
-<span class="c27 c42">Objectif du TP</span>
+### <span class="c27 c42">Objectif du TP</span>
 
 <span class="c5">L’objectif de ce TP était d’implémenter une intelligence artificielle à l’aide de l’algorithme de Monte-Carlo (</span><span class="c5">MCTS</span><span class="c5">) dans un jeu dont nous avons codé les règles (</span><span class="c5">Dames Anglaises</span><span class="c5">) pour en suite analyser les performances avec différents temps de calculer.</span>
 
 <span class="c4"></span>
 
-<span class="c42 c27">Processus</span>
+### <span class="c42 c27">Processus</span>
 
 <span class="c4">Pour réaliser notre tâche nous avons eu deux grandes étapes qui sont :</span>
 
@@ -35,7 +35,7 @@
 
 <span class="c4"></span>
 
-1.  <span class="c5 c67">Implémentations</span><span class="c12"> </span>
+#### 1.  <span class="c5 c67">Implémentations</span><span class="c12"> </span>
 
 1.  <span class="c12"> Implémentation des règles du je</span>
 
