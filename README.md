@@ -35,9 +35,9 @@
 
 <span class="c4"></span>
 
-#### 1.  <span class="c5 c67">Implémentations</span><span class="c12"> </span>
+### 1.  <span class="c5 c67">Implémentations</span><span class="c12"> </span>
 
-1.  <span class="c12"> Implémentation des règles du je</span>
+### A.  <span class="c12"> Implémentation des règles du je</span>
 
 <span class="c12"></span>
 
@@ -113,60 +113,33 @@ List<Move></span> <span class="c43">possibleMoves</span><span class="c16">()</sp
 
 <span class="c15">deplacementPossible</span><span class="c5">utilise</span> <span class="c15">calculMov</span><span class="c5">et</span> <span class="c15">myPawns</span><span class="c5">et calcule pour chaque pion les déplacements possibles toujours sans contrainte comme si chaque pion était seul sur le damier puis forme des objets</span> <span class="c15">Move</span><span class="c5">de sous la forme</span> <span class="c5 c10 c94">(</span><span class="c5 c10 c36">from-t1xt2xt3x.... tn)</span><span class="c46"> </span><span class="c4">où from représente la position de départ et t, la position d’arrivée.</span>
 
-<span class="c4">Exemple :</span>
 
-<a id="t.2b4e72d66f7a9755ae22af4597c5fe341baa9e8d"></a><a id="t.2"></a>
+```java
+Exemple :
 
-<table class="c80">
+ -------------     ------------- 
+|   1   2   3 |   |   x   x   x |
+| 4   5   6   |   | x   x   x   |
+|   7   8   9 |   |   .   .   . |
+|10  11  12   |   | .   .   .   |
+|  13  14  15 |   |   o   o   o |
+|16  17  18   |   | o   o   o   |
+ -------------     ------------- 
+calculMov (14, !estDame, esBblanc, board) retrurne (11,12)
+calculMov (16, !estDame, estBlanc, board) retourne (13) 
+calculMov (13, estDame, esBblanc, board) retourne (10,11,16,17)
 
-<tbody>
+//on considère ici que chaque pion est seul sur le damier
+deplacementPossible() retourne donc dans notre cas: 
+ 13-10x11
+ 14-11x12
+ 15-12
+ 16-13
+ 17-13x14
+ 18-14x15
 
-<tr class="c14">
+```
 
-<td class="c83" colspan="1" rowspan="1">
-
-<span class="c13">-------------     -------------  
-|</span> <span class="c19">1</span><span class="c13">   </span><span class="c19">2</span><span class="c13">   </span><span class="c19">3</span><span class="c13">|   |   x   x   x |  
-|</span> <span class="c19">4</span><span class="c13">   </span><span class="c19">5</span><span class="c13">   </span><span class="c19">6</span><span class="c13">|   | x   x   x   |  
-|</span> <span class="c19">7</span><span class="c13">   </span><span class="c19">8</span><span class="c13">   </span><span class="c19">9</span><span class="c13"> |   |   .   .   . |  
-|</span><span class="c19">10</span><span class="c13"></span> <span class="c19">11</span><span class="c13"></span> <span class="c19">12</span><span class="c13">   |   | .   .   .   |  
-|  </span><span class="c19">13</span><span class="c13"></span> <span class="c19">14</span><span class="c13"></span> <span class="c19">15</span><span class="c13"> |   |   o   o   o |  
-|</span><span class="c19">16</span><span class="c13"></span> <span class="c19">17</span><span class="c13"></span> <span class="c19">18</span><span class="c13 c27 c50">   |   | o   o   o   |  
--------------     -------------</span>
-
-<span class="c13 c27 c50">calculMov (14, !estDame, esBblanc, board) retrurne (11,12)</span>
-
-<span class="c13 c27 c50">calculMov (16, !estDame, estBlanc, board) retourne (13)</span>
-
-<span class="c13 c27 c50">calculMov (13, estDame, esBblanc, board) retourne (10,11,16,17)</span>
-
-<span class="c27 c50 c75">//on considère ici que chaque pion est seul sur le damier</span>
-
-<span class="c13 c27 c50">deplacementPossible() retourne donc dans notre cas:</span>
-
-<span class="c13 c27 c50"> 13-10x11</span>
-
-<span class="c13 c27 c50"> 14-11x12</span>
-
-<span class="c13 c27 c50"> 15-12</span>
-
-<span class="c13 c27 c50"> 16-13</span>
-
-<span class="c13 c27 c50"> 17-13x14</span>
-
-<span class="c13 c27 c50"> 18-14x15</span>
-
-<span class="c13 c27 c50"></span>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<span class="c4"></span>
 
 <span class="c15">moveSansCapture</span><span class="c5">récupère la liste retournée par</span> <span class="c15">deplacementPossible,</span><span class="c5">pour chaque sous-liste, isole le premier élément qui est la case de départ puis pour chaque destination vide, forme un doublet</span> <span class="c5 c36 c10">(from-to)</span><span class="c4"> et l’ajoute à laliste des mouvements sans captures.</span>
 
@@ -190,68 +163,46 @@ List<Move></span> <span class="c43">possibleMoves</span><span class="c16">()</sp
 
 <span class="c5">Illustration de l’importance d’</span><span class="c5 c54">origin</span><span class="c4"> :</span>
 
-<a id="t.c2dbcb74274cb364441fb375c79453845c7cde1d"></a><a id="t.3"></a>
+```java
+ -----------------     ----------------- 
+|   1   2   3   4 |   |   .   O   .   . |
+| 5   6   7   8   |   | .   .   .   x   |
+|   9  10  11  12 |   |   .   x   x   . |
+|13  14  15  16   |   | .   x   .   .   |
+|  17  18  19  20 |   |   .   x   x   . |
+|21  22  23  24   |   | .   .   .   .   |
+|  25  26  27  28 |   |   .   .   o   . |
+|29  30  31  32   |   | X   o   o   o   |
+ -----------------     ----------------- 
+                    ||
+                    \/
+ -----------------     ----------------- 
+|   1   2   3   4 |   |   .   .   .   . |
+| 5   6   7   8   |   | .   .   O   x   |
+|   9  10  11  12 |   |   .   x   x   . |
+|13  14  15  16   |   | .   x   .   .   |
+|  17  18  19  20 |   |   .   X   x   . |
+|21  22  23  24   |   | .   .   .   .   |
+|  25  26  27  28 |   |   .   .   o   . |
+|29  30  31  32   |   | X   o   o   o   |
+ -----------------     ----------------- 
+                    ||
+                    \/
+ -----------------     ----------------- 
+|   1   2   3   4 |   |   .   .   .   . |  
+| 5   6   7   8   |   | .   .   O   x   | 
+|   9  10  11  12 |   |   .   x   x   . |
+|13  14  15  16   |   | .   .   .   .   |
+|  17  18  19  20 |   |   x   x   x   . |
+|21  22  23  24   |   | .   .   .   .   |
+|  25  26  27  28 |   |   .   .   o   . |
+|29  30  31  32   |   | X   o   o   o   |
+ -----------------     ----------------- 
 
-<table class="c17 c85">
-
-<tbody>
-
-<tr class="c14">
-
-<td class="c64" colspan="1" rowspan="1">
-
-<span class="c2">-----------------     -----------------  
-|</span> <span class="c1">1</span><span class="c2">   </span><span class="c1">2</span><span class="c2">   </span><span class="c1">3</span><span class="c2">   </span><span class="c1">4</span><span class="c2">|   |   .   O   .   . |  
-|</span> <span class="c1">5</span><span class="c2">   </span><span class="c1">6</span><span class="c2">   </span><span class="c1">7</span><span class="c2">   </span><span class="c1">8</span><span class="c2">|   | .   .   .   x   |  
-|</span> <span class="c1">9</span><span class="c2"></span> <span class="c1">10</span><span class="c2"></span> <span class="c1">11</span><span class="c2"></span> <span class="c1">12</span><span class="c2"> |   |   .   x   x   . |  
-|</span><span class="c1">13</span><span class="c2"></span> <span class="c1">14</span><span class="c2"></span> <span class="c1">15</span><span class="c2"></span> <span class="c1">16</span><span class="c2">   |   | .   x   .   .   |  
-|  </span><span class="c1">17</span><span class="c2"></span> <span class="c1">18</span><span class="c2"></span> <span class="c1">19</span><span class="c2"></span> <span class="c1">20</span><span class="c2"> |   |   .   x   x   . |  
-|</span><span class="c1">21</span><span class="c2"></span> <span class="c1">22</span><span class="c2"></span> <span class="c1">23</span><span class="c2"></span> <span class="c1">24</span><span class="c2">   |   | .   .   .   .   |  
-|  </span><span class="c1">25</span><span class="c2"></span> <span class="c1">26</span><span class="c2"></span> <span class="c1">27</span><span class="c2"></span> <span class="c1">28</span><span class="c2"> |   |   .   .   o   . |  
-|</span><span class="c1">29</span><span class="c2"></span> <span class="c1">30</span><span class="c2"></span> <span class="c1">31</span><span class="c2"></span> <span class="c1">32</span><span class="c2 c27">   |   | X   o   o   o   |  
------------------     -----------------</span>
-
-<span class="c13 c27 c37">  ||</span>
-
-<span class="c13 c27 c37">  \/</span>
-
-<span class="c2">-----------------     -----------------  
-|</span> <span class="c1">1</span><span class="c2">   </span><span class="c1">2</span><span class="c2">   </span><span class="c1">3</span><span class="c2">   </span><span class="c1">4</span><span class="c2">|   |   .   .   .   . |  
-|</span> <span class="c1">5</span><span class="c2">   </span><span class="c1">6</span><span class="c2">   </span><span class="c1">7</span><span class="c2">   </span><span class="c1">8</span><span class="c2">|   | .   .   O   x   |  
-|</span> <span class="c1">9</span><span class="c2"></span> <span class="c1">10</span><span class="c2"></span> <span class="c1">11</span><span class="c2"></span> <span class="c1">12</span><span class="c2"> |   |   .   x   x   . |  
-|</span><span class="c1">13</span><span class="c2"></span> <span class="c1">14</span><span class="c2"></span> <span class="c1">15</span><span class="c2"></span> <span class="c1">16</span><span class="c2">   |   | .   x   .   .   |  
-|  </span><span class="c1">17</span><span class="c2"></span> <span class="c1">18</span><span class="c2"></span> <span class="c1">19</span><span class="c2"></span> <span class="c1">20</span><span class="c2"> |   |   .   X   x   . |  
-|</span><span class="c1">21</span><span class="c2"></span> <span class="c1">22</span><span class="c2"></span> <span class="c1">23</span><span class="c2"></span> <span class="c1">24</span><span class="c2">   |   | .   .   .   .   |  
-|  </span><span class="c1">25</span><span class="c2"></span> <span class="c1">26</span><span class="c2"></span> <span class="c1">27</span><span class="c2"></span> <span class="c1">28</span><span class="c2"> |   |   .   .   o   . |  
-|</span><span class="c1">29</span><span class="c2"></span> <span class="c1">30</span><span class="c2"></span> <span class="c1">31</span><span class="c2"></span> <span class="c1">32</span><span class="c2 c27">   |   | X   o   o   o   |  
------------------     -----------------</span>
-
-<span class="c13 c27 c37">  ||</span>
-
-<span class="c13 c27 c37">  \/</span>
-
-<span class="c2">-----------------     -----------------  
-|</span> <span class="c1">1</span><span class="c2">   </span><span class="c1">2</span><span class="c2">   </span><span class="c1">3</span><span class="c2">   </span><span class="c1">4</span><span class="c2">|   |   .   .   .   . |    
-|</span> <span class="c1">5</span><span class="c2">   </span><span class="c1">6</span><span class="c2">   </span><span class="c1">7</span><span class="c2">   </span><span class="c1">8</span><span class="c2">|   | .   .   O   x   |  
-|</span> <span class="c1">9</span><span class="c2"></span> <span class="c1">10</span><span class="c2"></span> <span class="c1">11</span><span class="c2"></span> <span class="c1">12</span><span class="c2"> |   |   .   x   x   . |  
-|</span><span class="c1">13</span><span class="c2"></span> <span class="c1">14</span><span class="c2"></span> <span class="c1">15</span><span class="c2"></span> <span class="c1">16</span><span class="c2">   |   | .   .   .   .   |  
-|  </span><span class="c1">17</span><span class="c2"></span> <span class="c1">18</span><span class="c2"></span> <span class="c1">19</span><span class="c2"></span> <span class="c1">20</span><span class="c2"> |   |   x   x   x   . |  
-|</span><span class="c1">21</span><span class="c2"></span> <span class="c1">22</span><span class="c2"></span> <span class="c1">23</span><span class="c2"></span> <span class="c1">24</span><span class="c2">   |   | .   .   .   .   |  
-|  </span><span class="c1">25</span><span class="c2"></span> <span class="c1">26</span><span class="c2"></span> <span class="c1">27</span><span class="c2"></span> <span class="c1">28</span><span class="c2"> |   |   .   .   o   . |  
-|</span><span class="c1">29</span><span class="c2"></span> <span class="c1">30</span><span class="c2"></span> <span class="c1">31</span><span class="c2"></span> <span class="c1">32</span><span class="c2">   |   | X   o   o   o   |  
------------------     -----------------</span><span class="c13">  
-</span><span class="c2">Ici</span> <span class="c73 c89">possibleMove</span><span class="c2">retourne :  
-avec</span> <span class="c29">origin :</span><span class="c2 c27">{7x16x23x14x7 ; 7x14x21 ; 7x16x23x14x21 ; 7x14x23x16x7}  </span>
-
-<span class="c2">sans</span> <span class="c29">origin</span><span class="c60 c73"> :</span><span class="c2">{7x16x23x14 ; 7x14x21 ; 7x16x23x14x21 ; 7x14x23x16}</span>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+ Ici possibleMove retourne : 
+avec origin :{7x16x23x14x7 ; 7x14x21 ; 7x16x23x14x21 ; 7x14x23x16x7}  
+sans origin :{7x16x23x14 ; 7x14x21 ; 7x16x23x14x21 ; 7x14x23x16} 
+```
 
 <span class="c5">Par la suite, avec</span> <span class="c15">movAvecCaptureForAll</span><span class="c5">on récupère juste liste des déplacements avec prise pour tous les pions en itérant sur</span> <span class="c15">myPawns.</span><span class="c4"> </span>
 
@@ -306,7 +257,7 @@ PlayerId</span> <span class="c43">winner</span><span class="c16">()</span>
 
 <span class="c4"></span>
 
-1.  <span class="c12"> Implémentation du MCTS</span>
+### B.  <span class="c12"> Implémentation du MCTS</span>
 
 <span class="c4">Dans cette deuxième partie, il s’agissait pour nous d’implémenter l’algorithme de Monte-Carlo. Pour ce faire nous avions à notre disposition la structure suivante que nous avons modifié pour l’adapter à notre implémentation:</span>
 
@@ -314,41 +265,30 @@ PlayerId</span> <span class="c43">winner</span><span class="c16">()</span>
 
 <a id="t.ed348dcb9e4a6447aba22856aca60807453a2e2d"></a><a id="t.5"></a>
 
-<table class="c69">
+```java
+public class MonteCarloTreeSearch {
+	class EvalNode {
 
-<tbody>
+	       Move move_node ; //Ajouté mouvement associer au nœud
+		EvalNode parent;//Ajouté : un pointeur vers le père
 
-<tr class="c14">
-
-<td class="c79" colspan="1" rowspan="1">
-
-<span class="c7 c18">public</span><span class="c16 c18"> </span><span class="c7 c18">class</span><span class="c16 c18"> </span><span class="c9">MonteCarloTreeSearch</span><span class="c16 c18"> {  
-        </span><span class="c7 c18">class</span><span class="c16 c18"> </span><span class="c9">EvalNode</span><span class="c16 c18">{  
-
-               Move move_node ;</span> <span class="c18 c28">//Ajouté mouvement associer au nœud</span><span class="c16 c18">  
-                EvalNode parent;</span><span class="c28 c18">//Ajouté : un pointeur vers le père</span><span class="c16 c18">  
-
-                </span><span class="c7 c18">double</span><span class="c16 c18"> </span><span class="c43 c18">uct</span><span class="c16 c18">()  
-                </span><span class="c7 c18">double</span><span class="c16 c18"> </span><span class="c43 c18">score</span><span class="c16 c18">()  
-                </span><span class="c7 c18">void</span><span class="c16 c18"> </span><span class="c18 c43">updateStats</span><span class="c16 c18">(RolloutResults res)  
-                </span><span class="c7 c18">void</span><span class="c16 c18"> </span><span class="c43 c18">genererFils</span><span class="c16 c18">()  </span><span class="c28 c18">//Ajouté</span><span class="c16 c18">EvalNode</span> <span class="c43 c18">meilleurFeuille</span><span class="c16 c18">()</span> <span class="c28 c18">//Ajouté</span><span class="c16 c18">EvalNode</span> <span class="c43 c18">meilleurFils</span><span class="c16 c18">()</span> <span class="c28 c18">//Ajouté</span><span class="c16 c18">  
-        }  
-
-        </span><span class="c7 c18">static</span><span class="c16 c18">class</span> <span class="c43 c18">RolloutResults</span><span class="c16 c18">()</span> <span class="c7 c18">static</span><span class="c16 c18">PlayerId</span> <span class="c43 c18">playRandomlyToEnd</span><span class="c16 c18">(Game game)</span> <span class="c7 c18">static</span><span class="c16 c18">RolloutResults</span> <span class="c43 c18">rollOut</span><span class="c16 c18">(</span><span class="c7 c18">final</span><span class="c16 c18">Game game,</span> <span class="c7 c18">int</span><span class="c16 c18"> nbRuns)  
-        </span><span class="c7 c18">public</span><span class="c16 c18"> </span><span class="c7 c18">void</span><span class="c16 c18"> </span><span class="c43 c18">evaluateTreeWithTimeLimit</span><span class="c16 c18">(</span><span class="c7 c18">int</span><span class="c16 c18"> timeLimitMillis)  
-        </span><span class="c7 c18">public</span><span class="c16 c18"> </span><span class="c7 c18">boolean</span><span class="c16 c18"> </span><span class="c43 c18">evaluateTreeOnce</span><span class="c16 c18">()  
-        </span><span class="c7 c18">public</span><span class="c16 c18">Move</span> <span class="c43 c18">getBestMove</span><span class="c16 c18">()</span> <span class="c7 c18">public</span><span class="c16 c18">String</span> <span class="c43 c18">stats</span><span class="c16 c27 c18">()  
-}</span>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<span class="c4"></span>
+		double uct() 
+		double score() 
+		void updateStats(RolloutResults res)
+		void genererFils()  //Ajouté
+		EvalNode meilleurFeuille() //Ajouté 
+		EvalNode meilleurFils ()   //Ajouté
+	}
+	
+	static class RolloutResults()
+       static PlayerId playRandomlyToEnd(Game game) 
+       static RolloutResults rollOut(final Game game, int nbRuns)
+	public void evaluateTreeWithTimeLimit(int timeLimitMillis)
+	public boolean evaluateTreeOnce()
+	public Move getBestMove()
+       public String stats()
+}
+```
 
 <span class="c5">La première des choses qu’on avait  à faire était de nous assurer que notre algorithme parcourait toutes les possibilités dans un état donné du jeu avant de passer à l’exploration des niveaux suivants. Pour ce faire nous avons utilisé la formule</span> <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 84.70px; height: 16.81px;">![](images/image3.png)</span><span class="c5">que nous avons implémenté dans la méthode</span> <span class="c15 c18">uct.</span><span class="c4"> </span>
 
@@ -372,7 +312,7 @@ PlayerId</span> <span class="c43">winner</span><span class="c16">()</span>
 
 <span class="c5"> </span>
 
-1.  <span class="c27 c67 c90 c92">Analyse des résultats</span>
+## 2.  <span class="c27 c67 c90 c92">Analyse des résultats</span>
 
 <span class="c4">Après implémentation de l’algorithme, nous l’avons testé sur les différentes versions des jeux à notre disposition (Tic-tac-toe, Dames 8x8, Dames 10x10, Dames 6x6) avec les différents temps de calcul.</span>
 
@@ -404,27 +344,16 @@ PlayerId</span> <span class="c43">winner</span><span class="c16">()</span>
 
 <a id="t.6bb9eaac4754da2b192d635d0e5c8b140ee3af9c"></a><a id="t.6"></a>
 
-<table class="c77">
+```java
 
-<tbody>
+//IA avec 'o' et Humain avec 'x'
+         board      board     board     board     board     board     board
+0 1 2    . . .      . . x     o . x     o . x     o . x     o. x      o . x
+3 4 5    . o .      . o .     . o .     . o .     . o .     . o .     . o .
+6 7 8    . . .      . . .     . . .     . . x     . . x     . . x     . . x
 
-<tr class="c86">
 
-<td class="c34" colspan="1" rowspan="1">
-
-<span class="c35">//IA avec 'o' et Humain avec 'x'</span><span class="c44">  
-        board      board     board     board     board     board     board  
-0 1 2    . . .      . . x     o . x     o . x     o . x     o. x      o . x  
-3 4 5    . o .      . o .     . o .     . o .     . o .     . o .     . o .  
-6 7 8    . . .      . . .     . . .     . . x     . . x     . . x     . . x</span>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+```
 
 <span class="c4"></span>
 
@@ -436,33 +365,17 @@ PlayerId</span> <span class="c43">winner</span><span class="c16">()</span>
 
 <a id="t.2e145ab91627b399db34a9899e15bddb74e00e58"></a><a id="t.7"></a>
 
-<table class="c74">
-
-<tbody>
-
-<tr class="c14">
-
-<td class="c87" colspan="1" rowspan="1">
-
-<span class="c7 c10">boolean</span><span class="c16 c10"> </span><span class="c43 c10">verfDefaiteImediate</span><span class="c16 c10">(EvalNode node){  
-                        EvalNode nodeDeVerificationDeDefaite =</span> <span class="c7 c10">new</span><span class="c16 c10"> EvalNode(node.game.clone());</span><span class="c16 c73">  
-</span><span class="c16 c10">                        nodeDeVerificationDeDefaite.genererFils();  
-                        </span><span class="c7 c10">for</span><span class="c16 c10"> (EvalNode n : nodeDeVerificationDeDefaite.children){  
-                                </span><span class="c7 c10">if</span><span class="c16 c10"> (n.game.winner() !=</span><span class="c7 c10">null</span><span class="c16 c10">)  
-                                </span><span class="c7 c10">return</span><span class="c16 c10"> </span><span class="c7 c10">true</span><span class="c16 c10">;  
-                        }  
-                        </span><span class="c7 c10">return</span><span class="c16 c10"> </span><span class="c7 c10">false</span><span class="c16 c27 c10">;  
-                }</span>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<span class="c16 c27 c50"></span>
+```java
+boolean verfDefaiteImediate(EvalNode node){
+			EvalNode nodeDeVerificationDeDefaite = new EvalNode(node.game.clone());
+			nodeDeVerificationDeDefaite.genererFils();
+			for (EvalNode n : nodeDeVerificationDeDefaite.children){
+				if (n.game.winner() !=null)
+				return true;
+			}
+			return false;
+		}
+```
 
 <span class="c5">Dans la même lancée, nous topons l’itération s’il y a qu’un seul fils qui peut nous sortie de la situation de défaite (</span> <span class="c7">int</span><span class="c16"> </span><span class="c43">seSauverAvec</span><span class="c16">(EvalNode node) ==</span> <span class="c88">1</span><span class="c4">).</span>
 
@@ -475,7 +388,7 @@ les parties entre IA sont plus élaborées et celle entre IA et humain se solden
 
 <span class="c4"></span>
 
-<span class="c5 c51">Dames Anglaise</span>
+### <span class="c5 c51">Dames Anglaise</span>
 
 <span class="c5">Avec le jeu  de Dames, la version améliorée n’apporte pas grand changement dans les résultats qu’on avait déjà dans la première version de notre</span> <span class="c5">MCTS</span><span class="c4"> sauf souvent en fin de partie.</span>
 
@@ -493,34 +406,18 @@ les parties entre IA sont plus élaborées et celle entre IA et humain se solden
 
 <a id="t.bceafbb14406dfa47eed93e4a07a1c63b98aafdd"></a><a id="t.8"></a>
 
-<table class="c58">
-
-<tbody>
-
-<tr class="c14">
-
-<td class="c66" colspan="1" rowspan="1">
-
-<span class="c13">-----------------     -----------------  
-|</span> <span class="c19">1</span><span class="c13">   </span><span class="c19">2</span><span class="c13">   </span><span class="c19">3</span><span class="c13">   </span><span class="c19">4</span><span class="c13">|   |   x   O   .   . |  
-|</span> <span class="c19">5</span><span class="c13">   </span><span class="c19">6</span><span class="c13">   </span><span class="c19">7</span><span class="c13">   </span><span class="c19">8</span><span class="c13">|   | o   .   .   O   |  
-|</span> <span class="c19">9</span><span class="c13"></span> <span class="c19">10</span><span class="c13"></span> <span class="c19">11</span><span class="c13"></span> <span class="c19">12</span><span class="c13"> |   |   .   .   .   . |  
-|</span><span class="c19">13</span><span class="c13"></span> <span class="c19">14</span><span class="c13"></span> <span class="c19">15</span><span class="c13"></span> <span class="c19">16</span><span class="c13">   |   | .   x   .   .   |  
-|  </span><span class="c19">17</span><span class="c13"></span> <span class="c19">18</span><span class="c13"></span> <span class="c19">19</span><span class="c13"></span> <span class="c19">20</span><span class="c13"> |   |   .   .   .   . |  
-|</span><span class="c19">21</span><span class="c13"></span> <span class="c19">22</span><span class="c13"></span> <span class="c19">23</span><span class="c13"></span> <span class="c19">24</span><span class="c13">   |   | o   .   .   .   |  
-|  </span><span class="c19">25</span><span class="c13"></span> <span class="c19">26</span><span class="c13"></span> <span class="c19">27</span><span class="c13"></span> <span class="c19">28</span><span class="c13"> |   |   .   O   o   . |  
-|</span><span class="c19">29</span><span class="c13"></span> <span class="c19">30</span><span class="c13"></span> <span class="c19">31</span><span class="c13"></span> <span class="c19">32</span><span class="c13">   |   | .   .   .   .   |  
------------------     -----------------</span>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<span class="c4"></span>
+```java
+ -----------------     ----------------- 
+|   1   2   3   4 |   |   x   O   .   . |
+| 5   6   7   8   |   | o   .   .   O   |
+|   9  10  11  12 |   |   .   .   .   . |
+|13  14  15  16   |   | .   x   .   .   |
+|  17  18  19  20 |   |   .   .   .   . |
+|21  22  23  24   |   | o   .   .   .   |
+|  25  26  27  28 |   |   .   O   o   . |
+|29  30  31  32   |   | .   .   .   .   |
+ -----------------     ----------------- 
+```
 
 <span class="c5">À ce stade de la partie, le joueur “</span><span class="c5">x</span><span class="c5">”</span><span class="c5">à 100% de chance de perdre la partie et il a la possibilité d’aller en :</span> <span class="c5">1-6</span><span class="c5">;</span> <span class="c5">14-17</span><span class="c5">et</span> <span class="c5">14-18.</span><span class="c4"> Dans la première version, il aurait choisi un mouvement aléatoire entre ces trois qui ont la même probabilité. Mais avec la version améliorée, on privilégiera le mouvement avec lequel on aura droit à des tours supplémentaire même si la défaite est imminente.</span>
 
@@ -544,7 +441,7 @@ les parties entre IA sont plus élaborées et celle entre IA et humain se solden
 
 <span class="c5"> </span>
 
-<span class="c12">Annexe: Les résultats des parties de Dames Anglaise</span>
+## <span class="c12">Annexe: Les résultats des parties de Dames Anglaise</span>
 
 <span class="c12"></span>
 
