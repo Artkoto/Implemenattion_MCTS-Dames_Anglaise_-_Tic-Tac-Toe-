@@ -1,1 +1,1147 @@
-<html><head><meta content="text/html; charset=UTF-8" http-equiv="content-type"><style type="text/css">@import url('https://themes.googleusercontent.com/fonts/css?kit=na2xy4REgy2vjVAZtpZNcyWqADZi4Syx-AEk2KH_Q_ghpxpI3AaQyNkCBlHoR0O4');.lst-kix_hfiucoeyw4da-3>li{counter-increment:lst-ctn-kix_hfiucoeyw4da-3}.lst-kix_izmif0spe5my-4>li{counter-increment:lst-ctn-kix_izmif0spe5my-4}ol.lst-kix_gyeppx8es2n5-5.start{counter-reset:lst-ctn-kix_gyeppx8es2n5-5 0}.lst-kix_izmif0spe5my-3>li{counter-increment:lst-ctn-kix_izmif0spe5my-3}ol.lst-kix_izmif0spe5my-0.start{counter-reset:lst-ctn-kix_izmif0spe5my-0 0}ol.lst-kix_gyeppx8es2n5-2.start{counter-reset:lst-ctn-kix_gyeppx8es2n5-2 0}ol.lst-kix_hfiucoeyw4da-0.start{counter-reset:lst-ctn-kix_hfiucoeyw4da-0 0}.lst-kix_hfiucoeyw4da-4>li{counter-increment:lst-ctn-kix_hfiucoeyw4da-4}.lst-kix_hfiucoeyw4da-6>li:before{content:"(" counter(lst-ctn-kix_hfiucoeyw4da-6,lower-roman) ") "}.lst-kix_hfiucoeyw4da-8>li:before{content:"(" counter(lst-ctn-kix_hfiucoeyw4da-8,lower-roman) ") "}.lst-kix_gyeppx8es2n5-2>li{counter-increment:lst-ctn-kix_gyeppx8es2n5-2}.lst-kix_hfiucoeyw4da-7>li:before{content:"(" counter(lst-ctn-kix_hfiucoeyw4da-7,lower-latin) ") "}ol.lst-kix_izmif0spe5my-3.start{counter-reset:lst-ctn-kix_izmif0spe5my-3 0}.lst-kix_izmif0spe5my-0>li:before{content:"" counter(lst-ctn-kix_izmif0spe5my-0,upper-roman) ". "}.lst-kix_izmif0spe5my-1>li:before{content:"" counter(lst-ctn-kix_izmif0spe5my-1,upper-latin) ". "}.lst-kix_izmif0spe5my-2>li:before{content:"" counter(lst-ctn-kix_izmif0spe5my-2,decimal) ". "}.lst-kix_gyeppx8es2n5-3>li{counter-increment:lst-ctn-kix_gyeppx8es2n5-3}ul.lst-kix_n0rpi5riu1ki-2{list-style-type:none}.lst-kix_izmif0spe5my-3>li:before{content:"" counter(lst-ctn-kix_izmif0spe5my-3,lower-latin) ") "}ul.lst-kix_n0rpi5riu1ki-3{list-style-type:none}ul.lst-kix_n0rpi5riu1ki-0{list-style-type:none}ol.lst-kix_hfiucoeyw4da-3.start{counter-reset:lst-ctn-kix_hfiucoeyw4da-3 0}ul.lst-kix_n0rpi5riu1ki-1{list-style-type:none}.lst-kix_izmif0spe5my-5>li:before{content:"(" counter(lst-ctn-kix_izmif0spe5my-5,lower-latin) ") "}.lst-kix_izmif0spe5my-6>li:before{content:"(" counter(lst-ctn-kix_izmif0spe5my-6,lower-roman) ") "}.lst-kix_izmif0spe5my-4>li:before{content:"(" counter(lst-ctn-kix_izmif0spe5my-4,decimal) ") "}.lst-kix_izmif0spe5my-8>li:before{content:"(" counter(lst-ctn-kix_izmif0spe5my-8,lower-roman) ") "}ol.lst-kix_hfiucoeyw4da-6.start{counter-reset:lst-ctn-kix_hfiucoeyw4da-6 0}.lst-kix_gyeppx8es2n5-0>li{counter-increment:lst-ctn-kix_gyeppx8es2n5-0}.lst-kix_izmif0spe5my-7>li:before{content:"(" counter(lst-ctn-kix_izmif0spe5my-7,lower-latin) ") "}ol.lst-kix_gyeppx8es2n5-0.start{counter-reset:lst-ctn-kix_gyeppx8es2n5-0 0}ol.lst-kix_izmif0spe5my-2.start{counter-reset:lst-ctn-kix_izmif0spe5my-2 0}ol.lst-kix_hfiucoeyw4da-2.start{counter-reset:lst-ctn-kix_hfiucoeyw4da-2 0}ul.lst-kix_njnd71z84k03-8{list-style-type:none}ul.lst-kix_n0rpi5riu1ki-6{list-style-type:none}ul.lst-kix_njnd71z84k03-7{list-style-type:none}ul.lst-kix_n0rpi5riu1ki-7{list-style-type:none}ul.lst-kix_njnd71z84k03-6{list-style-type:none}ul.lst-kix_n0rpi5riu1ki-4{list-style-type:none}ul.lst-kix_njnd71z84k03-5{list-style-type:none}.lst-kix_gyeppx8es2n5-1>li:before{content:"" counter(lst-ctn-kix_gyeppx8es2n5-1,upper-latin) ". "}ul.lst-kix_n0rpi5riu1ki-5{list-style-type:none}ul.lst-kix_n0rpi5riu1ki-8{list-style-type:none}.lst-kix_gyeppx8es2n5-2>li:before{content:"" counter(lst-ctn-kix_gyeppx8es2n5-2,decimal) ". "}ul.lst-kix_njnd71z84k03-0{list-style-type:none}ul.lst-kix_njnd71z84k03-4{list-style-type:none}.lst-kix_gyeppx8es2n5-5>li{counter-increment:lst-ctn-kix_gyeppx8es2n5-5}ol.lst-kix_gyeppx8es2n5-7.start{counter-reset:lst-ctn-kix_gyeppx8es2n5-7 0}ul.lst-kix_njnd71z84k03-3{list-style-type:none}ul.lst-kix_njnd71z84k03-2{list-style-type:none}ul.lst-kix_njnd71z84k03-1{list-style-type:none}.lst-kix_gyeppx8es2n5-0>li:before{content:"" counter(lst-ctn-kix_gyeppx8es2n5-0,upper-roman) ". "}ol.lst-kix_hfiucoeyw4da-8{list-style-type:none}ol.lst-kix_hfiucoeyw4da-7{list-style-type:none}ol.lst-kix_hfiucoeyw4da-8.start{counter-reset:lst-ctn-kix_hfiucoeyw4da-8 0}ol.lst-kix_hfiucoeyw4da-6{list-style-type:none}ol.lst-kix_hfiucoeyw4da-5{list-style-type:none}.lst-kix_izmif0spe5my-2>li{counter-increment:lst-ctn-kix_izmif0spe5my-2}.lst-kix_izmif0spe5my-5>li{counter-increment:lst-ctn-kix_izmif0spe5my-5}ol.lst-kix_izmif0spe5my-8.start{counter-reset:lst-ctn-kix_izmif0spe5my-8 0}ol.lst-kix_hfiucoeyw4da-4{list-style-type:none}ol.lst-kix_hfiucoeyw4da-3{list-style-type:none}.lst-kix_hfiucoeyw4da-2>li{counter-increment:lst-ctn-kix_hfiucoeyw4da-2}.lst-kix_hfiucoeyw4da-5>li{counter-increment:lst-ctn-kix_hfiucoeyw4da-5}ol.lst-kix_gyeppx8es2n5-1.start{counter-reset:lst-ctn-kix_gyeppx8es2n5-1 0}ol.lst-kix_gyeppx8es2n5-8.start{counter-reset:lst-ctn-kix_gyeppx8es2n5-8 0}ol.lst-kix_hfiucoeyw4da-1.start{counter-reset:lst-ctn-kix_hfiucoeyw4da-1 0}.lst-kix_izmif0spe5my-8>li{counter-increment:lst-ctn-kix_izmif0spe5my-8}ol.lst-kix_izmif0spe5my-4.start{counter-reset:lst-ctn-kix_izmif0spe5my-4 0}.lst-kix_gyeppx8es2n5-8>li{counter-increment:lst-ctn-kix_gyeppx8es2n5-8}ol.lst-kix_hfiucoeyw4da-7.start{counter-reset:lst-ctn-kix_hfiucoeyw4da-7 0}.lst-kix_hfiucoeyw4da-8>li{counter-increment:lst-ctn-kix_hfiucoeyw4da-8}.lst-kix_n0rpi5riu1ki-6>li:before{content:"\0025cf  "}.lst-kix_n0rpi5riu1ki-7>li:before{content:"\0025cb  "}ol.lst-kix_hfiucoeyw4da-2{list-style-type:none}ol.lst-kix_hfiucoeyw4da-1{list-style-type:none}ol.lst-kix_hfiucoeyw4da-0{list-style-type:none}.lst-kix_n0rpi5riu1ki-8>li:before{content:"\0025a0  "}ol.lst-kix_gyeppx8es2n5-6.start{counter-reset:lst-ctn-kix_gyeppx8es2n5-6 0}.lst-kix_gyeppx8es2n5-7>li:before{content:"(" counter(lst-ctn-kix_gyeppx8es2n5-7,lower-latin) ") "}.lst-kix_gyeppx8es2n5-6>li:before{content:"(" counter(lst-ctn-kix_gyeppx8es2n5-6,lower-roman) ") "}.lst-kix_33y7xv22o0ph-0>li:before{content:"\0025cf  "}ol.lst-kix_izmif0spe5my-1.start{counter-reset:lst-ctn-kix_izmif0spe5my-1 0}.lst-kix_gyeppx8es2n5-3>li:before{content:"" counter(lst-ctn-kix_gyeppx8es2n5-3,lower-latin) ") "}.lst-kix_gyeppx8es2n5-5>li:before{content:"(" counter(lst-ctn-kix_gyeppx8es2n5-5,lower-latin) ") "}.lst-kix_gyeppx8es2n5-6>li{counter-increment:lst-ctn-kix_gyeppx8es2n5-6}.lst-kix_gyeppx8es2n5-4>li:before{content:"(" counter(lst-ctn-kix_gyeppx8es2n5-4,decimal) ") "}.lst-kix_33y7xv22o0ph-3>li:before{content:"\0025cf  "}.lst-kix_33y7xv22o0ph-2>li:before{content:"\0025a0  "}.lst-kix_33y7xv22o0ph-4>li:before{content:"\0025cb  "}ol.lst-kix_gyeppx8es2n5-7{list-style-type:none}ol.lst-kix_gyeppx8es2n5-8{list-style-type:none}.lst-kix_33y7xv22o0ph-1>li:before{content:"\0025cb  "}.lst-kix_33y7xv22o0ph-5>li:before{content:"\0025a0  "}ol.lst-kix_gyeppx8es2n5-1{list-style-type:none}ol.lst-kix_gyeppx8es2n5-2{list-style-type:none}ol.lst-kix_gyeppx8es2n5-0{list-style-type:none}ol.lst-kix_gyeppx8es2n5-5{list-style-type:none}.lst-kix_hfiucoeyw4da-6>li{counter-increment:lst-ctn-kix_hfiucoeyw4da-6}ol.lst-kix_gyeppx8es2n5-6{list-style-type:none}ol.lst-kix_izmif0spe5my-7.start{counter-reset:lst-ctn-kix_izmif0spe5my-7 0}ol.lst-kix_gyeppx8es2n5-3{list-style-type:none}ol.lst-kix_gyeppx8es2n5-3.start{counter-reset:lst-ctn-kix_gyeppx8es2n5-3 0}ol.lst-kix_gyeppx8es2n5-4{list-style-type:none}.lst-kix_gyeppx8es2n5-8>li:before{content:"(" counter(lst-ctn-kix_gyeppx8es2n5-8,lower-roman) ") "}.lst-kix_hfiucoeyw4da-0>li{counter-increment:lst-ctn-kix_hfiucoeyw4da-0}ol.lst-kix_izmif0spe5my-0{list-style-type:none}ol.lst-kix_izmif0spe5my-1{list-style-type:none}ol.lst-kix_izmif0spe5my-2{list-style-type:none}ol.lst-kix_izmif0spe5my-3{list-style-type:none}.lst-kix_izmif0spe5my-1>li{counter-increment:lst-ctn-kix_izmif0spe5my-1}ol.lst-kix_izmif0spe5my-4{list-style-type:none}ol.lst-kix_izmif0spe5my-5{list-style-type:none}ol.lst-kix_izmif0spe5my-6{list-style-type:none}.lst-kix_33y7xv22o0ph-7>li:before{content:"\0025cb  "}.lst-kix_izmif0spe5my-7>li{counter-increment:lst-ctn-kix_izmif0spe5my-7}.lst-kix_33y7xv22o0ph-6>li:before{content:"\0025cf  "}.lst-kix_33y7xv22o0ph-8>li:before{content:"\0025a0  "}ol.lst-kix_izmif0spe5my-6.start{counter-reset:lst-ctn-kix_izmif0spe5my-6 0}.lst-kix_izmif0spe5my-0>li{counter-increment:lst-ctn-kix_izmif0spe5my-0}.lst-kix_izmif0spe5my-6>li{counter-increment:lst-ctn-kix_izmif0spe5my-6}ol.lst-kix_gyeppx8es2n5-4.start{counter-reset:lst-ctn-kix_gyeppx8es2n5-4 0}ol.lst-kix_izmif0spe5my-7{list-style-type:none}ol.lst-kix_izmif0spe5my-8{list-style-type:none}.lst-kix_hfiucoeyw4da-1>li{counter-increment:lst-ctn-kix_hfiucoeyw4da-1}ol.lst-kix_hfiucoeyw4da-5.start{counter-reset:lst-ctn-kix_hfiucoeyw4da-5 0}.lst-kix_njnd71z84k03-7>li:before{content:"\0025cb  "}.lst-kix_hfiucoeyw4da-2>li:before{content:"" counter(lst-ctn-kix_hfiucoeyw4da-2,decimal) ". "}.lst-kix_hfiucoeyw4da-4>li:before{content:"(" counter(lst-ctn-kix_hfiucoeyw4da-4,decimal) ") "}ul.lst-kix_33y7xv22o0ph-0{list-style-type:none}ul.lst-kix_33y7xv22o0ph-1{list-style-type:none}ul.lst-kix_33y7xv22o0ph-2{list-style-type:none}.lst-kix_njnd71z84k03-8>li:before{content:"\0025a0  "}ul.lst-kix_33y7xv22o0ph-3{list-style-type:none}.lst-kix_hfiucoeyw4da-1>li:before{content:"" counter(lst-ctn-kix_hfiucoeyw4da-1,upper-latin) ". "}.lst-kix_hfiucoeyw4da-5>li:before{content:"(" counter(lst-ctn-kix_hfiucoeyw4da-5,lower-latin) ") "}ul.lst-kix_33y7xv22o0ph-4{list-style-type:none}ul.lst-kix_33y7xv22o0ph-5{list-style-type:none}.lst-kix_hfiucoeyw4da-7>li{counter-increment:lst-ctn-kix_hfiucoeyw4da-7}.lst-kix_n0rpi5riu1ki-3>li:before{content:"\0025cf  "}ul.lst-kix_33y7xv22o0ph-6{list-style-type:none}.lst-kix_njnd71z84k03-5>li:before{content:"\0025a0  "}ul.lst-kix_33y7xv22o0ph-7{list-style-type:none}ul.lst-kix_33y7xv22o0ph-8{list-style-type:none}.lst-kix_gyeppx8es2n5-1>li{counter-increment:lst-ctn-kix_gyeppx8es2n5-1}.lst-kix_n0rpi5riu1ki-4>li:before{content:"\0025cb  "}.lst-kix_n0rpi5riu1ki-5>li:before{content:"\0025a0  "}li.li-bullet-0:before{margin-left:-18pt;white-space:nowrap;display:inline-block;min-width:18pt}.lst-kix_njnd71z84k03-6>li:before{content:"\0025cf  "}.lst-kix_hfiucoeyw4da-3>li:before{content:"" counter(lst-ctn-kix_hfiucoeyw4da-3,lower-latin) ") "}ol.lst-kix_izmif0spe5my-5.start{counter-reset:lst-ctn-kix_izmif0spe5my-5 0}.lst-kix_gyeppx8es2n5-7>li{counter-increment:lst-ctn-kix_gyeppx8es2n5-7}.lst-kix_njnd71z84k03-1>li:before{content:"\0025cb  "}.lst-kix_gyeppx8es2n5-4>li{counter-increment:lst-ctn-kix_gyeppx8es2n5-4}.lst-kix_njnd71z84k03-0>li:before{content:"\0025cf  "}.lst-kix_njnd71z84k03-4>li:before{content:"\0025cb  "}ol.lst-kix_hfiucoeyw4da-4.start{counter-reset:lst-ctn-kix_hfiucoeyw4da-4 0}.lst-kix_n0rpi5riu1ki-2>li:before{content:"\0025a0  "}.lst-kix_njnd71z84k03-3>li:before{content:"\0025cf  "}.lst-kix_hfiucoeyw4da-0>li:before{content:"" counter(lst-ctn-kix_hfiucoeyw4da-0,upper-roman) ". "}.lst-kix_n0rpi5riu1ki-0>li:before{content:"\0025cf  "}.lst-kix_n0rpi5riu1ki-1>li:before{content:"\0025cb  "}.lst-kix_njnd71z84k03-2>li:before{content:"\0025a0  "}ol{margin:0;padding:0}table td,table th{padding:0}.c79{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:0pt;border-right-width:0pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:0pt;border-top-style:solid;background-color:#f8f8f8;border-left-style:solid;border-bottom-width:0pt;width:425.2pt;border-top-color:#000000;border-bottom-style:solid}.c87{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:0pt;border-right-width:0pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:0pt;border-top-style:solid;background-color:#f8f8f8;border-left-style:solid;border-bottom-width:0pt;width:453.8pt;border-top-color:#000000;border-bottom-style:solid}.c64{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:0pt;border-right-width:0pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:0pt;border-top-style:solid;background-color:#2b2b2b;border-left-style:solid;border-bottom-width:0pt;width:426.8pt;border-top-color:#000000;border-bottom-style:solid}.c66{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:0pt;border-right-width:0pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:0pt;border-top-style:solid;background-color:#2b2b2b;border-left-style:solid;border-bottom-width:0pt;width:374.2pt;border-top-color:#000000;border-bottom-style:solid}.c71{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:0pt;border-right-width:0pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:0pt;border-top-style:solid;background-color:#f8f8f8;border-left-style:solid;border-bottom-width:0pt;width:361.5pt;border-top-color:#000000;border-bottom-style:solid}.c34{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:0pt;border-right-width:0pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:0pt;border-top-style:solid;background-color:#444444;border-left-style:solid;border-bottom-width:0pt;width:445.5pt;border-top-color:#000000;border-bottom-style:solid}.c30{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:0pt;border-right-width:0pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:0pt;border-top-style:solid;background-color:#f8f8f8;border-left-style:solid;border-bottom-width:0pt;width:421.5pt;border-top-color:#000000;border-bottom-style:solid}.c83{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:0pt;border-right-width:0pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:0pt;border-top-style:solid;background-color:#2b2b2b;border-left-style:solid;border-bottom-width:0pt;width:424.5pt;border-top-color:#000000;border-bottom-style:solid}.c57{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:0pt;border-right-width:0pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:0pt;border-top-style:solid;background-color:#f8f8f8;border-left-style:solid;border-bottom-width:0pt;width:477pt;border-top-color:#000000;border-bottom-style:solid}.c52{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:40.5pt;border-top-color:#000000;border-bottom-style:solid}.c70{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:97.5pt;border-top-color:#000000;border-bottom-style:solid}.c20{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:30.8pt;border-top-color:#000000;border-bottom-style:solid}.c63{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:129pt;border-top-color:#000000;border-bottom-style:solid}.c65{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:108pt;border-top-color:#000000;border-bottom-style:solid}.c8{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:36pt;border-top-color:#000000;border-bottom-style:solid}.c21{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:49.5pt;border-top-color:#000000;border-bottom-style:solid}.c48{border-right-style:solid;padding:5pt 5pt 5pt 5pt;border-bottom-color:#000000;border-top-width:1pt;border-right-width:1pt;border-left-color:#000000;vertical-align:top;border-right-color:#000000;border-left-width:1pt;border-top-style:solid;border-left-style:solid;border-bottom-width:1pt;width:44.2pt;border-top-color:#000000;border-bottom-style:solid}.c24{background-color:#ffffff;padding-top:0pt;padding-bottom:0pt;line-height:1.3571428571428572;orphans:2;widows:2;text-align:right;height:10.5pt}.c76{background-color:#ffffff;padding-top:0pt;padding-bottom:0pt;line-height:1.3571428571428572;orphans:2;widows:2;text-align:center}.c11{background-color:#ffffff;padding-top:0pt;padding-bottom:0pt;line-height:1.3571428571428572;orphans:2;widows:2;text-align:left}.c12{color:#2e2e2e;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:"Arial";font-style:normal}.c22{color:#2e2e2e;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:12.5pt;font-family:"Arial";font-style:normal}.c4{color:#2e2e2e;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:10.5pt;font-family:"Arial";font-style:normal}.c28{background-color:#f8f8f8;color:#999988;font-weight:400;font-family:"Consolas";font-style:italic}.c2{background-color:#2b2b2b;font-size:6.5pt;font-family:"Consolas";color:#bababa;font-weight:400}.c1{background-color:#2b2b2b;font-size:6.5pt;font-family:"Consolas";color:#6896ba;font-weight:400}.c9{background-color:#f8f8f8;font-size:9.5pt;font-family:"Consolas";color:#445588;font-weight:700}.c33{padding-top:0pt;padding-bottom:0pt;line-height:1.0;text-align:center}.c32{padding-top:0pt;padding-bottom:0pt;line-height:1.15;text-align:left}.c29{background-color:#2b2b2b;font-size:6.5pt;font-family:"Consolas";color:#93c47d;font-weight:400}.c3{padding-top:0pt;padding-bottom:0pt;line-height:1.0;text-align:left}.c82{margin-left:106.5pt;border-spacing:0;border-collapse:collapse;margin-right:auto}.c47{color:#2e2e2e;font-weight:700;font-size:10.5pt;font-family:"Arial"}.c38{color:#2e2e2e;font-weight:700;font-size:18pt;font-family:"Arial"}.c13{background-color:#2b2b2b;font-family:"Consolas";color:#bababa;font-weight:400}.c40{padding-top:0pt;padding-bottom:0pt;line-height:1.15;text-align:left}.c75{background-color:#2b2b2b;color:#93c47d;font-weight:400;font-family:"Consolas"}.c74{margin-left:75pt;border-spacing:0;border-collapse:collapse;margin-right:auto}.c80{margin-left:71.2pt;border-spacing:0;border-collapse:collapse;margin-right:auto}.c42{color:#2e2e2e;font-weight:700;font-size:12pt;font-family:"Arial"}.c58{margin-left:105pt;border-spacing:0;border-collapse:collapse;margin-right:auto}.c69{margin-left:70.5pt;border-spacing:0;border-collapse:collapse;margin-right:auto}.c89{background-color:#2b2b2b;font-family:"Consolas";color:#e06666;font-weight:400}.c81{color:#434343;font-weight:400;font-size:11.5pt;font-family:"Calibri"}.c25{padding-top:0pt;padding-bottom:0pt;line-height:1.15;text-align:center}.c15{background-color:#f8f8f8;font-family:"Consolas";color:#990000;font-weight:400}.c68{border-spacing:0;border-collapse:collapse;margin-right:auto}.c19{background-color:#2b2b2b;font-family:"Consolas";color:#6896ba;font-weight:400}.c44{background-color:#444444;font-family:"Consolas";color:#dddddd;font-weight:400}.c7{background-color:#f8f8f8;font-family:"Consolas";color:#333333;font-weight:700}.c16{background-color:#f8f8f8;font-family:"Consolas";color:#333333;font-weight:400}.c62{margin-left:48.8pt;border-spacing:0;border-collapse:collapse;margin-right:auto}.c35{background-color:#444444;font-family:"Consolas";color:#777777;font-weight:400}.c60{background-color:#2b2b2b;color:#6aa84f;font-weight:400;font-family:"Consolas"}.c88{background-color:#f8f8f8;font-family:"Consolas";color:#008080;font-weight:400}.c77{margin-left:80.2pt;border-spacing:0;border-collapse:collapse;margin-right:auto}.c43{background-color:#f8f8f8;font-family:"Consolas";color:#990000;font-weight:700}.c46{font-size:6.5pt;font-style:italic;font-weight:400}.c27{text-decoration:none;vertical-align:baseline;font-style:normal}.c85{border-spacing:0;border-collapse:collapse;margin-right:auto}.c72{background-color:#ffffff;max-width:496.2pt;padding:72pt 56.7pt 72pt 42.5pt}.c59{text-decoration-skip-ink:none;-webkit-text-decoration-skip:none;text-decoration:underline}.c61{color:#2e2e2e;font-weight:700;font-family:"Courier New"}.c41{font-style:italic;color:#444444}.c78{font-style:italic;color:#008080}.c31{margin-left:36pt;padding-left:0pt}.c92{font-weight:700;font-family:"Arial"}.c5{font-weight:400;font-family:"Arial"}.c84{margin-left:324pt;text-indent:36pt}.c55{font-style:italic;color:#777777}.c6{padding:0;margin:0}.c36{font-style:italic;color:#38761d}.c45{font-style:italic;color:#666666}.c14{height:0pt}.c26{height:10.5pt}.c93{margin-left:69.8pt}.c94{color:#38761d}.c56{margin-left:36pt}.c0{height:26.6pt}.c50{font-size:10.5pt}.c91{font-size:18pt}.c37{font-size:4.5pt}.c51{font-size:12.5pt}.c17{margin-left:72pt}.c67{font-size:15pt}.c73{font-size:6.5pt}.c18{font-size:9.5pt}.c86{height:67.7pt}.c49{color:#cc0000}.c10{font-size:8.5pt}.c54{color:#880000}.c90{color:#2e2e2e}.c23{margin-left:108pt}.c39{padding-left:0pt}.title{padding-top:0pt;color:#2e2e2e;font-weight:700;font-size:26pt;padding-bottom:3pt;font-family:"Courier New";line-height:1.3571428571428572;page-break-after:avoid;orphans:2;widows:2;text-align:left}.subtitle{padding-top:0pt;color:#666666;font-weight:700;font-size:15pt;padding-bottom:16pt;font-family:"Arial";line-height:1.3571428571428572;page-break-after:avoid;orphans:2;widows:2;text-align:left}li{color:#2e2e2e;font-weight:700;font-size:10.5pt;font-family:"Courier New"}p{margin:0;color:#2e2e2e;font-weight:700;font-size:10.5pt;font-family:"Courier New"}h1{padding-top:20pt;color:#2e2e2e;font-weight:700;font-size:20pt;padding-bottom:6pt;font-family:"Courier New";line-height:1.3571428571428572;page-break-after:avoid;orphans:2;widows:2;text-align:left}h2{padding-top:18pt;color:#2e2e2e;font-weight:700;font-size:16pt;padding-bottom:6pt;font-family:"Courier New";line-height:1.3571428571428572;page-break-after:avoid;orphans:2;widows:2;text-align:left}h3{padding-top:16pt;color:#434343;font-weight:700;font-size:14pt;padding-bottom:4pt;font-family:"Courier New";line-height:1.3571428571428572;page-break-after:avoid;orphans:2;widows:2;text-align:left}h4{padding-top:14pt;color:#666666;font-weight:700;font-size:12pt;padding-bottom:4pt;font-family:"Courier New";line-height:1.3571428571428572;page-break-after:avoid;orphans:2;widows:2;text-align:left}h5{padding-top:12pt;color:#666666;font-weight:700;font-size:11pt;padding-bottom:4pt;font-family:"Courier New";line-height:1.3571428571428572;page-break-after:avoid;orphans:2;widows:2;text-align:left}h6{padding-top:12pt;color:#666666;font-weight:700;font-size:11pt;padding-bottom:4pt;font-family:"Courier New";line-height:1.3571428571428572;page-break-after:avoid;font-style:italic;orphans:2;widows:2;text-align:left}</style></head><body class="c72"><div><p class="c76"><span class="c27 c81">M1 Informatique - TP IA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2020-2021</span></p></div><p class="c76"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 171.00px; height: 45.00px;"><img alt="" src="images/image4.png" style="width: 171.00px; height: 71.19px; margin-left: 0.00px; margin-top: -14.19px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 151.81px; height: 40.00px;"><img alt="" src="images/image2.png" style="width: 151.81px; height: 40.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span><span class="c5 c91">&nbsp;</span><span class="c27 c38">AKOTO Yao Arnaud P</span></p><p class="c11 c26 c84"><span class="c4"></span></p><p class="c11 c26"><span class="c4"></span></p><p class="c76"><span class="c12">Compte rendu du &nbsp;TP1 : Dames Anglaises avec MCTS</span></p><p class="c11 c26"><span class="c4"></span></p><p class="c11"><span class="c27 c42">Objectif du TP</span></p><p class="c11 c56"><span class="c5">L&rsquo;objectif de ce TP &eacute;tait d&rsquo;impl&eacute;menter une intelligence artificielle &agrave; l&rsquo;aide de l&rsquo;algorithme de Monte-Carlo (</span><span class="c5">MCTS</span><span class="c5">) dans un jeu dont nous avons cod&eacute; les r&egrave;gles (</span><span class="c5">Dames Anglaises</span><span class="c5">) pour en suite analyser les performances avec diff&eacute;rents temps de calculer. </span></p><p class="c11 c26"><span class="c4"></span></p><p class="c11"><span class="c42 c27">Processus</span></p><p class="c11 c56"><span class="c4">Pour r&eacute;aliser notre t&acirc;che nous avons eu deux grandes &eacute;tapes qui sont :</span></p><ul class="c6 lst-kix_njnd71z84k03-0 start"><li class="c11 c17 c39 li-bullet-0"><span class="c4">L&rsquo;impl&eacute;mentation </span></li></ul><ul class="c6 lst-kix_njnd71z84k03-1 start"><li class="c11 c23 c39 li-bullet-0"><span class="c4">Impl&eacute;mentation des r&egrave;gles du jeu</span></li><li class="c11 c23 c39 li-bullet-0"><span class="c4">Impl&eacute;mentation du MCTS</span></li></ul><ul class="c6 lst-kix_njnd71z84k03-0"><li class="c11 c17 c39 li-bullet-0"><span class="c4">L&rsquo;analyse des r&eacute;sultats</span></li></ul><p class="c11 c26 c17"><span class="c4"></span></p><ol class="c6 lst-kix_hfiucoeyw4da-0 start" start="1"><li class="c11 c31 li-bullet-0"><span class="c5 c67">Impl&eacute;mentations</span><span class="c12">&nbsp;</span></li></ol><ol class="c6 lst-kix_hfiucoeyw4da-1 start" start="1"><li class="c11 c17 c39 li-bullet-0"><span class="c12">&nbsp;Impl&eacute;mentation des r&egrave;gles du je</span></li></ol><p class="c11 c26"><span class="c12"></span></p><p class="c11 c17"><span class="c4">Pour commencer, il &eacute;tait important avant un tour de connaitre le statut des diff&eacute;rents cases de notre jeu de dame (vide, pion adverse, notre pion). &Agrave; l&rsquo;aide des fonctions :</span></p><a id="t.9c010cb5b70a005f8fb361bdcfec3af5a0dfb198"></a><a id="t.0"></a><table class="c85 c93"><tbody><tr class="c14"><td class="c30" colspan="1" rowspan="1"><p class="c32"><span class="c16">boolean</span><span class="c16">&nbsp;</span><span class="c15">isEmpty</span><span class="c16">(</span><span class="c16">int</span><span class="c16">&nbsp;square)<br></span><span class="c16">boolean</span><span class="c16">&nbsp;</span><span class="c15">isAdversary</span><span class="c16">(</span><span class="c16">int</span><span class="c16">&nbsp;square)<br></span><span class="c16">boolean</span><span class="c16">&nbsp;</span><span class="c15">isMine</span><span class="c16">(</span><span class="c16">int</span><span class="c16">&nbsp;square)<br>ArrayList&lt;Integer&gt; </span><span class="c15">myPawns</span><span class="c16">()</span></p></td></tr></tbody></table><p class="c11 c17"><span class="c5">Pour </span><span class="c15">isEmpty</span><span class="c5">, on a juste utiliser la fonction portant le m&ecirc;me non dans la classe </span><span class="c5">CheckerBoard </span><span class="c4">retournant la valeur souhait&eacute;e.</span></p><p class="c11 c17"><span class="c15">isAdversary et isMine</span><span class="c5">&nbsp;sont impl&eacute;ment&eacute; quasiment de la m&ecirc;me mani&egrave;re: Si la valeur du joueur courant est </span><span class="c5">ONE</span><span class="c5">&nbsp;et &nbsp;la fonction </span><span class="c15">isBlack</span><span class="c5">&nbsp;du </span><span class="c5">CheckerBoard</span><span class="c5">&nbsp; ou si la valeur du joueur courant est </span><span class="c5">TWO</span><span class="c5">&nbsp;et &nbsp;la fonction </span><span class="c15">isWhite</span><span class="c4">&nbsp;on a alors une case contenant un adversaire. On fait l&rsquo;inverse pour celle contenant notre pion. &nbsp; </span></p><p class="c11 c17"><span class="c5">Concernant </span><span class="c15">myPawns,</span><span class="c4">&nbsp;on retourne la liste contenant les pions noirs ou celle contenant les pions blancs en fonction de la valeur de notre joueur.</span></p><p class="c11 c26 c17"><span class="c4"></span></p><p class="c11 c26 c17"><span class="c4"></span></p><p class="c11 c17"><span class="c5">Ensuite, il fallait impl&eacute;menter les mouvements possibles du joueur courent </span><span class="c5 c18 c45">(l&rsquo;&eacute;tape la plus difficile de cette premi&egrave;re partie)</span><span class="c4">.</span></p><p class="c11 c17"><span class="c4">Pour ce faire, on a d&ucirc; passer par six(6) fonctions auxiliaires dont une pas tr&egrave;s utile mais laiss&eacute;e pour la compr&eacute;hension du code:</span></p><a id="t.5f02427bdbfbcfb25edb12797d495c88ceab40b9"></a><a id="t.1"></a><table class="c62"><tbody><tr class="c14"><td class="c57" colspan="1" rowspan="1"><p class="c40"><span class="c16">ArrayList&lt;Integer&gt; </span><span class="c43">calculMov</span><span class="c16">&nbsp;(Integer from, </span><span class="c7">boolean</span><span class="c16">&nbsp;dame, </span><span class="c7">boolean</span><span class="c16 c27 c50">&nbsp;blanc,CheckerBoard board1)</span></p><p class="c40"><span class="c16"><br>List&lt;Move&gt; </span><span class="c43">deplacementPossible</span><span class="c16">()<br>List&lt;Move&gt; </span><span class="c43">moveSansCapture</span><span class="c16 c27 c50">()</span></p><p class="c40"><span class="c16"><br>List&lt;Move&gt; </span><span class="c43">movAvecCaptureForEach</span><span class="c16">(</span><span class="c7">int</span><span class="c16">&nbsp;origin,</span><span class="c7">int</span><span class="c16">&nbsp;from, </span><span class="c7">boolean</span><span class="c16">&nbsp;blanc , </span><span class="c7">boolean</span><span class="c16 c27 c50">&nbsp;dame,CheckerBoard board1 ,DraughtsMove drMove , ArrayList&lt;Integer&gt; prise)</span></p><p class="c40"><span class="c16"><br>List&lt;Move&gt; </span><span class="c43">movAvecCaptureForAll</span><span class="c16">()<br>List&lt;Move&gt; </span><span class="c43">moveAvecCapture</span><span class="c16">()<br>List&lt;Move&gt; </span><span class="c43">possibleMoves</span><span class="c16">()</span></p></td></tr></tbody></table><p class="c11 c17"><span class="c15">calculMov</span><span class="c5">&nbsp;prend en param&egrave;tre : un </span><span class="c5">pion</span><span class="c5">, son </span><span class="c5">type</span><span class="c5">, sa </span><span class="c5">couleur</span><span class="c5">&nbsp;et un </span><span class="c5">CheckerBoard.</span><span class="c4">&nbsp;On commence par v&eacute;rifier si le pion est positionn&eacute; sur une extr&eacute;mit&eacute; du plateau puis en fonction de son type et de sa couleur, calcule les destinations que pourrait atteindre le pion s&rsquo;il y avait aucun obstacle pour l&rsquo;y en emp&ecirc;cher. &nbsp; &nbsp;</span></p><p class="c11 c17"><span class="c15">deplacementPossible</span><span class="c5">&nbsp;utilise </span><span class="c15">calculMov</span><span class="c5">&nbsp; et </span><span class="c15">myPawns</span><span class="c5">&nbsp; et calcule pour chaque pion les d&eacute;placements possibles toujours sans contrainte comme si chaque pion &eacute;tait seul sur le damier puis forme des objets </span><span class="c15">Move</span><span class="c5">&nbsp;de sous la forme </span><span class="c5 c10 c94">(</span><span class="c5 c10 c36">from-t1xt2xt3x.... tn)</span><span class="c46">&nbsp;</span><span class="c4">o&ugrave; from repr&eacute;sente la position de d&eacute;part et t, la position d&rsquo;arriv&eacute;e.</span></p><p class="c11 c17"><span class="c4">Exemple :</span></p><a id="t.2b4e72d66f7a9755ae22af4597c5fe341baa9e8d"></a><a id="t.2"></a><table class="c80"><tbody><tr class="c14"><td class="c83" colspan="1" rowspan="1"><p class="c40"><span class="c13">&nbsp;------------- &nbsp; &nbsp; ------------- <br>| &nbsp; </span><span class="c19">1</span><span class="c13">&nbsp; &nbsp;</span><span class="c19">2</span><span class="c13">&nbsp; &nbsp;</span><span class="c19">3</span><span class="c13">&nbsp;| &nbsp; | &nbsp; x &nbsp; x &nbsp; x |<br>| </span><span class="c19">4</span><span class="c13">&nbsp; &nbsp;</span><span class="c19">5</span><span class="c13">&nbsp; &nbsp;</span><span class="c19">6</span><span class="c13">&nbsp; &nbsp;| &nbsp; | x &nbsp; x &nbsp; x &nbsp; |<br>| &nbsp; </span><span class="c19">7</span><span class="c13">&nbsp; &nbsp;</span><span class="c19">8</span><span class="c13">&nbsp; &nbsp;</span><span class="c19">9</span><span class="c13">&nbsp;| &nbsp; | &nbsp; . &nbsp; . &nbsp; . |<br>|</span><span class="c19">10</span><span class="c13">&nbsp; </span><span class="c19">11</span><span class="c13">&nbsp; </span><span class="c19">12</span><span class="c13">&nbsp; &nbsp;| &nbsp; | . &nbsp; . &nbsp; . &nbsp; |<br>| &nbsp;</span><span class="c19">13</span><span class="c13">&nbsp; </span><span class="c19">14</span><span class="c13">&nbsp; </span><span class="c19">15</span><span class="c13">&nbsp;| &nbsp; | &nbsp; o &nbsp; o &nbsp; o |<br>|</span><span class="c19">16</span><span class="c13">&nbsp; </span><span class="c19">17</span><span class="c13">&nbsp; </span><span class="c19">18</span><span class="c13 c27 c50">&nbsp; &nbsp;| &nbsp; | o &nbsp; o &nbsp; o &nbsp; |<br> ------------- &nbsp; &nbsp; ------------- </span></p><p class="c40"><span class="c13 c27 c50">calculMov (14, !estDame, esBblanc, board) retrurne (11,12)</span></p><p class="c32"><span class="c13 c27 c50">calculMov (16, !estDame, estBlanc, board) retourne (13) </span></p><p class="c32"><span class="c13 c27 c50">calculMov (13, estDame, esBblanc, board) retourne (10,11,16,17)</span></p><p class="c32"><span class="c27 c50 c75">//on consid&egrave;re ici que chaque pion est seul sur le damier</span></p><p class="c32"><span class="c13 c27 c50">deplacementPossible() retourne donc dans notre cas: </span></p><p class="c32"><span class="c13 c27 c50">&nbsp;13-10x11</span></p><p class="c32"><span class="c13 c27 c50">&nbsp;14-11x12</span></p><p class="c32"><span class="c13 c27 c50">&nbsp;15-12</span></p><p class="c32"><span class="c13 c27 c50">&nbsp;16-13</span></p><p class="c32"><span class="c13 c27 c50">&nbsp;17-13x14</span></p><p class="c32"><span class="c13 c27 c50">&nbsp;18-14x15</span></p><p class="c32 c26"><span class="c13 c27 c50"></span></p></td></tr></tbody></table><p class="c11 c26 c17"><span class="c4"></span></p><p class="c11 c17"><span class="c15">moveSansCapture</span><span class="c5">&nbsp;r&eacute;cup&egrave;re la liste retourn&eacute;e par </span><span class="c15">deplacementPossible,</span><span class="c5">&nbsp;pour chaque sous-liste, isole le premier &eacute;l&eacute;ment qui est la case de d&eacute;part puis pour chaque destination vide, forme un doublet </span><span class="c5 c36 c10">(from-to)</span><span class="c4">&nbsp;et l&rsquo;ajoute &agrave; laliste des mouvements sans captures.</span></p><p class="c11 c17"><span class="c4">on a donc une double it&eacute;ration.</span></p><p class="c11 c26 c17"><span class="c4"></span></p><p class="c11 c17"><span class="c5">Pour un pion donn&eacute;, on calcule toutes ses prises possible avec </span><span class="c15">movAvecCaptureForEach</span><span class="c4">.</span></p><p class="c11 c17"><span class="c5">Ici aussi on utilise </span><span class="c15">calculMov</span><span class="c4">&nbsp; et pour chaque destination du pion de d&eacute;part, on v&eacute;rifie si c&rsquo;est un adversaire puis si elle n&rsquo;est pas d&eacute;j&agrave; dans la liste des pions d&eacute;j&agrave; captur&eacute;s. Ensuite si la destination n&rsquo;est pas une extr&eacute;mit&eacute; de notre damier. Une les trois conditions pr&eacute;c&eacute;dentes r&eacute;unis, on peut envisager une prise pour notre pion.</span></p><p class="c11 c17"><span class="c5">Pour savoir s&rsquo;il y a </span><span class="c5">prise</span><span class="c5">, on doit d&eacute;tecter </span><span class="c5 c59">le sens du voisinage</span><span class="c5">&nbsp;entre le </span><span class="c5">pion</span><span class="c5">&nbsp;et la </span><span class="c5">destination</span><span class="c5">&nbsp;et si la </span><span class="c5 c54">case suivante dans le m&ecirc;me sens de voisinage est vide</span><span class="c4">&nbsp;on a effectivement une prise. &nbsp; &nbsp; &nbsp; &nbsp;</span></p><p class="c11 c17"><span class="c5">Pour les prises multiples, on appelle r&eacute;cursivement </span><span class="c15">movAvecCaptureForEach</span><span class="c4">. &nbsp; &nbsp;</span></p><p class="c11 c17"><span class="c5">On remarque la pr&eacute;sence de trois param&egrave;tres particuliers (</span><span class="c5 c54">drMove, prise et origin</span><span class="c5">):</span></p><ul class="c6 lst-kix_n0rpi5riu1ki-0 start"><li class="c11 c23 c39 li-bullet-0"><span class="c5 c54">drMove :</span><span class="c4">&Agrave; chaque r&eacute;cursion, on m&eacute;morise la trace de d&eacute;placement pour l&rsquo;ajoute &agrave; la liste de d&eacute;placement avec captures du pion seulement quand on arrive &agrave; la destination finale.</span></li><li class="c11 c23 c39 li-bullet-0"><span class="c5 c54">prise :</span><span class="c4">Pour s&rsquo;assurer de ne pas boucler infiniment sur une prise, il faut &agrave; chaque fois ajouter la prise &agrave; la liste de pions captur&eacute;s.</span></li><li class="c11 c23 c39 li-bullet-0"><span class="c5 c54">origin :</span><span class="c5">&nbsp; Si lors d&rsquo;une rafle, les adversaires sons dispos&eacute;s de tel sorte que notre pion a la possibilit&eacute; de repasser par sa position d&rsquo;origine, il est &eacute;vident que v&eacute;rifier uniquement que la case est vide ne le perp&eacute;trait pas alors nous avons ajout&eacute; la condition suivante : (</span><span class="c16">isEmpty(to) || to == origin)</span><span class="c4">&nbsp;</span></li></ul><p class="c11 c23"><span class="c5">Illustration de l&rsquo;importance d&rsquo;</span><span class="c5 c54">origin</span><span class="c4">&nbsp;: </span></p><a id="t.c2dbcb74274cb364441fb375c79453845c7cde1d"></a><a id="t.3"></a><table class="c17 c85"><tbody><tr class="c14"><td class="c64" colspan="1" rowspan="1"><p class="c25"><span class="c2">&nbsp;----------------- &nbsp; &nbsp; ----------------- <br>| &nbsp; </span><span class="c1">1</span><span class="c2">&nbsp; &nbsp;</span><span class="c1">2</span><span class="c2">&nbsp; &nbsp;</span><span class="c1">3</span><span class="c2">&nbsp; &nbsp;</span><span class="c1">4</span><span class="c2">&nbsp;| &nbsp; | &nbsp; . &nbsp; O &nbsp; . &nbsp; . |<br>| </span><span class="c1">5</span><span class="c2">&nbsp; &nbsp;</span><span class="c1">6</span><span class="c2">&nbsp; &nbsp;</span><span class="c1">7</span><span class="c2">&nbsp; &nbsp;</span><span class="c1">8</span><span class="c2">&nbsp; &nbsp;| &nbsp; | . &nbsp; . &nbsp; . &nbsp; x &nbsp; |<br>| &nbsp; </span><span class="c1">9</span><span class="c2">&nbsp; </span><span class="c1">10</span><span class="c2">&nbsp; </span><span class="c1">11</span><span class="c2">&nbsp; </span><span class="c1">12</span><span class="c2">&nbsp;| &nbsp; | &nbsp; . &nbsp; x &nbsp; x &nbsp; . |<br>|</span><span class="c1">13</span><span class="c2">&nbsp; </span><span class="c1">14</span><span class="c2">&nbsp; </span><span class="c1">15</span><span class="c2">&nbsp; </span><span class="c1">16</span><span class="c2">&nbsp; &nbsp;| &nbsp; | . &nbsp; x &nbsp; . &nbsp; . &nbsp; |<br>| &nbsp;</span><span class="c1">17</span><span class="c2">&nbsp; </span><span class="c1">18</span><span class="c2">&nbsp; </span><span class="c1">19</span><span class="c2">&nbsp; </span><span class="c1">20</span><span class="c2">&nbsp;| &nbsp; | &nbsp; . &nbsp; x &nbsp; x &nbsp; . |<br>|</span><span class="c1">21</span><span class="c2">&nbsp; </span><span class="c1">22</span><span class="c2">&nbsp; </span><span class="c1">23</span><span class="c2">&nbsp; </span><span class="c1">24</span><span class="c2">&nbsp; &nbsp;| &nbsp; | . &nbsp; . &nbsp; . &nbsp; . &nbsp; |<br>| &nbsp;</span><span class="c1">25</span><span class="c2">&nbsp; </span><span class="c1">26</span><span class="c2">&nbsp; </span><span class="c1">27</span><span class="c2">&nbsp; </span><span class="c1">28</span><span class="c2">&nbsp;| &nbsp; | &nbsp; . &nbsp; . &nbsp; o &nbsp; . |<br>|</span><span class="c1">29</span><span class="c2">&nbsp; </span><span class="c1">30</span><span class="c2">&nbsp; </span><span class="c1">31</span><span class="c2">&nbsp; </span><span class="c1">32</span><span class="c2 c27">&nbsp; &nbsp;| &nbsp; | X &nbsp; o &nbsp; o &nbsp; o &nbsp; |<br> ----------------- &nbsp; &nbsp; ----------------- </span></p><p class="c25"><span class="c13 c27 c37">&nbsp; ||</span></p><p class="c25"><span class="c13 c27 c37">&nbsp; \/</span></p><p class="c25"><span class="c2">&nbsp;----------------- &nbsp; &nbsp; ----------------- <br>| &nbsp; </span><span class="c1">1</span><span class="c2">&nbsp; &nbsp;</span><span class="c1">2</span><span class="c2">&nbsp; &nbsp;</span><span class="c1">3</span><span class="c2">&nbsp; &nbsp;</span><span class="c1">4</span><span class="c2">&nbsp;| &nbsp; | &nbsp; . &nbsp; . &nbsp; . &nbsp; . |<br>| </span><span class="c1">5</span><span class="c2">&nbsp; &nbsp;</span><span class="c1">6</span><span class="c2">&nbsp; &nbsp;</span><span class="c1">7</span><span class="c2">&nbsp; &nbsp;</span><span class="c1">8</span><span class="c2">&nbsp; &nbsp;| &nbsp; | . &nbsp; . &nbsp; O &nbsp; x &nbsp; |<br>| &nbsp; </span><span class="c1">9</span><span class="c2">&nbsp; </span><span class="c1">10</span><span class="c2">&nbsp; </span><span class="c1">11</span><span class="c2">&nbsp; </span><span class="c1">12</span><span class="c2">&nbsp;| &nbsp; | &nbsp; . &nbsp; x &nbsp; x &nbsp; . |<br>|</span><span class="c1">13</span><span class="c2">&nbsp; </span><span class="c1">14</span><span class="c2">&nbsp; </span><span class="c1">15</span><span class="c2">&nbsp; </span><span class="c1">16</span><span class="c2">&nbsp; &nbsp;| &nbsp; | . &nbsp; x &nbsp; . &nbsp; . &nbsp; |<br>| &nbsp;</span><span class="c1">17</span><span class="c2">&nbsp; </span><span class="c1">18</span><span class="c2">&nbsp; </span><span class="c1">19</span><span class="c2">&nbsp; </span><span class="c1">20</span><span class="c2">&nbsp;| &nbsp; | &nbsp; . &nbsp; X &nbsp; x &nbsp; . |<br>|</span><span class="c1">21</span><span class="c2">&nbsp; </span><span class="c1">22</span><span class="c2">&nbsp; </span><span class="c1">23</span><span class="c2">&nbsp; </span><span class="c1">24</span><span class="c2">&nbsp; &nbsp;| &nbsp; | . &nbsp; . &nbsp; . &nbsp; . &nbsp; |<br>| &nbsp;</span><span class="c1">25</span><span class="c2">&nbsp; </span><span class="c1">26</span><span class="c2">&nbsp; </span><span class="c1">27</span><span class="c2">&nbsp; </span><span class="c1">28</span><span class="c2">&nbsp;| &nbsp; | &nbsp; . &nbsp; . &nbsp; o &nbsp; . |<br>|</span><span class="c1">29</span><span class="c2">&nbsp; </span><span class="c1">30</span><span class="c2">&nbsp; </span><span class="c1">31</span><span class="c2">&nbsp; </span><span class="c1">32</span><span class="c2 c27">&nbsp; &nbsp;| &nbsp; | X &nbsp; o &nbsp; o &nbsp; o &nbsp; |<br> ----------------- &nbsp; &nbsp; ----------------- </span></p><p class="c25 c53"><span class="c13 c27 c37">&nbsp; ||</span></p><p class="c25"><span class="c13 c27 c37">&nbsp; \/</span></p><p class="c25"><span class="c2">&nbsp;----------------- &nbsp; &nbsp; ----------------- <br>| &nbsp; </span><span class="c1">1</span><span class="c2">&nbsp; &nbsp;</span><span class="c1">2</span><span class="c2">&nbsp; &nbsp;</span><span class="c1">3</span><span class="c2">&nbsp; &nbsp;</span><span class="c1">4</span><span class="c2">&nbsp;| &nbsp; | &nbsp; . &nbsp; . &nbsp; . &nbsp; . | &nbsp;<br>| </span><span class="c1">5</span><span class="c2">&nbsp; &nbsp;</span><span class="c1">6</span><span class="c2">&nbsp; &nbsp;</span><span class="c1">7</span><span class="c2">&nbsp; &nbsp;</span><span class="c1">8</span><span class="c2">&nbsp; &nbsp;| &nbsp; | . &nbsp; . &nbsp; O &nbsp; x &nbsp; | <br>| &nbsp; </span><span class="c1">9</span><span class="c2">&nbsp; </span><span class="c1">10</span><span class="c2">&nbsp; </span><span class="c1">11</span><span class="c2">&nbsp; </span><span class="c1">12</span><span class="c2">&nbsp;| &nbsp; | &nbsp; . &nbsp; x &nbsp; x &nbsp; . |<br>|</span><span class="c1">13</span><span class="c2">&nbsp; </span><span class="c1">14</span><span class="c2">&nbsp; </span><span class="c1">15</span><span class="c2">&nbsp; </span><span class="c1">16</span><span class="c2">&nbsp; &nbsp;| &nbsp; | . &nbsp; . &nbsp; . &nbsp; . &nbsp; |<br>| &nbsp;</span><span class="c1">17</span><span class="c2">&nbsp; </span><span class="c1">18</span><span class="c2">&nbsp; </span><span class="c1">19</span><span class="c2">&nbsp; </span><span class="c1">20</span><span class="c2">&nbsp;| &nbsp; | &nbsp; x &nbsp; x &nbsp; x &nbsp; . |<br>|</span><span class="c1">21</span><span class="c2">&nbsp; </span><span class="c1">22</span><span class="c2">&nbsp; </span><span class="c1">23</span><span class="c2">&nbsp; </span><span class="c1">24</span><span class="c2">&nbsp; &nbsp;| &nbsp; | . &nbsp; . &nbsp; . &nbsp; . &nbsp; |<br>| &nbsp;</span><span class="c1">25</span><span class="c2">&nbsp; </span><span class="c1">26</span><span class="c2">&nbsp; </span><span class="c1">27</span><span class="c2">&nbsp; </span><span class="c1">28</span><span class="c2">&nbsp;| &nbsp; | &nbsp; . &nbsp; . &nbsp; o &nbsp; . |<br>|</span><span class="c1">29</span><span class="c2">&nbsp; </span><span class="c1">30</span><span class="c2">&nbsp; </span><span class="c1">31</span><span class="c2">&nbsp; </span><span class="c1">32</span><span class="c2">&nbsp; &nbsp;| &nbsp; | X &nbsp; o &nbsp; o &nbsp; o &nbsp; |<br> ----------------- &nbsp; &nbsp; ----------------- </span><span class="c13"><br></span><span class="c2">&nbsp;Ici </span><span class="c73 c89">possibleMove</span><span class="c2">&nbsp;retourne : <br>avec </span><span class="c29">origin :</span><span class="c2 c27">{7x16x23x14x7 ; 7x14x21 ; 7x16x23x14x21 ; 7x14x23x16x7} &nbsp;</span></p><p class="c25"><span class="c2">sans </span><span class="c29">origin</span><span class="c60 c73">&nbsp;:</span><span class="c2">{7x16x23x14 ; 7x14x21 ; 7x16x23x14x21 ; 7x14x23x16} </span></p></td></tr></tbody></table><p class="c11 c23"><span class="c5">Par la suite, avec </span><span class="c15">movAvecCaptureForAll</span><span class="c5">&nbsp;on r&eacute;cup&egrave;re juste liste des d&eacute;placements avec prise pour tous les pions en it&eacute;rant sur </span><span class="c15">myPawns.</span><span class="c4">&nbsp;</span></p><p class="c11 c23"><span class="c15">moveAvecCapture</span><span class="c5">&nbsp;est la fonction un peu inutile car retourne simplement </span><span class="c15">movAvecCaptureForAll</span><span class="c4">&nbsp;mais pur une question compr&eacute;hension du code on l&rsquo;a laiss&eacute;e.</span></p><p class="c11 c23"><span class="c5">Pour finir avec la partie des d&eacute;placements, dans </span><span class="c15">possibleMoves </span><span class="c5">on retourne </span><span class="c15">moveAvecCapture</span><span class="c5">&nbsp;si elle n&rsquo;est pas vide sinon on retourne </span><span class="c15">moveSansCapture</span><span class="c4">&nbsp; </span></p><p class="c11 c26 c23"><span class="c4"></span></p><p class="c11 c26 c23"><span class="c4"></span></p><p class="c11 c23"><span class="c4">Pour finir nous avons r&eacute;ussi &agrave; impl&eacute;menter les M&eacute;thodes plus facilement:</span></p><a id="t.9437be57a1a8e64a98781e1b1535146f310ce254"></a><a id="t.4"></a><table class="c82"><tbody><tr class="c14"><td class="c71" colspan="1" rowspan="1"><p class="c40"><span class="c7">void</span><span class="c16">&nbsp;</span><span class="c43">play</span><span class="c16">(Move aMove)<br>PlayerId </span><span class="c43">winner</span><span class="c16">() </span></p></td></tr></tbody></table><p class="c11 c26 c23"><span class="c4"></span></p><p class="c11 c23"><span class="c5">Avec </span><span class="c15">play</span><span class="c5">,</span><span class="c4">&nbsp;on parcourt le mouvement en param&egrave;tre en d&eacute;pla&ccedil;ant le pion au fur et &agrave; mesure qu&rsquo;on avance. Si entre le couple d&eacute;part-arriv&eacute;e, il y a un pion, on le capture en le supprimant du damier.</span></p><p class="c11 c23"><span class="c5">Si on a un mouvement avec prise ou un mouvement d&rsquo;un pion simple, on r&eacute;initialise la variable </span><span class="c15">nbKingMovesWithoutCapture</span><span class="c4">&nbsp; sinon elle est incr&eacute;ment&eacute;e.</span></p><p class="c11 c23"><span class="c5">Si un pion arrive &agrave; l&rsquo;extr&eacute;mit&eacute; adverse et que ce n&rsquo;est pas une dame il est imm&eacute;diatement </span><span class="c5">promu en dame</span><span class="c4">&nbsp;et passe son tour.</span></p><p class="c11 c23"><span class="c4">&Agrave; la fin du tour, on incr&eacute;mente le nombre de tours &nbsp;et on donne la main &agrave; l&rsquo;adversaire.</span></p><p class="c11 c26 c23"><span class="c4"></span></p><p class="c11 c23"><span class="c15">winner</span><span class="c5">&nbsp;retourne </span><span class="c5">NONE</span><span class="c5">&nbsp;si on a seulement des mouvements de dames durant 25 tours (</span><span class="c15">nbKingMovesWithoutCapture ==25</span><span class="c4">). Si nous n&rsquo;avons plus la possibilit&eacute; de bouger ou si on n&rsquo;a plus de pion sur le damier alors c&rsquo;est l&rsquo;adversaire qui a gagn&eacute;.</span></p><hr style="page-break-before:always;display:none;"><p class="c11 c26"><span class="c4"></span></p><p class="c11 c26"><span class="c4"></span></p><ol class="c6 lst-kix_hfiucoeyw4da-1" start="2"><li class="c11 c17 c39 li-bullet-0"><span class="c12">&nbsp;Impl&eacute;mentation du MCTS</span></li></ol><p class="c11 c17"><span class="c4">Dans cette deuxi&egrave;me partie, il s&rsquo;agissait pour nous d&rsquo;impl&eacute;menter l&rsquo;algorithme de Monte-Carlo. Pour ce faire nous avions &agrave; notre disposition la structure suivante que nous avons modifi&eacute; pour l&rsquo;adapter &agrave; notre impl&eacute;mentation:</span></p><p class="c11 c26 c17"><span class="c4"></span></p><a id="t.ed348dcb9e4a6447aba22856aca60807453a2e2d"></a><a id="t.5"></a><table class="c69"><tbody><tr class="c14"><td class="c79" colspan="1" rowspan="1"><p class="c40"><span class="c7 c18">public</span><span class="c16 c18">&nbsp;</span><span class="c7 c18">class</span><span class="c16 c18">&nbsp;</span><span class="c9">MonteCarloTreeSearch</span><span class="c16 c18">&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c7 c18">class</span><span class="c16 c18">&nbsp;</span><span class="c9">EvalNode</span><span class="c16 c18">&nbsp;{<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; Move move_node ; </span><span class="c18 c28">//Ajout&eacute; mouvement associer au n&oelig;ud</span><span class="c16 c18"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EvalNode parent;</span><span class="c28 c18">//Ajout&eacute; : un pointeur vers le p&egrave;re</span><span class="c16 c18"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c7 c18">double</span><span class="c16 c18">&nbsp;</span><span class="c43 c18">uct</span><span class="c16 c18">() <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c7 c18">double</span><span class="c16 c18">&nbsp;</span><span class="c43 c18">score</span><span class="c16 c18">() <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c7 c18">void</span><span class="c16 c18">&nbsp;</span><span class="c18 c43">updateStats</span><span class="c16 c18">(RolloutResults res)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c7 c18">void</span><span class="c16 c18">&nbsp;</span><span class="c43 c18">genererFils</span><span class="c16 c18">() &nbsp;</span><span class="c28 c18">//Ajout&eacute;</span><span class="c16 c18"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EvalNode </span><span class="c43 c18">meilleurFeuille</span><span class="c16 c18">() </span><span class="c28 c18">//Ajout&eacute; </span><span class="c16 c18"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EvalNode </span><span class="c43 c18">meilleurFils</span><span class="c16 c18">&nbsp;() &nbsp; </span><span class="c28 c18">//Ajout&eacute;</span><span class="c16 c18"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c7 c18">static</span><span class="c16 c18">&nbsp;class </span><span class="c43 c18">RolloutResults</span><span class="c16 c18">()<br> &nbsp; &nbsp; &nbsp; </span><span class="c7 c18">static</span><span class="c16 c18">&nbsp;PlayerId </span><span class="c43 c18">playRandomlyToEnd</span><span class="c16 c18">(Game game) <br> &nbsp; &nbsp; &nbsp; </span><span class="c7 c18">static</span><span class="c16 c18">&nbsp;RolloutResults </span><span class="c43 c18">rollOut</span><span class="c16 c18">(</span><span class="c7 c18">final</span><span class="c16 c18">&nbsp;Game game, </span><span class="c7 c18">int</span><span class="c16 c18">&nbsp;nbRuns)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c7 c18">public</span><span class="c16 c18">&nbsp;</span><span class="c7 c18">void</span><span class="c16 c18">&nbsp;</span><span class="c43 c18">evaluateTreeWithTimeLimit</span><span class="c16 c18">(</span><span class="c7 c18">int</span><span class="c16 c18">&nbsp;timeLimitMillis)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c7 c18">public</span><span class="c16 c18">&nbsp;</span><span class="c7 c18">boolean</span><span class="c16 c18">&nbsp;</span><span class="c43 c18">evaluateTreeOnce</span><span class="c16 c18">()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c7 c18">public</span><span class="c16 c18">&nbsp;Move </span><span class="c43 c18">getBestMove</span><span class="c16 c18">()<br> &nbsp; &nbsp; &nbsp; </span><span class="c7 c18">public</span><span class="c16 c18">&nbsp;String </span><span class="c43 c18">stats</span><span class="c16 c27 c18">()<br>}</span></p></td></tr></tbody></table><p class="c11 c26 c17"><span class="c4"></span></p><p class="c11 c17"><span class="c5">La premi&egrave;re des choses qu&rsquo;on avait &nbsp;&agrave; faire &eacute;tait de nous assurer que notre algorithme parcourait toutes les possibilit&eacute;s dans un &eacute;tat donn&eacute; du jeu avant de passer &agrave; l&rsquo;exploration des niveaux suivants. Pour ce faire nous avons utilis&eacute; la formule &nbsp; </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 84.70px; height: 16.81px;"><img alt="" src="images/image3.png" style="width: 84.70px; height: 16.81px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span><span class="c5">&nbsp;que nous avons impl&eacute;ment&eacute; dans la m&eacute;thode </span><span class="c15 c18">uct.</span><span class="c4">&nbsp;</span></p><p class="c11 c17"><span class="c5">Pour commencer, on g&eacute;n&egrave;re imm&eacute;diatement les fils du </span><span class="c5">root </span><span class="c5">avec la m&eacute;thode </span><span class="c15 c18">genererFils</span><span class="c5">&nbsp;qui it&egrave;re sur les mouvements possibles de l&rsquo;&eacute;tat courent du jeu en associant &agrave; chaque mouvement, un n&oelig;ud dont le p&egrave;re est le n&oelig;ud appelant. D&#39;o&ugrave; l&rsquo;ajout des attributs </span><span class="c16 c18">Move et EvalNode.</span><span class="c5">&nbsp; <br>C&rsquo;est seulement avec la fonction </span><span class="c15 c18">evaluateTreeOnce</span><span class="c4">&nbsp;que nous impl&eacute;mentons concr&egrave;tement le comportement de notre MCTS.</span></p><p class="c11 c17"><span class="c5">Avant de parcourir notre arbre, on commence par s&eacute;lectionner le meilleur n&oelig;ud &nbsp;l&rsquo;aide de </span><span class="c15 c18">meilleurFeuille</span><span class="c5">&nbsp;qui parcoure l&rsquo;arbre et retourne la feuille la plus prometteuse de l&rsquo;arbre &agrave; l&rsquo;aide notamment l&rsquo;utilisation de </span><span class="c5">l&rsquo;uct</span><span class="c4">&nbsp;de chaque fils.</span></p><p class="c11 c17"><span class="c5">Une fois la meilleure feuille de l&rsquo;arborescence s&eacute;lectionn&eacute;e, on g&eacute;n&egrave;re aussi ses fils et on l&rsquo;ex&eacute;cute al&eacute;atoirement avec </span><span class="c15 c18">RolloutResults</span><span class="c4">&nbsp;durant une p&eacute;riode donn&eacute;e en param&egrave;tre d&rsquo;ex&eacute;cution et retourne &agrave; chaque fin de partie al&eacute;atoire, des r&eacute;sultats que nous remontons aux diff&eacute;rents n&oelig;uds parcouru. &nbsp; &nbsp; &nbsp;</span></p><p class="c11 c17"><span class="c5">La petite subtilit&eacute; qui &agrave; pendant un moment boulevers&eacute; nos r&eacute;sultats est la m&eacute;thode </span><span class="c15 c18">updateStats</span><span class="c4">&nbsp;qui permet de remonter le nombre de d&eacute;faites du n&oelig;ud courent (et non le nombre de victoires).</span></p><p class="c11 c17"><span class="c5">On stop l&rsquo;it&eacute;ration si notre root n&rsquo;a qu&rsquo;un seul fils ou quand on a un fils pour qui on a une victoire imminente </span><span class="c5 c18 c55">(&ccedil;a ne sert &agrave; rien de calculer)</span><span class="c4">. </span></p><p class="c11 c17"><span class="c5">Apr&egrave;s les calcules, on r&eacute;cup&egrave;re le meilleur coup avec </span><span class="c15 c18">getBestMove</span><span class="c5">&nbsp; qui appel la fonction </span><span class="c15 c18">meilleurFils</span><span class="c5">&nbsp;retournant le n&oelig;ud o&ugrave; notre probabilit&eacute; de gagner est plus forte (plus grand </span><span class="c15 c18">score</span><span class="c4">). &nbsp; &nbsp; </span></p><p class="c11 c17"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 594.00px; height: 209.86px;"><img alt="" src="images/image1.png" style="width: 594.00px; height: 209.86px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><p class="c11 c26 c17"><span class="c4"></span></p><p class="c11 c26 c17"><span class="c4"></span></p><p class="c11 c17"><span class="c5">&nbsp;</span></p><ol class="c6 lst-kix_hfiucoeyw4da-0" start="2"><li class="c11 c31 li-bullet-0"><span class="c27 c67 c90 c92">Analyse des r&eacute;sultats</span></li></ol><p class="c11 c17"><span class="c4">Apr&egrave;s impl&eacute;mentation de l&rsquo;algorithme, nous l&rsquo;avons test&eacute; sur les diff&eacute;rentes versions des jeux &agrave; notre disposition (Tic-tac-toe, Dames 8x8, Dames 10x10, Dames 6x6) avec les diff&eacute;rents temps de calcul.</span></p><p class="c11 c17"><span class="c4">Ce qui nous retourne les r&eacute;sultats suivants :</span></p><p class="c11 c26 c17"><span class="c4"></span></p><p class="c11 c17"><span class="c22">Tic-Tac-Toe</span></p><p class="c11 c17"><span class="c4">Ici peu importe leurs diff&eacute;rents temps de calcul, les IA ont tous la m&ecirc;me performance. Cela est d&ucirc; au fait que l&rsquo;espace jeux est relativement petit et donc ne n&eacute;cessite pas beaucoup d&#39;effort de calcul. &nbsp; </span></p><p class="c11 c26 c17"><span class="c4"></span></p><p class="c11 c23"><span class="c5">IA vs IA </span></p><p class="c11 c23"><span class="c5">100%</span><span class="c5">&nbsp;des parties confrontant deux IA peu importe leurs diff&eacute;rents temps de calcul se soldent sur des </span><span class="c5">matchs nul</span><span class="c4">.</span></p><p class="c11 c26 c23"><span class="c4"></span></p><p class="c11 c23"><span class="c27 c47">Humain vs IA</span></p><p class="c11 c23"><span class="c4">Ici les r&eacute;sultats divergent en fonction de l&rsquo;adversaire que l&rsquo;IA a en face d&rsquo;elle.</span></p><p class="c11 c23"><span class="c5">C&#39;est en gros cette partie qui nous a compliqu&eacute;e la t&acirc;che on pensait que c&#39;&eacute;tait une erreur de notre impl&eacute;mentation alors que non. C&rsquo;est juste que </span><span class="c5">MCTS</span><span class="c4">&nbsp;n&rsquo;est pas l&rsquo;algorithme le plus adapt&eacute; pour ce genre de jeux o&ugrave; le nombre de coups possible est assez r&eacute;duit. </span></p><p class="c11 c23"><span class="c4">Dans notre cas, l&rsquo;algorithme cherche &agrave; maximiser ses chances de gagner sans forc&eacute;ment minimiser celles de perdre.</span></p><p class="c11 c23"><span class="c4">Illustrations : </span></p><a id="t.6bb9eaac4754da2b192d635d0e5c8b140ee3af9c"></a><a id="t.6"></a><table class="c77"><tbody><tr class="c86"><td class="c34" colspan="1" rowspan="1"><p class="c40"><span class="c35">//IA avec &#39;o&#39; et Humain avec &#39;x&#39;</span><span class="c44"><br> &nbsp; &nbsp; &nbsp; &nbsp; board &nbsp; &nbsp; &nbsp;board &nbsp; &nbsp; board &nbsp; &nbsp; board &nbsp; &nbsp; board &nbsp; &nbsp; board &nbsp; &nbsp; board<br>0 1 2 &nbsp; &nbsp;. . . &nbsp; &nbsp; &nbsp;. . x &nbsp; &nbsp; o . x &nbsp; &nbsp; o . x &nbsp; &nbsp; o . x &nbsp; &nbsp; o. x &nbsp; &nbsp; &nbsp;o . x<br>3 4 5 &nbsp; &nbsp;. o . &nbsp; &nbsp; &nbsp;. o . &nbsp; &nbsp; . o . &nbsp; &nbsp; . o . &nbsp; &nbsp; . o . &nbsp; &nbsp; . o . &nbsp; &nbsp; . o .<br>6 7 8 &nbsp; &nbsp;. . . &nbsp; &nbsp; &nbsp;. . . &nbsp; &nbsp; . . . &nbsp; &nbsp; . . x &nbsp; &nbsp; . . x &nbsp; &nbsp; . . x &nbsp; &nbsp; . . x</span></p></td></tr></tbody></table><p class="c11 c26 c23"><span class="c4"></span></p><p class="c11 c23"><span class="c5">&Agrave; ce niveau de la partie de notre exemple, on constate que le meilleur coup ici pour &eacute;viter la d&eacute;faite est </span><span class="c5">&ldquo;</span><span class="c5 c49">5</span><span class="c5">&rdquo;</span><span class="c5">&nbsp;alors que notre algorithme privil&eacute;giera l&rsquo;option </span><span class="c5">&ldquo;</span><span class="c5 c49">3</span><span class="c5">&rdquo;</span><span class="c5">&nbsp;qui lui garantirait une victoire imminante au coup suivant. L&rsquo;option </span><span class="c5">&ldquo;</span><span class="c5 c49">5</span><span class="c5">&rdquo; </span><span class="c4">n&rsquo;est pas choix car m&ecirc;me si elle lui &eacute;vite la d&eacute;faite sur le coup on a aucune garantis de gagner la partie.</span></p><p class="c11 c23"><span class="c5">Pour r&eacute;soudre ce probl&egrave;me, nous avons ajout&eacute; une </span><span class="c5 c18">pseudo heuristique</span><span class="c4">&nbsp;permettant de savoir si apr&egrave;s notre tour l&rsquo;adversaire aurait un d&eacute;placement qui ferait imm&eacute;diatement perdre :</span></p><p class="c11 c26 c23"><span class="c4"></span></p><a id="t.2e145ab91627b399db34a9899e15bddb74e00e58"></a><a id="t.7"></a><table class="c74"><tbody><tr class="c14"><td class="c87" colspan="1" rowspan="1"><p class="c40"><span class="c7 c10">boolean</span><span class="c16 c10">&nbsp;</span><span class="c43 c10">verfDefaiteImediate</span><span class="c16 c10">(EvalNode node){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EvalNode nodeDeVerificationDeDefaite = </span><span class="c7 c10">new</span><span class="c16 c10">&nbsp;EvalNode(node.game.clone());</span><span class="c16 c73"><br></span><span class="c16 c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nodeDeVerificationDeDefaite.genererFils();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c7 c10">for</span><span class="c16 c10">&nbsp;(EvalNode n : nodeDeVerificationDeDefaite.children){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c7 c10">if</span><span class="c16 c10">&nbsp;(n.game.winner() !=</span><span class="c7 c10">null</span><span class="c16 c10">)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c7 c10">return</span><span class="c16 c10">&nbsp;</span><span class="c7 c10">true</span><span class="c16 c10">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c7 c10">return</span><span class="c16 c10">&nbsp;</span><span class="c7 c10">false</span><span class="c16 c27 c10">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p></td></tr></tbody></table><p class="c11 c26 c23"><span class="c16 c27 c50"></span></p><p class="c11 c23"><span class="c5">&nbsp; &nbsp;Dans la m&ecirc;me lanc&eacute;e, nous topons l&rsquo;it&eacute;ration s&rsquo;il y a qu&rsquo;un seul fils qui peut nous sortie de la situation de d&eacute;faite ( </span><span class="c7">int</span><span class="c16">&nbsp;</span><span class="c43">seSauverAvec</span><span class="c16">(EvalNode node) == </span><span class="c88">1</span><span class="c4">).</span></p><p class="c11 c26 c23"><span class="c4"></span></p><p class="c11 c23"><span class="c5">Les modifications apport&eacute;es am&eacute;liorent largement les l&rsquo;efficacit&eacute; de notre IA.<br>les parties entre IA sont plus &eacute;labor&eacute;es et celle entre IA et humain se soldent au mieux par un nul pour l&rsquo;humain. </span><span class="c5 c78">(sur la base de trois dizaines de parties)</span><span class="c4">&nbsp;</span></p><p class="c11 c26 c23"><span class="c4"></span></p><p class="c11 c26 c23"><span class="c4"></span></p><p class="c11 c17"><span class="c5 c51">Dames Anglaise</span></p><p class="c11 c23"><span class="c5">Avec le jeu &nbsp;de Dames, la version am&eacute;lior&eacute;e n&rsquo;apporte pas grand changement dans les r&eacute;sultats qu&rsquo;on avait d&eacute;j&agrave; dans la premi&egrave;re version de notre </span><span class="c5">MCTS</span><span class="c4">&nbsp;sauf souvent en fin de partie.</span></p><p class="c11 c26 c23"><span class="c4"></span></p><p class="c11 c23"><span class="c4">Dans cette partie, les r&eacute;sultats varient en fonction de l&#39;espace de jeu et du temps de calcul.</span></p><p class="c11 c23"><span class="c5">Apr&egrave;s les parties entre diff&eacute;rents temps de jeu et espace</span><span class="c5 c10 c41">(r&eacute;sultats en annexe page 9)</span><span class="c4">, on constate g&eacute;n&eacute;ralement que les d&eacute;buts de parties ne sont pas tr&egrave;s d&eacute;terminants.</span></p><p class="c11 c23"><span class="c5">La diff&eacute;rence se fait vers environ le </span><span class="c5">10&#7497; tour</span><span class="c4">&nbsp;o&ugrave; le joueur avec le plus de temps de calcul commence &agrave; prendre l&rsquo;avantage sur l&rsquo;autre. C&#39;est seulement vers la fin de la partie que le jeu devient un peu &eacute;quilibr&eacute; en termes de choix &nbsp;de d&eacute;placement. </span></p><p class="c11 c26 c23"><span class="c4"></span></p><p class="c11 c23"><span class="c5">Petite illustration pour revenir sur l&rsquo;am&eacute;lioration de notre </span><span class="c5">MCTS</span><span class="c4">&nbsp;en fin de partie</span></p><a id="t.bceafbb14406dfa47eed93e4a07a1c63b98aafdd"></a><a id="t.8"></a><table class="c58"><tbody><tr class="c14"><td class="c66" colspan="1" rowspan="1"><p class="c40"><span class="c13">&nbsp;----------------- &nbsp; &nbsp; ----------------- <br>| &nbsp; </span><span class="c19">1</span><span class="c13">&nbsp; &nbsp;</span><span class="c19">2</span><span class="c13">&nbsp; &nbsp;</span><span class="c19">3</span><span class="c13">&nbsp; &nbsp;</span><span class="c19">4</span><span class="c13">&nbsp;| &nbsp; | &nbsp; x &nbsp; O &nbsp; . &nbsp; . |<br>| </span><span class="c19">5</span><span class="c13">&nbsp; &nbsp;</span><span class="c19">6</span><span class="c13">&nbsp; &nbsp;</span><span class="c19">7</span><span class="c13">&nbsp; &nbsp;</span><span class="c19">8</span><span class="c13">&nbsp; &nbsp;| &nbsp; | o &nbsp; . &nbsp; . &nbsp; O &nbsp; |<br>| &nbsp; </span><span class="c19">9</span><span class="c13">&nbsp; </span><span class="c19">10</span><span class="c13">&nbsp; </span><span class="c19">11</span><span class="c13">&nbsp; </span><span class="c19">12</span><span class="c13">&nbsp;| &nbsp; | &nbsp; . &nbsp; . &nbsp; . &nbsp; . |<br>|</span><span class="c19">13</span><span class="c13">&nbsp; </span><span class="c19">14</span><span class="c13">&nbsp; </span><span class="c19">15</span><span class="c13">&nbsp; </span><span class="c19">16</span><span class="c13">&nbsp; &nbsp;| &nbsp; | . &nbsp; x &nbsp; . &nbsp; . &nbsp; |<br>| &nbsp;</span><span class="c19">17</span><span class="c13">&nbsp; </span><span class="c19">18</span><span class="c13">&nbsp; </span><span class="c19">19</span><span class="c13">&nbsp; </span><span class="c19">20</span><span class="c13">&nbsp;| &nbsp; | &nbsp; . &nbsp; . &nbsp; . &nbsp; . |<br>|</span><span class="c19">21</span><span class="c13">&nbsp; </span><span class="c19">22</span><span class="c13">&nbsp; </span><span class="c19">23</span><span class="c13">&nbsp; </span><span class="c19">24</span><span class="c13">&nbsp; &nbsp;| &nbsp; | o &nbsp; . &nbsp; . &nbsp; . &nbsp; |<br>| &nbsp;</span><span class="c19">25</span><span class="c13">&nbsp; </span><span class="c19">26</span><span class="c13">&nbsp; </span><span class="c19">27</span><span class="c13">&nbsp; </span><span class="c19">28</span><span class="c13">&nbsp;| &nbsp; | &nbsp; . &nbsp; O &nbsp; o &nbsp; . |<br>|</span><span class="c19">29</span><span class="c13">&nbsp; </span><span class="c19">30</span><span class="c13">&nbsp; </span><span class="c19">31</span><span class="c13">&nbsp; </span><span class="c19">32</span><span class="c13">&nbsp; &nbsp;| &nbsp; | . &nbsp; . &nbsp; . &nbsp; . &nbsp; |<br> ----------------- &nbsp; &nbsp; ----------------- </span></p></td></tr></tbody></table><p class="c11 c26 c23"><span class="c4"></span></p><p class="c11 c23"><span class="c5">&Agrave; ce stade de la partie, le joueur &ldquo;</span><span class="c5">x</span><span class="c5">&rdquo;</span><span class="c5">&nbsp; &agrave; 100% de chance de perdre la partie et il a la possibilit&eacute; d&rsquo;aller en : </span><span class="c5">1-6</span><span class="c5">&nbsp;; </span><span class="c5">14-17</span><span class="c5">&nbsp;et </span><span class="c5">14-18.</span><span class="c4">&nbsp;Dans la premi&egrave;re version, il aurait choisi un mouvement al&eacute;atoire entre ces trois qui ont la m&ecirc;me probabilit&eacute;. Mais avec la version am&eacute;lior&eacute;e, on privil&eacute;giera le mouvement avec lequel on aura droit &agrave; des tours suppl&eacute;mentaire m&ecirc;me si la d&eacute;faite est imminente.</span></p><p class="c11 c26 c23"><span class="c4"></span></p><p class="c11 c23"><span class="c4">En somme on peut dire qu&rsquo;en d&eacute;but de partie l&rsquo;impression d&rsquo;&eacute;quilibre entre deux IA avec des temps diff&eacute;rents n&rsquo;est qu&rsquo;une illusion car celle avec le plus de temps de calcul effectue logiquement plus de partie al&eacute;atoires donc &agrave; plusieurs coups d&rsquo;avances sur l&rsquo;autre. Constat qui se confirme en milieu de partie o&ugrave; le nombre de d&eacute;placements possible croit largement. Ce qui signifie que l&rsquo;arborescence est plus grande et les choix deviennent de plus en plus critiques.</span></p><p class="c11 c23"><span class="c5">Cependant, en fin de partie, o&ugrave; les coups possibles sont largement r&eacute;duits, le temps de calcul perd plus ou moins son importance comme au </span><span class="c5">tic-tac-toe</span><span class="c4">&nbsp;ce qui fait qu&rsquo;on a des parties tr&egrave;s longues. Et le r&eacute;sultat est d&eacute;termin&eacute; par l&rsquo;avance pris en milieu de partie.</span></p><p class="c11 c23"><span class="c4">Aussi, les temps les plus longs ne conc&egrave;dent aucunes victoires (dans nos tests) au temps les plus courts.</span></p><p class="c11 c26 c23"><span class="c4"></span></p><p class="c11 c17"><span class="c4">&nbsp;</span></p><p class="c11 c26 c23"><span class="c4"></span></p><p class="c11 c23"><span class="c4">&nbsp; &nbsp; </span></p><p class="c11 c23"><span class="c5">&nbsp; </span></p><p class="c11 c17"><span class="c5">&nbsp;</span></p><p class="c76"><span class="c12">Annexe: Les r&eacute;sultats des parties de Dames Anglaise</span></p><p class="c11 c26"><span class="c12"></span></p><a id="t.f2782291412da7e001852aa804cc9322e2c164fa"></a><a id="t.9"></a><table class="c68"><tbody><tr class="c0"><td class="c21" colspan="1" rowspan="1"><p class="c3 c26"><span class="c12"></span></p></td><td class="c70" colspan="3" rowspan="1"><p class="c33"><span class="c12">1s vs &nbsp;2s</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3 c26"><span class="c12"></span></p></td><td class="c65" colspan="3" rowspan="1"><p class="c33"><span class="c12">1s vs 5s</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3 c26"><span class="c12"></span></p></td><td class="c65" colspan="3" rowspan="1"><p class="c33"><span class="c12">1s vs 10s</span></p></td></tr><tr class="c0"><td class="c21" colspan="1" rowspan="1"><p class="c3"><span class="c12">8x8</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c3"><span class="c12">2</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">1</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3 c26"><span class="c12"></span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">4</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3 c26"><span class="c12"></span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td></tr><tr class="c0"><td class="c21" colspan="1" rowspan="1"><p class="c3"><span class="c12">10x10</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c3"><span class="c12">1</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3 c26"><span class="c12"></span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">2</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3 c26"><span class="c12"></span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td></tr><tr class="c0"><td class="c21" colspan="1" rowspan="1"><p class="c3"><span class="c12">6x6</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c3"><span class="c12">1</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">1</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3 c26"><span class="c12"></span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">2</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3 c26"><span class="c12"></span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">1</span></p></td></tr></tbody></table><p class="c11 c26"><span class="c12"></span></p><p class="c11 c26"><span class="c12"></span></p><a id="t.31d87c38d7e2f9a4ec3aa8249398413f48dac29f"></a><a id="t.10"></a><table class="c68"><tbody><tr class="c0"><td class="c21" colspan="1" rowspan="1"><p class="c3 c26"><span class="c12"></span></p></td><td class="c70" colspan="3" rowspan="1"><p class="c33"><span class="c12">2s vs 5s</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3 c26"><span class="c12"></span></p></td><td class="c65" colspan="3" rowspan="1"><p class="c33"><span class="c12">2s &nbsp;vs 10s</span></p></td></tr><tr class="c0"><td class="c21" colspan="1" rowspan="1"><p class="c3"><span class="c12">8x8</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c3"><span class="c12">1</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3 c26"><span class="c12"></span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">1</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">1</span></p></td></tr><tr class="c0"><td class="c21" colspan="1" rowspan="1"><p class="c3"><span class="c12">10x10</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c3"><span class="c12">1</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3 c26"><span class="c12"></span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">1</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">1</span></p></td></tr><tr class="c0"><td class="c21" colspan="1" rowspan="1"><p class="c3"><span class="c12">6x6</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">1</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3 c26"><span class="c12"></span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">1</span></p></td><td class="c8" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td></tr></tbody></table><p class="c11 c26"><span class="c12"></span></p><p class="c11 c26"><span class="c12"></span></p><a id="t.a193cbbdc4b2b676a4c306ca1f30f2bf92d3487f"></a><a id="t.11"></a><table class="c68"><tbody><tr class="c0"><td class="c21" colspan="1" rowspan="1"><p class="c3 c26"><span class="c12"></span></p></td><td class="c63" colspan="3" rowspan="1"><p class="c33"><span class="c12">5s vs 10s</span></p></td></tr><tr class="c0"><td class="c21" colspan="1" rowspan="1"><p class="c3"><span class="c12">8x8</span></p></td><td class="c52" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c3"><span class="c12">1</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td></tr><tr class="c0"><td class="c21" colspan="1" rowspan="1"><p class="c3"><span class="c12">10x10</span></p></td><td class="c52" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c3"><span class="c12">1</span></p></td></tr><tr class="c0"><td class="c21" colspan="1" rowspan="1"><p class="c3"><span class="c12">6x6</span></p></td><td class="c52" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c3"><span class="c12">1</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c3"><span class="c12">0</span></p></td></tr></tbody></table><p class="c11 c26"><span class="c4"></span></p><div><p class="c24"><span class="c27 c50 c61"></span></p></div></body></html>
+<div>
+
+<span class="c27 c81">M1 Informatique - TP IA                                                                                                                      2020-2021</span>
+
+</div>
+
+<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 171.00px; height: 45.00px;">![](images/image4.png)</span>
+<span class="c27 c38"> AKOTO Yao Arnaud P  </span> 
+<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 151.81px; height: 40.00px;">![](images/image2.png)</span><span class="c5 c91"> </span>
+
+<span class="c4"></span>
+
+<span class="c4"></span>
+
+<span class="c12">Compte rendu du  TP1 : Dames Anglaises avec MCTS</span>
+
+<span class="c4"></span>
+
+<span class="c27 c42">Objectif du TP</span>
+
+<span class="c5">L’objectif de ce TP était d’implémenter une intelligence artificielle à l’aide de l’algorithme de Monte-Carlo (</span><span class="c5">MCTS</span><span class="c5">) dans un jeu dont nous avons codé les règles (</span><span class="c5">Dames Anglaises</span><span class="c5">) pour en suite analyser les performances avec différents temps de calculer.</span>
+
+<span class="c4"></span>
+
+<span class="c42 c27">Processus</span>
+
+<span class="c4">Pour réaliser notre tâche nous avons eu deux grandes étapes qui sont :</span>
+
+*   <span class="c4">L’implémentation</span>
+
+*   <span class="c4">Implémentation des règles du jeu</span>
+*   <span class="c4">Implémentation du MCTS</span>
+
+*   <span class="c4">L’analyse des résultats</span>
+
+<span class="c4"></span>
+
+1.  <span class="c5 c67">Implémentations</span><span class="c12"> </span>
+
+1.  <span class="c12"> Implémentation des règles du je</span>
+
+<span class="c12"></span>
+
+<span class="c4">Pour commencer, il était important avant un tour de connaitre le statut des différents cases de notre jeu de dame (vide, pion adverse, notre pion). À l’aide des fonctions :</span>
+
+<a id="t.9c010cb5b70a005f8fb361bdcfec3af5a0dfb198"></a><a id="t.0"></a>
+
+<table class="c85 c93">
+
+<tbody>
+
+<tr class="c14">
+
+<td class="c30" colspan="1" rowspan="1">
+
+<span class="c16">boolean</span><span class="c16"> </span><span class="c15">isEmpty</span><span class="c16">(</span><span class="c16">int</span><span class="c16"> square)  
+</span><span class="c16">boolean</span><span class="c16"> </span><span class="c15">isAdversary</span><span class="c16">(</span><span class="c16">int</span><span class="c16"> square)  
+</span><span class="c16">boolean</span><span class="c16"> </span><span class="c15">isMine</span><span class="c16">(</span><span class="c16">int</span><span class="c16">square)  
+ArrayList<Integer></span> <span class="c15">myPawns</span><span class="c16">()</span>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<span class="c5">Pour</span> <span class="c15">isEmpty</span><span class="c5">, on a juste utiliser la fonction portant le même non dans la classe</span> <span class="c5">CheckerBoard</span> <span class="c4">retournant la valeur souhaitée.</span>
+
+<span class="c15">isAdversary et isMine</span><span class="c5">sont implémenté quasiment de la même manière: Si la valeur du joueur courant est</span> <span class="c5">ONE</span><span class="c5">et  la fonction</span> <span class="c15">isBlack</span><span class="c5">du</span> <span class="c5">CheckerBoard</span><span class="c5">ou si la valeur du joueur courant est</span> <span class="c5">TWO</span><span class="c5">et  la fonction</span> <span class="c15">isWhite</span><span class="c4"> on a alors une case contenant un adversaire. On fait l’inverse pour celle contenant notre pion.  </span>
+
+<span class="c5">Concernant</span> <span class="c15">myPawns,</span><span class="c4"> on retourne la liste contenant les pions noirs ou celle contenant les pions blancs en fonction de la valeur de notre joueur.</span>
+
+<span class="c4"></span>
+
+<span class="c4"></span>
+
+<span class="c5">Ensuite, il fallait implémenter les mouvements possibles du joueur courent</span> <span class="c5 c18 c45">(l’étape la plus difficile de cette première partie)</span><span class="c4">.</span>
+
+<span class="c4">Pour ce faire, on a dû passer par six(6) fonctions auxiliaires dont une pas très utile mais laissée pour la compréhension du code:</span>
+
+<a id="t.5f02427bdbfbcfb25edb12797d495c88ceab40b9"></a><a id="t.1"></a>
+
+<table class="c62">
+
+<tbody>
+
+<tr class="c14">
+
+<td class="c57" colspan="1" rowspan="1">
+
+<span class="c16">ArrayList<Integer></span> <span class="c43">calculMov</span><span class="c16">(Integer from,</span> <span class="c7">boolean</span><span class="c16">dame,</span> <span class="c7">boolean</span><span class="c16 c27 c50"> blanc,CheckerBoard board1)</span>
+
+<span class="c16">List<Move></span> <span class="c43">deplacementPossible</span><span class="c16">()  
+List<Move></span> <span class="c43">moveSansCapture</span><span class="c16 c27 c50">()</span>
+
+<span class="c16">List<Move></span> <span class="c43">movAvecCaptureForEach</span><span class="c16">(</span><span class="c7">int</span><span class="c16"> origin,</span><span class="c7">int</span><span class="c16">from,</span> <span class="c7">boolean</span><span class="c16">blanc ,</span> <span class="c7">boolean</span><span class="c16 c27 c50"> dame,CheckerBoard board1 ,DraughtsMove drMove , ArrayList<Integer> prise)</span>
+
+<span class="c16">List<Move></span> <span class="c43">movAvecCaptureForAll</span><span class="c16">()  
+List<Move></span> <span class="c43">moveAvecCapture</span><span class="c16">()  
+List<Move></span> <span class="c43">possibleMoves</span><span class="c16">()</span>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<span class="c15">calculMov</span><span class="c5">prend en paramètre : un</span> <span class="c5">pion</span><span class="c5">, son</span> <span class="c5">type</span><span class="c5">, sa</span> <span class="c5">couleur</span><span class="c5">et un</span> <span class="c5">CheckerBoard.</span><span class="c4"> On commence par vérifier si le pion est positionné sur une extrémité du plateau puis en fonction de son type et de sa couleur, calcule les destinations que pourrait atteindre le pion s’il y avait aucun obstacle pour l’y en empêcher.    </span>
+
+<span class="c15">deplacementPossible</span><span class="c5">utilise</span> <span class="c15">calculMov</span><span class="c5">et</span> <span class="c15">myPawns</span><span class="c5">et calcule pour chaque pion les déplacements possibles toujours sans contrainte comme si chaque pion était seul sur le damier puis forme des objets</span> <span class="c15">Move</span><span class="c5">de sous la forme</span> <span class="c5 c10 c94">(</span><span class="c5 c10 c36">from-t1xt2xt3x.... tn)</span><span class="c46"> </span><span class="c4">où from représente la position de départ et t, la position d’arrivée.</span>
+
+<span class="c4">Exemple :</span>
+
+<a id="t.2b4e72d66f7a9755ae22af4597c5fe341baa9e8d"></a><a id="t.2"></a>
+
+<table class="c80">
+
+<tbody>
+
+<tr class="c14">
+
+<td class="c83" colspan="1" rowspan="1">
+
+<span class="c13">-------------     -------------  
+|</span> <span class="c19">1</span><span class="c13">   </span><span class="c19">2</span><span class="c13">   </span><span class="c19">3</span><span class="c13">|   |   x   x   x |  
+|</span> <span class="c19">4</span><span class="c13">   </span><span class="c19">5</span><span class="c13">   </span><span class="c19">6</span><span class="c13">|   | x   x   x   |  
+|</span> <span class="c19">7</span><span class="c13">   </span><span class="c19">8</span><span class="c13">   </span><span class="c19">9</span><span class="c13"> |   |   .   .   . |  
+|</span><span class="c19">10</span><span class="c13"></span> <span class="c19">11</span><span class="c13"></span> <span class="c19">12</span><span class="c13">   |   | .   .   .   |  
+|  </span><span class="c19">13</span><span class="c13"></span> <span class="c19">14</span><span class="c13"></span> <span class="c19">15</span><span class="c13"> |   |   o   o   o |  
+|</span><span class="c19">16</span><span class="c13"></span> <span class="c19">17</span><span class="c13"></span> <span class="c19">18</span><span class="c13 c27 c50">   |   | o   o   o   |  
+-------------     -------------</span>
+
+<span class="c13 c27 c50">calculMov (14, !estDame, esBblanc, board) retrurne (11,12)</span>
+
+<span class="c13 c27 c50">calculMov (16, !estDame, estBlanc, board) retourne (13)</span>
+
+<span class="c13 c27 c50">calculMov (13, estDame, esBblanc, board) retourne (10,11,16,17)</span>
+
+<span class="c27 c50 c75">//on considère ici que chaque pion est seul sur le damier</span>
+
+<span class="c13 c27 c50">deplacementPossible() retourne donc dans notre cas:</span>
+
+<span class="c13 c27 c50"> 13-10x11</span>
+
+<span class="c13 c27 c50"> 14-11x12</span>
+
+<span class="c13 c27 c50"> 15-12</span>
+
+<span class="c13 c27 c50"> 16-13</span>
+
+<span class="c13 c27 c50"> 17-13x14</span>
+
+<span class="c13 c27 c50"> 18-14x15</span>
+
+<span class="c13 c27 c50"></span>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<span class="c4"></span>
+
+<span class="c15">moveSansCapture</span><span class="c5">récupère la liste retournée par</span> <span class="c15">deplacementPossible,</span><span class="c5">pour chaque sous-liste, isole le premier élément qui est la case de départ puis pour chaque destination vide, forme un doublet</span> <span class="c5 c36 c10">(from-to)</span><span class="c4"> et l’ajoute à laliste des mouvements sans captures.</span>
+
+<span class="c4">on a donc une double itération.</span>
+
+<span class="c4"></span>
+
+<span class="c5">Pour un pion donné, on calcule toutes ses prises possible avec</span> <span class="c15">movAvecCaptureForEach</span><span class="c4">.</span>
+
+<span class="c5">Ici aussi on utilise</span> <span class="c15">calculMov</span><span class="c4">  et pour chaque destination du pion de départ, on vérifie si c’est un adversaire puis si elle n’est pas déjà dans la liste des pions déjà capturés. Ensuite si la destination n’est pas une extrémité de notre damier. Une les trois conditions précédentes réunis, on peut envisager une prise pour notre pion.</span>
+
+<span class="c5">Pour savoir s’il y a</span> <span class="c5">prise</span><span class="c5">, on doit détecter</span> <span class="c5 c59">le sens du voisinage</span><span class="c5">entre le</span> <span class="c5">pion</span><span class="c5">et la</span> <span class="c5">destination</span><span class="c5">et si la</span> <span class="c5 c54">case suivante dans le même sens de voisinage est vide</span><span class="c4"> on a effectivement une prise.        </span>
+
+<span class="c5">Pour les prises multiples, on appelle récursivement</span> <span class="c15">movAvecCaptureForEach</span><span class="c4">.    </span>
+
+<span class="c5">On remarque la présence de trois paramètres particuliers (</span><span class="c5 c54">drMove, prise et origin</span><span class="c5">):</span>
+
+*   <span class="c5 c54">drMove :</span><span class="c4">À chaque récursion, on mémorise la trace de déplacement pour l’ajoute à la liste de déplacement avec captures du pion seulement quand on arrive à la destination finale.</span>
+*   <span class="c5 c54">prise :</span><span class="c4">Pour s’assurer de ne pas boucler infiniment sur une prise, il faut à chaque fois ajouter la prise à la liste de pions capturés.</span>
+*   <span class="c5 c54">origin :</span><span class="c5">  Si lors d’une rafle, les adversaires sons disposés de tel sorte que notre pion a la possibilité de repasser par sa position d’origine, il est évident que vérifier uniquement que la case est vide ne le perpétrait pas alors nous avons ajouté la condition suivante : (</span><span class="c16">isEmpty(to) || to == origin)</span><span class="c4"> </span>
+
+<span class="c5">Illustration de l’importance d’</span><span class="c5 c54">origin</span><span class="c4"> :</span>
+
+<a id="t.c2dbcb74274cb364441fb375c79453845c7cde1d"></a><a id="t.3"></a>
+
+<table class="c17 c85">
+
+<tbody>
+
+<tr class="c14">
+
+<td class="c64" colspan="1" rowspan="1">
+
+<span class="c2">-----------------     -----------------  
+|</span> <span class="c1">1</span><span class="c2">   </span><span class="c1">2</span><span class="c2">   </span><span class="c1">3</span><span class="c2">   </span><span class="c1">4</span><span class="c2">|   |   .   O   .   . |  
+|</span> <span class="c1">5</span><span class="c2">   </span><span class="c1">6</span><span class="c2">   </span><span class="c1">7</span><span class="c2">   </span><span class="c1">8</span><span class="c2">|   | .   .   .   x   |  
+|</span> <span class="c1">9</span><span class="c2"></span> <span class="c1">10</span><span class="c2"></span> <span class="c1">11</span><span class="c2"></span> <span class="c1">12</span><span class="c2"> |   |   .   x   x   . |  
+|</span><span class="c1">13</span><span class="c2"></span> <span class="c1">14</span><span class="c2"></span> <span class="c1">15</span><span class="c2"></span> <span class="c1">16</span><span class="c2">   |   | .   x   .   .   |  
+|  </span><span class="c1">17</span><span class="c2"></span> <span class="c1">18</span><span class="c2"></span> <span class="c1">19</span><span class="c2"></span> <span class="c1">20</span><span class="c2"> |   |   .   x   x   . |  
+|</span><span class="c1">21</span><span class="c2"></span> <span class="c1">22</span><span class="c2"></span> <span class="c1">23</span><span class="c2"></span> <span class="c1">24</span><span class="c2">   |   | .   .   .   .   |  
+|  </span><span class="c1">25</span><span class="c2"></span> <span class="c1">26</span><span class="c2"></span> <span class="c1">27</span><span class="c2"></span> <span class="c1">28</span><span class="c2"> |   |   .   .   o   . |  
+|</span><span class="c1">29</span><span class="c2"></span> <span class="c1">30</span><span class="c2"></span> <span class="c1">31</span><span class="c2"></span> <span class="c1">32</span><span class="c2 c27">   |   | X   o   o   o   |  
+-----------------     -----------------</span>
+
+<span class="c13 c27 c37">  ||</span>
+
+<span class="c13 c27 c37">  \/</span>
+
+<span class="c2">-----------------     -----------------  
+|</span> <span class="c1">1</span><span class="c2">   </span><span class="c1">2</span><span class="c2">   </span><span class="c1">3</span><span class="c2">   </span><span class="c1">4</span><span class="c2">|   |   .   .   .   . |  
+|</span> <span class="c1">5</span><span class="c2">   </span><span class="c1">6</span><span class="c2">   </span><span class="c1">7</span><span class="c2">   </span><span class="c1">8</span><span class="c2">|   | .   .   O   x   |  
+|</span> <span class="c1">9</span><span class="c2"></span> <span class="c1">10</span><span class="c2"></span> <span class="c1">11</span><span class="c2"></span> <span class="c1">12</span><span class="c2"> |   |   .   x   x   . |  
+|</span><span class="c1">13</span><span class="c2"></span> <span class="c1">14</span><span class="c2"></span> <span class="c1">15</span><span class="c2"></span> <span class="c1">16</span><span class="c2">   |   | .   x   .   .   |  
+|  </span><span class="c1">17</span><span class="c2"></span> <span class="c1">18</span><span class="c2"></span> <span class="c1">19</span><span class="c2"></span> <span class="c1">20</span><span class="c2"> |   |   .   X   x   . |  
+|</span><span class="c1">21</span><span class="c2"></span> <span class="c1">22</span><span class="c2"></span> <span class="c1">23</span><span class="c2"></span> <span class="c1">24</span><span class="c2">   |   | .   .   .   .   |  
+|  </span><span class="c1">25</span><span class="c2"></span> <span class="c1">26</span><span class="c2"></span> <span class="c1">27</span><span class="c2"></span> <span class="c1">28</span><span class="c2"> |   |   .   .   o   . |  
+|</span><span class="c1">29</span><span class="c2"></span> <span class="c1">30</span><span class="c2"></span> <span class="c1">31</span><span class="c2"></span> <span class="c1">32</span><span class="c2 c27">   |   | X   o   o   o   |  
+-----------------     -----------------</span>
+
+<span class="c13 c27 c37">  ||</span>
+
+<span class="c13 c27 c37">  \/</span>
+
+<span class="c2">-----------------     -----------------  
+|</span> <span class="c1">1</span><span class="c2">   </span><span class="c1">2</span><span class="c2">   </span><span class="c1">3</span><span class="c2">   </span><span class="c1">4</span><span class="c2">|   |   .   .   .   . |    
+|</span> <span class="c1">5</span><span class="c2">   </span><span class="c1">6</span><span class="c2">   </span><span class="c1">7</span><span class="c2">   </span><span class="c1">8</span><span class="c2">|   | .   .   O   x   |  
+|</span> <span class="c1">9</span><span class="c2"></span> <span class="c1">10</span><span class="c2"></span> <span class="c1">11</span><span class="c2"></span> <span class="c1">12</span><span class="c2"> |   |   .   x   x   . |  
+|</span><span class="c1">13</span><span class="c2"></span> <span class="c1">14</span><span class="c2"></span> <span class="c1">15</span><span class="c2"></span> <span class="c1">16</span><span class="c2">   |   | .   .   .   .   |  
+|  </span><span class="c1">17</span><span class="c2"></span> <span class="c1">18</span><span class="c2"></span> <span class="c1">19</span><span class="c2"></span> <span class="c1">20</span><span class="c2"> |   |   x   x   x   . |  
+|</span><span class="c1">21</span><span class="c2"></span> <span class="c1">22</span><span class="c2"></span> <span class="c1">23</span><span class="c2"></span> <span class="c1">24</span><span class="c2">   |   | .   .   .   .   |  
+|  </span><span class="c1">25</span><span class="c2"></span> <span class="c1">26</span><span class="c2"></span> <span class="c1">27</span><span class="c2"></span> <span class="c1">28</span><span class="c2"> |   |   .   .   o   . |  
+|</span><span class="c1">29</span><span class="c2"></span> <span class="c1">30</span><span class="c2"></span> <span class="c1">31</span><span class="c2"></span> <span class="c1">32</span><span class="c2">   |   | X   o   o   o   |  
+-----------------     -----------------</span><span class="c13">  
+</span><span class="c2">Ici</span> <span class="c73 c89">possibleMove</span><span class="c2">retourne :  
+avec</span> <span class="c29">origin :</span><span class="c2 c27">{7x16x23x14x7 ; 7x14x21 ; 7x16x23x14x21 ; 7x14x23x16x7}  </span>
+
+<span class="c2">sans</span> <span class="c29">origin</span><span class="c60 c73"> :</span><span class="c2">{7x16x23x14 ; 7x14x21 ; 7x16x23x14x21 ; 7x14x23x16}</span>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<span class="c5">Par la suite, avec</span> <span class="c15">movAvecCaptureForAll</span><span class="c5">on récupère juste liste des déplacements avec prise pour tous les pions en itérant sur</span> <span class="c15">myPawns.</span><span class="c4"> </span>
+
+<span class="c15">moveAvecCapture</span><span class="c5">est la fonction un peu inutile car retourne simplement</span> <span class="c15">movAvecCaptureForAll</span><span class="c4"> mais pur une question compréhension du code on l’a laissée.</span>
+
+<span class="c5">Pour finir avec la partie des déplacements, dans</span> <span class="c15">possibleMoves</span> <span class="c5">on retourne</span> <span class="c15">moveAvecCapture</span><span class="c5">si elle n’est pas vide sinon on retourne</span> <span class="c15">moveSansCapture</span><span class="c4"> </span>
+
+<span class="c4"></span>
+
+<span class="c4"></span>
+
+<span class="c4">Pour finir nous avons réussi à implémenter les Méthodes plus facilement:</span>
+
+<a id="t.9437be57a1a8e64a98781e1b1535146f310ce254"></a><a id="t.4"></a>
+
+<table class="c82">
+
+<tbody>
+
+<tr class="c14">
+
+<td class="c71" colspan="1" rowspan="1">
+
+<span class="c7">void</span><span class="c16"> </span><span class="c43">play</span><span class="c16">(Move aMove)  
+PlayerId</span> <span class="c43">winner</span><span class="c16">()</span>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<span class="c4"></span>
+
+<span class="c5">Avec</span> <span class="c15">play</span><span class="c5">,</span><span class="c4"> on parcourt le mouvement en paramètre en déplaçant le pion au fur et à mesure qu’on avance. Si entre le couple départ-arrivée, il y a un pion, on le capture en le supprimant du damier.</span>
+
+<span class="c5">Si on a un mouvement avec prise ou un mouvement d’un pion simple, on réinitialise la variable</span> <span class="c15">nbKingMovesWithoutCapture</span><span class="c4">  sinon elle est incrémentée.</span>
+
+<span class="c5">Si un pion arrive à l’extrémité adverse et que ce n’est pas une dame il est immédiatement</span> <span class="c5">promu en dame</span><span class="c4"> et passe son tour.</span>
+
+<span class="c4">À la fin du tour, on incrémente le nombre de tours  et on donne la main à l’adversaire.</span>
+
+<span class="c4"></span>
+
+<span class="c15">winner</span><span class="c5">retourne</span> <span class="c5">NONE</span><span class="c5"> si on a seulement des mouvements de dames durant 25 tours (</span><span class="c15">nbKingMovesWithoutCapture ==25</span><span class="c4">). Si nous n’avons plus la possibilité de bouger ou si on n’a plus de pion sur le damier alors c’est l’adversaire qui a gagné.</span>
+
+* * *
+
+<span class="c4"></span>
+
+<span class="c4"></span>
+
+1.  <span class="c12"> Implémentation du MCTS</span>
+
+<span class="c4">Dans cette deuxième partie, il s’agissait pour nous d’implémenter l’algorithme de Monte-Carlo. Pour ce faire nous avions à notre disposition la structure suivante que nous avons modifié pour l’adapter à notre implémentation:</span>
+
+<span class="c4"></span>
+
+<a id="t.ed348dcb9e4a6447aba22856aca60807453a2e2d"></a><a id="t.5"></a>
+
+<table class="c69">
+
+<tbody>
+
+<tr class="c14">
+
+<td class="c79" colspan="1" rowspan="1">
+
+<span class="c7 c18">public</span><span class="c16 c18"> </span><span class="c7 c18">class</span><span class="c16 c18"> </span><span class="c9">MonteCarloTreeSearch</span><span class="c16 c18"> {  
+        </span><span class="c7 c18">class</span><span class="c16 c18"> </span><span class="c9">EvalNode</span><span class="c16 c18">{  
+
+               Move move_node ;</span> <span class="c18 c28">//Ajouté mouvement associer au nœud</span><span class="c16 c18">  
+                EvalNode parent;</span><span class="c28 c18">//Ajouté : un pointeur vers le père</span><span class="c16 c18">  
+
+                </span><span class="c7 c18">double</span><span class="c16 c18"> </span><span class="c43 c18">uct</span><span class="c16 c18">()  
+                </span><span class="c7 c18">double</span><span class="c16 c18"> </span><span class="c43 c18">score</span><span class="c16 c18">()  
+                </span><span class="c7 c18">void</span><span class="c16 c18"> </span><span class="c18 c43">updateStats</span><span class="c16 c18">(RolloutResults res)  
+                </span><span class="c7 c18">void</span><span class="c16 c18"> </span><span class="c43 c18">genererFils</span><span class="c16 c18">()  </span><span class="c28 c18">//Ajouté</span><span class="c16 c18">EvalNode</span> <span class="c43 c18">meilleurFeuille</span><span class="c16 c18">()</span> <span class="c28 c18">//Ajouté</span><span class="c16 c18">EvalNode</span> <span class="c43 c18">meilleurFils</span><span class="c16 c18">()</span> <span class="c28 c18">//Ajouté</span><span class="c16 c18">  
+        }  
+
+        </span><span class="c7 c18">static</span><span class="c16 c18">class</span> <span class="c43 c18">RolloutResults</span><span class="c16 c18">()</span> <span class="c7 c18">static</span><span class="c16 c18">PlayerId</span> <span class="c43 c18">playRandomlyToEnd</span><span class="c16 c18">(Game game)</span> <span class="c7 c18">static</span><span class="c16 c18">RolloutResults</span> <span class="c43 c18">rollOut</span><span class="c16 c18">(</span><span class="c7 c18">final</span><span class="c16 c18">Game game,</span> <span class="c7 c18">int</span><span class="c16 c18"> nbRuns)  
+        </span><span class="c7 c18">public</span><span class="c16 c18"> </span><span class="c7 c18">void</span><span class="c16 c18"> </span><span class="c43 c18">evaluateTreeWithTimeLimit</span><span class="c16 c18">(</span><span class="c7 c18">int</span><span class="c16 c18"> timeLimitMillis)  
+        </span><span class="c7 c18">public</span><span class="c16 c18"> </span><span class="c7 c18">boolean</span><span class="c16 c18"> </span><span class="c43 c18">evaluateTreeOnce</span><span class="c16 c18">()  
+        </span><span class="c7 c18">public</span><span class="c16 c18">Move</span> <span class="c43 c18">getBestMove</span><span class="c16 c18">()</span> <span class="c7 c18">public</span><span class="c16 c18">String</span> <span class="c43 c18">stats</span><span class="c16 c27 c18">()  
+}</span>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<span class="c4"></span>
+
+<span class="c5">La première des choses qu’on avait  à faire était de nous assurer que notre algorithme parcourait toutes les possibilités dans un état donné du jeu avant de passer à l’exploration des niveaux suivants. Pour ce faire nous avons utilisé la formule</span> <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 84.70px; height: 16.81px;">![](images/image3.png)</span><span class="c5">que nous avons implémenté dans la méthode</span> <span class="c15 c18">uct.</span><span class="c4"> </span>
+
+<span class="c5">Pour commencer, on génère immédiatement les fils du</span> <span class="c5">root</span> <span class="c5">avec la méthode</span> <span class="c15 c18">genererFils</span><span class="c5">qui itère sur les mouvements possibles de l’état courent du jeu en associant à chaque mouvement, un nœud dont le père est le nœud appelant. D'où l’ajout des attributs</span> <span class="c16 c18">Move et EvalNode.</span><span class="c5">C’est seulement avec la fonction</span> <span class="c15 c18">evaluateTreeOnce</span><span class="c4"> que nous implémentons concrètement le comportement de notre MCTS.</span>
+
+<span class="c5">Avant de parcourir notre arbre, on commence par sélectionner le meilleur nœud  l’aide de</span> <span class="c15 c18">meilleurFeuille</span><span class="c5">qui parcoure l’arbre et retourne la feuille la plus prometteuse de l’arbre à l’aide notamment l’utilisation de</span> <span class="c5">l’uct</span><span class="c4"> de chaque fils.</span>
+
+<span class="c5">Une fois la meilleure feuille de l’arborescence sélectionnée, on génère aussi ses fils et on l’exécute aléatoirement avec</span> <span class="c15 c18">RolloutResults</span><span class="c4"> durant une période donnée en paramètre d’exécution et retourne à chaque fin de partie aléatoire, des résultats que nous remontons aux différents nœuds parcouru.      </span>
+
+<span class="c5">La petite subtilité qui à pendant un moment bouleversé nos résultats est la méthode</span> <span class="c15 c18">updateStats</span><span class="c4"> qui permet de remonter le nombre de défaites du nœud courent (et non le nombre de victoires).</span>
+
+<span class="c5">On stop l’itération si notre root n’a qu’un seul fils ou quand on a un fils pour qui on a une victoire imminente</span> <span class="c5 c18 c55">(ça ne sert à rien de calculer)</span><span class="c4">.</span>
+
+<span class="c5">Après les calcules, on récupère le meilleur coup avec</span> <span class="c15 c18">getBestMove</span><span class="c5">qui appel la fonction</span> <span class="c15 c18">meilleurFils</span><span class="c5">retournant le nœud où notre probabilité de gagner est plus forte (plus grand</span> <span class="c15 c18">score</span><span class="c4">).    </span>
+
+<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 594.00px; height: 209.86px;">![](images/image1.png)</span>
+
+<span class="c4"></span>
+
+<span class="c4"></span>
+
+<span class="c5"> </span>
+
+1.  <span class="c27 c67 c90 c92">Analyse des résultats</span>
+
+<span class="c4">Après implémentation de l’algorithme, nous l’avons testé sur les différentes versions des jeux à notre disposition (Tic-tac-toe, Dames 8x8, Dames 10x10, Dames 6x6) avec les différents temps de calcul.</span>
+
+<span class="c4">Ce qui nous retourne les résultats suivants :</span>
+
+<span class="c4"></span>
+
+<span class="c22">Tic-Tac-Toe</span>
+
+<span class="c4">Ici peu importe leurs différents temps de calcul, les IA ont tous la même performance. Cela est dû au fait que l’espace jeux est relativement petit et donc ne nécessite pas beaucoup d'effort de calcul.  </span>
+
+<span class="c4"></span>
+
+<span class="c5">IA vs IA</span>
+
+<span class="c5">100%</span><span class="c5">des parties confrontant deux IA peu importe leurs différents temps de calcul se soldent sur des</span> <span class="c5">matchs nul</span><span class="c4">.</span>
+
+<span class="c4"></span>
+
+<span class="c27 c47">Humain vs IA</span>
+
+<span class="c4">Ici les résultats divergent en fonction de l’adversaire que l’IA a en face d’elle.</span>
+
+<span class="c5">C'est en gros cette partie qui nous a compliquée la tâche on pensait que c'était une erreur de notre implémentation alors que non. C’est juste que</span> <span class="c5">MCTS</span><span class="c4"> n’est pas l’algorithme le plus adapté pour ce genre de jeux où le nombre de coups possible est assez réduit.</span>
+
+<span class="c4">Dans notre cas, l’algorithme cherche à maximiser ses chances de gagner sans forcément minimiser celles de perdre.</span>
+
+<span class="c4">Illustrations :</span>
+
+<a id="t.6bb9eaac4754da2b192d635d0e5c8b140ee3af9c"></a><a id="t.6"></a>
+
+<table class="c77">
+
+<tbody>
+
+<tr class="c86">
+
+<td class="c34" colspan="1" rowspan="1">
+
+<span class="c35">//IA avec 'o' et Humain avec 'x'</span><span class="c44">  
+        board      board     board     board     board     board     board  
+0 1 2    . . .      . . x     o . x     o . x     o . x     o. x      o . x  
+3 4 5    . o .      . o .     . o .     . o .     . o .     . o .     . o .  
+6 7 8    . . .      . . .     . . .     . . x     . . x     . . x     . . x</span>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<span class="c4"></span>
+
+<span class="c5">À ce niveau de la partie de notre exemple, on constate que le meilleur coup ici pour éviter la défaite est</span> <span class="c5">“</span><span class="c5 c49">5</span><span class="c5">”</span><span class="c5">alors que notre algorithme privilégiera l’option</span> <span class="c5">“</span><span class="c5 c49">3</span><span class="c5">”</span><span class="c5">qui lui garantirait une victoire imminante au coup suivant. L’option</span> <span class="c5">“</span><span class="c5 c49">5</span><span class="c5">”</span> <span class="c4">n’est pas choix car même si elle lui évite la défaite sur le coup on a aucune garantis de gagner la partie.</span>
+
+<span class="c5">Pour résoudre ce problème, nous avons ajouté une</span> <span class="c5 c18">pseudo heuristique</span><span class="c4"> permettant de savoir si après notre tour l’adversaire aurait un déplacement qui ferait immédiatement perdre :</span>
+
+<span class="c4"></span>
+
+<a id="t.2e145ab91627b399db34a9899e15bddb74e00e58"></a><a id="t.7"></a>
+
+<table class="c74">
+
+<tbody>
+
+<tr class="c14">
+
+<td class="c87" colspan="1" rowspan="1">
+
+<span class="c7 c10">boolean</span><span class="c16 c10"> </span><span class="c43 c10">verfDefaiteImediate</span><span class="c16 c10">(EvalNode node){  
+                        EvalNode nodeDeVerificationDeDefaite =</span> <span class="c7 c10">new</span><span class="c16 c10"> EvalNode(node.game.clone());</span><span class="c16 c73">  
+</span><span class="c16 c10">                        nodeDeVerificationDeDefaite.genererFils();  
+                        </span><span class="c7 c10">for</span><span class="c16 c10"> (EvalNode n : nodeDeVerificationDeDefaite.children){  
+                                </span><span class="c7 c10">if</span><span class="c16 c10"> (n.game.winner() !=</span><span class="c7 c10">null</span><span class="c16 c10">)  
+                                </span><span class="c7 c10">return</span><span class="c16 c10"> </span><span class="c7 c10">true</span><span class="c16 c10">;  
+                        }  
+                        </span><span class="c7 c10">return</span><span class="c16 c10"> </span><span class="c7 c10">false</span><span class="c16 c27 c10">;  
+                }</span>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<span class="c16 c27 c50"></span>
+
+<span class="c5">Dans la même lancée, nous topons l’itération s’il y a qu’un seul fils qui peut nous sortie de la situation de défaite (</span> <span class="c7">int</span><span class="c16"> </span><span class="c43">seSauverAvec</span><span class="c16">(EvalNode node) ==</span> <span class="c88">1</span><span class="c4">).</span>
+
+<span class="c4"></span>
+
+<span class="c5">Les modifications apportées améliorent largement les l’efficacité de notre IA.  
+les parties entre IA sont plus élaborées et celle entre IA et humain se soldent au mieux par un nul pour l’humain.</span> <span class="c5 c78">(sur la base de trois dizaines de parties)</span><span class="c4"> </span>
+
+<span class="c4"></span>
+
+<span class="c4"></span>
+
+<span class="c5 c51">Dames Anglaise</span>
+
+<span class="c5">Avec le jeu  de Dames, la version améliorée n’apporte pas grand changement dans les résultats qu’on avait déjà dans la première version de notre</span> <span class="c5">MCTS</span><span class="c4"> sauf souvent en fin de partie.</span>
+
+<span class="c4"></span>
+
+<span class="c4">Dans cette partie, les résultats varient en fonction de l'espace de jeu et du temps de calcul.</span>
+
+<span class="c5">Après les parties entre différents temps de jeu et espace</span><span class="c5 c10 c41">(résultats en annexe page 9)</span><span class="c4">, on constate généralement que les débuts de parties ne sont pas très déterminants.</span>
+
+<span class="c5">La différence se fait vers environ le</span> <span class="c5">10ᵉ tour</span><span class="c4"> où le joueur avec le plus de temps de calcul commence à prendre l’avantage sur l’autre. C'est seulement vers la fin de la partie que le jeu devient un peu équilibré en termes de choix  de déplacement.</span>
+
+<span class="c4"></span>
+
+<span class="c5">Petite illustration pour revenir sur l’amélioration de notre</span> <span class="c5">MCTS</span><span class="c4"> en fin de partie</span>
+
+<a id="t.bceafbb14406dfa47eed93e4a07a1c63b98aafdd"></a><a id="t.8"></a>
+
+<table class="c58">
+
+<tbody>
+
+<tr class="c14">
+
+<td class="c66" colspan="1" rowspan="1">
+
+<span class="c13">-----------------     -----------------  
+|</span> <span class="c19">1</span><span class="c13">   </span><span class="c19">2</span><span class="c13">   </span><span class="c19">3</span><span class="c13">   </span><span class="c19">4</span><span class="c13">|   |   x   O   .   . |  
+|</span> <span class="c19">5</span><span class="c13">   </span><span class="c19">6</span><span class="c13">   </span><span class="c19">7</span><span class="c13">   </span><span class="c19">8</span><span class="c13">|   | o   .   .   O   |  
+|</span> <span class="c19">9</span><span class="c13"></span> <span class="c19">10</span><span class="c13"></span> <span class="c19">11</span><span class="c13"></span> <span class="c19">12</span><span class="c13"> |   |   .   .   .   . |  
+|</span><span class="c19">13</span><span class="c13"></span> <span class="c19">14</span><span class="c13"></span> <span class="c19">15</span><span class="c13"></span> <span class="c19">16</span><span class="c13">   |   | .   x   .   .   |  
+|  </span><span class="c19">17</span><span class="c13"></span> <span class="c19">18</span><span class="c13"></span> <span class="c19">19</span><span class="c13"></span> <span class="c19">20</span><span class="c13"> |   |   .   .   .   . |  
+|</span><span class="c19">21</span><span class="c13"></span> <span class="c19">22</span><span class="c13"></span> <span class="c19">23</span><span class="c13"></span> <span class="c19">24</span><span class="c13">   |   | o   .   .   .   |  
+|  </span><span class="c19">25</span><span class="c13"></span> <span class="c19">26</span><span class="c13"></span> <span class="c19">27</span><span class="c13"></span> <span class="c19">28</span><span class="c13"> |   |   .   O   o   . |  
+|</span><span class="c19">29</span><span class="c13"></span> <span class="c19">30</span><span class="c13"></span> <span class="c19">31</span><span class="c13"></span> <span class="c19">32</span><span class="c13">   |   | .   .   .   .   |  
+-----------------     -----------------</span>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<span class="c4"></span>
+
+<span class="c5">À ce stade de la partie, le joueur “</span><span class="c5">x</span><span class="c5">”</span><span class="c5">à 100% de chance de perdre la partie et il a la possibilité d’aller en :</span> <span class="c5">1-6</span><span class="c5">;</span> <span class="c5">14-17</span><span class="c5">et</span> <span class="c5">14-18.</span><span class="c4"> Dans la première version, il aurait choisi un mouvement aléatoire entre ces trois qui ont la même probabilité. Mais avec la version améliorée, on privilégiera le mouvement avec lequel on aura droit à des tours supplémentaire même si la défaite est imminente.</span>
+
+<span class="c4"></span>
+
+<span class="c4">En somme on peut dire qu’en début de partie l’impression d’équilibre entre deux IA avec des temps différents n’est qu’une illusion car celle avec le plus de temps de calcul effectue logiquement plus de partie aléatoires donc à plusieurs coups d’avances sur l’autre. Constat qui se confirme en milieu de partie où le nombre de déplacements possible croit largement. Ce qui signifie que l’arborescence est plus grande et les choix deviennent de plus en plus critiques.</span>
+
+<span class="c5">Cependant, en fin de partie, où les coups possibles sont largement réduits, le temps de calcul perd plus ou moins son importance comme au</span> <span class="c5">tic-tac-toe</span><span class="c4"> ce qui fait qu’on a des parties très longues. Et le résultat est déterminé par l’avance pris en milieu de partie.</span>
+
+<span class="c4">Aussi, les temps les plus longs ne concèdent aucunes victoires (dans nos tests) au temps les plus courts.</span>
+
+<span class="c4"></span>
+
+<span class="c4"> </span>
+
+<span class="c4"></span>
+
+<span class="c4">   </span>
+
+<span class="c5"> </span>
+
+<span class="c5"> </span>
+
+<span class="c12">Annexe: Les résultats des parties de Dames Anglaise</span>
+
+<span class="c12"></span>
+
+<a id="t.f2782291412da7e001852aa804cc9322e2c164fa"></a><a id="t.9"></a>
+
+<table class="c68">
+
+<tbody>
+
+<tr class="c0">
+
+<td class="c21" colspan="1" rowspan="1">
+
+<span class="c12"></span>
+
+</td>
+
+<td class="c70" colspan="3" rowspan="1">
+
+<span class="c12">1s vs  2s</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12"></span>
+
+</td>
+
+<td class="c65" colspan="3" rowspan="1">
+
+<span class="c12">1s vs 5s</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12"></span>
+
+</td>
+
+<td class="c65" colspan="3" rowspan="1">
+
+<span class="c12">1s vs 10s</span>
+
+</td>
+
+</tr>
+
+<tr class="c0">
+
+<td class="c21" colspan="1" rowspan="1">
+
+<span class="c12">8x8</span>
+
+</td>
+
+<td class="c20" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c20" colspan="1" rowspan="1">
+
+<span class="c12">2</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">1</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12"></span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">4</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12"></span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+</tr>
+
+<tr class="c0">
+
+<td class="c21" colspan="1" rowspan="1">
+
+<span class="c12">10x10</span>
+
+</td>
+
+<td class="c20" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c20" colspan="1" rowspan="1">
+
+<span class="c12">1</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12"></span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">2</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12"></span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+</tr>
+
+<tr class="c0">
+
+<td class="c21" colspan="1" rowspan="1">
+
+<span class="c12">6x6</span>
+
+</td>
+
+<td class="c20" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c20" colspan="1" rowspan="1">
+
+<span class="c12">1</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">1</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12"></span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">2</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12"></span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">1</span>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<span class="c12"></span>
+
+<span class="c12"></span>
+
+<a id="t.31d87c38d7e2f9a4ec3aa8249398413f48dac29f"></a><a id="t.10"></a>
+
+<table class="c68">
+
+<tbody>
+
+<tr class="c0">
+
+<td class="c21" colspan="1" rowspan="1">
+
+<span class="c12"></span>
+
+</td>
+
+<td class="c70" colspan="3" rowspan="1">
+
+<span class="c12">2s vs 5s</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12"></span>
+
+</td>
+
+<td class="c65" colspan="3" rowspan="1">
+
+<span class="c12">2s  vs 10s</span>
+
+</td>
+
+</tr>
+
+<tr class="c0">
+
+<td class="c21" colspan="1" rowspan="1">
+
+<span class="c12">8x8</span>
+
+</td>
+
+<td class="c20" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c20" colspan="1" rowspan="1">
+
+<span class="c12">1</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12"></span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">1</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">1</span>
+
+</td>
+
+</tr>
+
+<tr class="c0">
+
+<td class="c21" colspan="1" rowspan="1">
+
+<span class="c12">10x10</span>
+
+</td>
+
+<td class="c20" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c20" colspan="1" rowspan="1">
+
+<span class="c12">1</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12"></span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">1</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">1</span>
+
+</td>
+
+</tr>
+
+<tr class="c0">
+
+<td class="c21" colspan="1" rowspan="1">
+
+<span class="c12">6x6</span>
+
+</td>
+
+<td class="c20" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c20" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">1</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12"></span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">1</span>
+
+</td>
+
+<td class="c8" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<span class="c12"></span>
+
+<span class="c12"></span>
+
+<a id="t.a193cbbdc4b2b676a4c306ca1f30f2bf92d3487f"></a><a id="t.11"></a>
+
+<table class="c68">
+
+<tbody>
+
+<tr class="c0">
+
+<td class="c21" colspan="1" rowspan="1">
+
+<span class="c12"></span>
+
+</td>
+
+<td class="c63" colspan="3" rowspan="1">
+
+<span class="c12">5s vs 10s</span>
+
+</td>
+
+</tr>
+
+<tr class="c0">
+
+<td class="c21" colspan="1" rowspan="1">
+
+<span class="c12">8x8</span>
+
+</td>
+
+<td class="c52" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c48" colspan="1" rowspan="1">
+
+<span class="c12">1</span>
+
+</td>
+
+<td class="c48" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+</tr>
+
+<tr class="c0">
+
+<td class="c21" colspan="1" rowspan="1">
+
+<span class="c12">10x10</span>
+
+</td>
+
+<td class="c52" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c48" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c48" colspan="1" rowspan="1">
+
+<span class="c12">1</span>
+
+</td>
+
+</tr>
+
+<tr class="c0">
+
+<td class="c21" colspan="1" rowspan="1">
+
+<span class="c12">6x6</span>
+
+</td>
+
+<td class="c52" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+<td class="c48" colspan="1" rowspan="1">
+
+<span class="c12">1</span>
+
+</td>
+
+<td class="c48" colspan="1" rowspan="1">
+
+<span class="c12">0</span>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<span class="c4"></span>
+
+<div>
+
+<span class="c27 c50 c61"></span>
+
+</div>
